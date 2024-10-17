@@ -1,10 +1,18 @@
-import React, { useState } from "react"; 
+import React, { useEffect, useState } from "react"; 
 import "./menu.css";
 import ReservoirData from './reservoir_data.json';
 
-function Menu({ putSearch }) {
+function Menu({ putSearch, getPopup, isEmptyPopup }) {
     const [menuOpen, setMenuOpen] = useState(true);
     const left_menu = menuOpen ? 'left_menu' : 'left_menu left_menu_closed';
+    const [reservoirInformation, setReservoirInformation] = useState([]);
+
+    useEffect(() => {
+        if (!isEmptyPopup()) {
+            const popupData = getPopup();
+            setReservoirInformation(popupData);
+        }
+    }, [getPopup, isEmptyPopup]);
 
     const leftMenuBnt = () => {  
         setMenuOpen(!menuOpen);
@@ -85,6 +93,9 @@ function Menu({ putSearch }) {
             </button>
             <Search />
             <hr className="gray-line"></hr>
+            <div className="reservoir_information_box">
+            {reservoirInformation}
+            </div>
         </div>
     );
 }

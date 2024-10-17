@@ -89,6 +89,15 @@
   transform-origin: left center;
 }
 
+.reservoir_information_box{
+  width: 390px;
+  height: 200px;
+  border: 2px solid #9C27B0; 
+}
+
+
+
+
 
 
 

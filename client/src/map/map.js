@@ -74,6 +74,11 @@ function Map({ getSearch, isEmptySearch, putPopup }) {
         return { 저수율: `${percent}%`, 저수량: `${저수량.toFixed(2)} m³` };
     };
 
+    const handlePopupOpen = (name, 유효저수량, 저수량, 저수율, 위치) => {
+        const popupdata = [name, 유효저수량, 저수량, 저수율, 위치]
+        putPopup(popupdata);
+    };
+
     return (
         <MapContainer center={start_point} zoom={start_zoom} className="map-size">
             <MapHandler searchReservoir={searchReservoir} />
@@ -99,6 +104,9 @@ function Map({ getSearch, isEmptySearch, putPopup }) {
                             if (el) {
                                 markersRef.current[marker.name] = el;
                             }
+                        }}
+                        eventHandlers={{
+                            popupopen: () => handlePopupOpen(marker.name, marker.유효저수량, 저수량, 저수율, marker.위치)
                         }}
                     >
                         <Popup>
