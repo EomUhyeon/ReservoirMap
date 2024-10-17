@@ -1,4 +1,9 @@
 /save
+/client/save
+/ai_server/save
+/ai_server/data
+/ai_server/venv
+/ai_server/.idea
 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
@@ -61,7 +66,3 @@
 
 ### VS Code ###
 /server/.vscode/
-
-/ai_server/venv
-/ai_server/.idea
-/ai_server/data

@@ -6,8 +6,9 @@ excel_file_path = 'reservoir_241013.xls'
 # 변환된 CSV 파일 저장 경로
 csv_output_path = 'reservoir_selected_data.csv'
 
-# 엑셀 파일에서 데이터 읽기
-df = pd.read_excel(excel_file_path)
+dataframes = pd.read_html(excel_file_path)
+
+df = dataframes[0]  # 첫 번째 테이블 선택
 
 # '저수지명', '위치', '유효저수량' 순서로 열을 재배치하여 추출
 reservoir_selected_df = df[['저수지명', '위치', '유효저수량']]
