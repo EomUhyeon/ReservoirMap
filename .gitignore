@@ -61,3 +61,7 @@
 
 ### VS Code ###
 /server/.vscode/
+
+/ai_server/venv
+/ai_server/.idea
+/ai_server/data

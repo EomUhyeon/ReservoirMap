@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Queue from "./Queue.js";
+import Map from "./map/map_241015_001.js";
+import MapUploader from "./map/map.js";
+import CounterComponent from "./test.js"
+
 
 function App() {
+  const testQueue = Queue();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Map />
+      {/* <MapUploader get={testQueue.get} />
+      <CounterComponent put={testQueue.put} /> */}
+    </>
   );
-}
+};
+
 
 export default App;

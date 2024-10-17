@@ -1,0 +1,9 @@
+.leaflet-top.leaflet-left {
+    left: auto !important;
+    right: 10px;
+    top: 10px;
+}
+.map-size {
+    width: calc(100vw - 16px);
+    height: calc(100vh - 16px);
+}
