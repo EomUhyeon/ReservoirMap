@@ -1,0 +1,125 @@
+.left_menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 390px;
+  height: calc(100vh - 16px);
+  display: flex;
+  flex-direction: column;
+  background-color: white;      /* 연한 회색 배경 */
+  color: #000;                  /* 검은색 텍스트 */
+  transition: transform 0.3s ease;
+  z-index: 1000;                  /* 사이드바를 맨 위에 배치 */
+}
+.left_menu_closed {
+  transform: translateX(-390px);
+}
+.left_menu_btn {
+  position: absolute;
+  right: -23px;
+  font-size: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;       /* 중간 회색 배경 */
+  color: #9C27B0;
+  border: 1px solid #9C27B0;
+  border-left: none;               /* 왼쪽 테두리 제거 */
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 8px;
+  border-radius: 0 8px 8px 0;
+}
+
+.gray-line {
+  border: none;
+  border-top: 5px solid #f0f0f3;
+  margin: 1px;                    /* 위아래 여백 */
+}
+
+.search_box {
+  width: 340px;
+  height: 46px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #9C27B0;
+  border-radius: 8px;             /* 모서리 둥글게 */
+}
+.search_bar {
+  border: none;
+  margin-left: 20px;
+  width: 100%;
+}
+.search_bar:focus {
+  outline: none;                  /* 기본 포커스 아웃라인 제거 */
+}
+.search_bnt {
+  width: 25px;
+  height: 25px;
+  border: none; 
+  background-color: #fff;       /* 흰색 배경 */
+  color: #9C27B0;               /* 텍스트와 아이콘을 보라색으로 */
+  margin: 10px 15px;
+  cursor: pointer;
+  position: relative;             /* 아이콘 위치를 위한 설정 */
+}
+.search_bnt::before {             /* 돋보기 동그라미 */
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #9C27B0; 
+  border-radius: 50%;
+  top: 40%;
+  left: 9px;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+}
+.search_bnt::after {              /* 돋보기 손잡이 */
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  background-color: #9C27B0;
+  top: 59%;
+  left: 20px;
+  transform: translateY(-50%) rotate(45deg);
+  transform-origin: left center;
+}
+
+
+
+
+.facilities_box {
+  width: 390px;
+  flex-wrap: wrap; 
+  display: flex;
+  justify-content: center;          /* 수평 중앙 정렬 */
+}
+.facilities_bnt {
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 2px solid #9C27B0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background-color: white;
+}
+.facilities_bnt:hover{
+  background-color: #f0f0f0;
+}
+.facilities_text {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}

@@ -7,3 +7,147 @@
     width: calc(100vw - 16px);
     height: calc(100vh - 16px);
 }
+
+.custom-marker {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: gray;
+    border: 2px solid #D3D3D3;                  /* 테두리 색상 */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);     /* 그림자 */
+}
+.marker-20 {
+    background-color: #FF6F61;                  /* 파스텔  */
+}
+.marker-40 {
+    background-color: #FFB347;
+}
+.marker-60 {
+    background-color: #FDFD96;
+}
+.marker-80 {
+    background-color: #AEC6CF;
+}
+.marker-100 {
+    background-color: #779ECB;
+}
+
+
+/* 마커 색상 예시 001 */
+/* .marker-20 {
+    background-color: red;
+}
+.marker-40 {
+    background-color: orange;
+}
+.marker-60 {
+    background-color: yellow;
+}
+.marker-80 {
+    background-color: lightgreen;
+}
+.marker-100 {
+    background-color: green;
+} */
+
+/* 마커 색상 예시 002 */
+/* .marker-20 {
+    background-color: #FF4500;
+}
+.marker-40 {
+    background-color: #FF8C00;
+}
+.marker-60 {
+    background-color: #FFD700;
+}
+.marker-80 {
+    background-color: #87CEEB;
+}
+.marker-100 {
+    background-color: #1E90FF;
+} */
+
+/* 마커 색상 예시 밝고 화사한 계열 */
+/* .marker-20 {
+    background-color: #FF6347;
+}
+.marker-40 {
+    background-color: #FFA07A;
+}
+.marker-60 {
+    background-color: #FFD700;
+}
+.marker-80 {
+    background-color: #7FFFD4;
+}
+.marker-100 {
+    background-color: #00BFFF;
+} */
+
+/* 마커 색상 예시 파스텔 계열 */
+/* .marker-20 {
+    background-color: #FF6F61;
+}
+.marker-40 {
+    background-color: #FFB347;
+}
+.marker-60 {
+    background-color: #FDFD96;
+}
+.marker-80 {
+    background-color: #AEC6CF;
+}
+.marker-100 {
+    background-color: #779ECB;
+} */
+
+/* 마커 색상 예시 자연 계열 */
+/* .marker-20 {
+    background-color: #8B0000;
+}
+.marker-40 {
+    background-color: #FF8C00;
+}
+.marker-60 {
+    background-color: #9ACD32;
+}
+.marker-80 {
+    background-color: #00FA9A;
+}
+.marker-100 {
+    background-color: #4682B4;
+} */
+
+/* 마커 색상 예시 강렬한 대비 계열 */
+/* .marker-20 {
+    background-color: #DC143C;
+}
+.marker-40 {
+    background-color: #FF4500;
+}
+.marker-60 {
+    background-color: #FFD700;
+}
+.marker-80 {
+    background-color: #32CD32;
+}
+.marker-100 {
+    background-color: #1E90FF;
+} */
+
+/* 마커 색상 예시 고급스러운 어두운 계열 */
+/* .marker-20 {
+    background-color: #800000;
+}
+.marker-40 {
+    background-color: #FF6347;
+}
+.marker-60 {
+    background-color: #DAA520;
+}
+.marker-80 {
+    background-color: #3CB371;
+}
+.marker-100 {
+    background-color: #00008B;
+} */

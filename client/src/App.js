@@ -1,20 +1,16 @@
 import Queue from "./Queue.js";
-import Map from "./map/map_241015_001.js";
-import MapUploader from "./map/map.js";
-import CounterComponent from "./test.js"
-
+import Map from "./map/map.js";
+import Menu from "./menu/menu.js";
 
 function App() {
-  const testQueue = Queue();
+  const searchQueue = Queue();
 
   return (
     <>
-      <Map />
-      {/* <MapUploader get={testQueue.get} />
-      <CounterComponent put={testQueue.put} /> */}
+      <Map getSearch={searchQueue.get} isEmptySearch={searchQueue.isEmpty} />
+      <Menu putSearch={searchQueue.put} />
     </>
   );
 };
-
 
 export default App;
