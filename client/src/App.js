@@ -4,11 +4,20 @@ import Menu from "./menu/menu.js";
 
 function App() {
   const searchQueue = Queue();
+  const popupQueue = Queue();
 
   return (
     <>
-      <Map getSearch={searchQueue.get} isEmptySearch={searchQueue.isEmpty} />
-      <Menu putSearch={searchQueue.put} />
+      <Map 
+        getSearch={searchQueue.get} 
+        isEmptySearch={searchQueue.isEmpty}
+        putPopup={popupQueue.put}
+      />
+      <Menu 
+        putSearch={searchQueue.put}
+        getPopup={popupQueue.get}
+        isEmptyPopup={popupQueue.isEmpty}
+      />
     </>
   );
 };
