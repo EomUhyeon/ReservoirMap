@@ -90,9 +90,36 @@
 }
 
 .reservoir_information_box{
-  width: 390px;
+  width: 100%;
   height: 200px;
   border: 2px solid #9C27B0; 
+}
+
+.reservoir_graph_box {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.graph_button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.graph_button:hover {
+  background-color: #45a049;
 }
 
 

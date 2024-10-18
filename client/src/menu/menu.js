@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"; 
 import "./menu.css";
 import ReservoirData from './reservoir_data.json';
+import ReservoirGraph from './reservoir_graph.js';
 
 function Menu({ putSearch, getPopup, isEmptyPopup }) {
     const [menuOpen, setMenuOpen] = useState(true);
@@ -121,6 +122,7 @@ function Menu({ putSearch, getPopup, isEmptyPopup }) {
                     </table>
                 )}
             </div>
+            <ReservoirGraph />
         </div>
     );
 }
