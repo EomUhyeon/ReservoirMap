@@ -46,8 +46,8 @@ function Menu({ putSearch, getPopup, isEmptyPopup }) {
     
         const filteredReservoirs = searchTerm
             ? ReservoirData.filter((reservoir) =>
-                  reservoir.name.includes(searchTerm)
-              )
+                reservoir.name.includes(searchTerm)
+                ).slice(0, 10)
             : [];
 
         const handleReservoirClick = (reservoir) => {
@@ -94,7 +94,32 @@ function Menu({ putSearch, getPopup, isEmptyPopup }) {
             <Search />
             <hr className="gray-line"></hr>
             <div className="reservoir_information_box">
-            {reservoirInformation}
+                {reservoirInformation.length > 0 && (
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><strong>이름 :</strong></td>
+                                <td>{reservoirInformation[0]}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>유효 저수량 :</strong></td>
+                                <td>{reservoirInformation[1]} m³</td>
+                            </tr>
+                            <tr>
+                                <td><strong>금일 저수량 :</strong></td>
+                                <td>{reservoirInformation[2]}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>금일 저수율 :</strong></td>
+                                <td>{reservoirInformation[3]}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>소재지 :</strong></td>
+                                <td>{reservoirInformation[4]}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                )}
             </div>
         </div>
     );

@@ -32,6 +32,15 @@ function Map({ getSearch, isEmptySearch, putPopup }) {
             if (searchReservoir && markersRef.current[searchReservoir.name]) {
                 map.setView(searchReservoir.position, 13);
                 markersRef.current[searchReservoir.name].openPopup();
+                
+                const marker = ReservoirData.find(r => r.name === searchReservoir.name);
+                if (marker) {
+                    const 유효저수량 = parseFloat(marker.유효저수량);
+                    const { 저수율, 저수량 } = getTodayData(marker.name, 유효저수량);
+                    handlePopupOpen(marker.name, marker.유효저수량, 저수량, 저수율, marker.위치);
+                }
+
+                setSearchReservoir(null);
             }
         }, [searchReservoir, map]);
 
