@@ -56,34 +56,34 @@ function Menu({ putSearch, getPopup, isEmptyPopup }) {
         };
 
         return (
-            <>
             <div className="search_box">
-                <input
-                    type="text"
-                    placeholder="저수지 검색..."
-                    value={searchTerm}
-                    onChange={handleSearchChange}
-                    onKeyDown={handleKeyPress} 
-                    className="search_bar"
-                />
-                <button className="search_bnt" onClick={handleSearchClick}></button>
+                <div className="search_bar">
+                    <input
+                        className="search_window"
+                        type="text"
+                        placeholder="저수지를 검색 하세요."
+                        value={searchTerm}
+                        onChange={handleSearchChange}
+                        onKeyDown={handleKeyPress} 
+                    />
+                    <button className="search_bnt" onClick={handleSearchClick}></button>
+                </div>
+                <div className="search_data_box">
+                    {searchTerm && (
+                        <ul className="search-results">
+                            {filteredReservoirs.length > 0 ? (
+                                filteredReservoirs.map((reservoir, index) => (
+                                    <li key={index} onClick={() => handleReservoirClick(reservoir)}>
+                                        {reservoir.name} ({reservoir.위치})
+                                    </li>
+                                ))
+                            ) : (
+                                <li>결과가 없습니다.</li>
+                            )}
+                        </ul>
+                    )}
+                </div>            
             </div>    
-            <div>
-                {searchTerm && (
-                    <ul className="search-results">
-                        {filteredReservoirs.length > 0 ? (
-                            filteredReservoirs.map((reservoir, index) => (
-                                <li key={index} onClick={() => handleReservoirClick(reservoir)}>
-                                    {reservoir.name} ({reservoir.위치})
-                                </li>
-                            ))
-                        ) : (
-                            <li>결과가 없습니다.</li>
-                        )}
-                    </ul>
-                )}
-            </div>
-            </>
         );
     }
 
@@ -122,6 +122,7 @@ function Menu({ putSearch, getPopup, isEmptyPopup }) {
                     </table>
                 )}
             </div>
+            <hr className="gray-line"></hr>
             {reservoirInformation.length > 0 ? (
                 <ReservoirGraph reservoir_name={reservoirInformation[0]} />
 

@@ -42,7 +42,7 @@ public class ReservoirDataController {
     public ResponseEntity<String> getReservoirForecast(@PathVariable String reservoirName) {
         try {
             // 요청받은 저수지명에 해당하는 CSV 파일 경로 설정
-            String fileName = "reservoir_forecast_data/" + reservoirName + ".csv";
+            String fileName = "reservoir_forecast_data/" + reservoirName + "_예측결과.csv";
             Path filePath = Paths.get(new ClassPathResource(fileName).getURI());
 
             String csvContent = Files.readString(filePath);

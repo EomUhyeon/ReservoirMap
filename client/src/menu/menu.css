@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 590px;
-  height: calc(100vh - 16px);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: white;      /* 연한 회색 배경 */
@@ -43,21 +43,29 @@
 
 .search_box {
   width: calc(100% - 48px);
-  height: 46px;
   margin: 23px;
-  display: flex;
+
   align-items: center;
   border: 2px solid #9C27B0;
   border-radius: 8px;             /* 모서리 둥글게 */
 }
 .search_bar {
   border: none;
+  display: flex;
   margin-left: 20px;
-  width: 100%;
+  width: calc(100% - 20px);
 }
-.search_bar:focus {
+.search_window {
+  width: 100%;
+  border: none;
+}
+.search_window:focus {
   outline: none;                  /* 기본 포커스 아웃라인 제거 */
 }
+.search_window:focus::placeholder {
+  color: transparent;
+}
+
 .search_bnt {
   width: 25px;
   height: 25px;
@@ -91,11 +99,13 @@
   transform: translateY(-50%) rotate(45deg);
   transform-origin: left center;
 }
+.search_data_box {
+  border-top: 1px solid #f0f0f3; 
+}
 
 .reservoir_information_box{
   width: 100%;
   height: 200px;
-  border: 2px solid #9C27B0; 
 }
 
 .reservoir_graph_box {

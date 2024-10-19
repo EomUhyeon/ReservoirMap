@@ -7,32 +7,53 @@ import './menu.css';
 Chart.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
 function ReservoirGraph(reservoir_name) {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState([]);                 // 실제 저수율 데이터
+  const [forecastData, setForecastData] = useState([]); // 예측 저수율 데이터
   const [graphData, setGraphData] = useState({});
   const [reservoirName, setReservoirName] = useState('');
 
+  // 실제 저수율 데이터
   useEffect(() => {
     const reservoirNameStr = typeof reservoir_name === 'string' ? reservoir_name : reservoir_name?.reservoir_name;
     setReservoirName(reservoirNameStr);
-    // 서버에서 CSV 파일 가져오기
-    fetch('http://localhost:8080/api/reservoir_percent/' + reservoirName)
+    
+    fetch(`http://localhost:8080/api/reservoir_percent/${reservoirNameStr}`)
       .then((response) => response.text())
       .then((csvText) => {
-        // PapaParse로 CSV 텍스트를 파싱
         Papa.parse(csvText, {
           header: true,
           complete: (result) => {
-            setData(result.data);
-            updateGraphData(result.data, 'daily');
+            setData(result.data); // 실제 저수율 데이터 설정
+            updateGraphData(result.data, null, 'daily');
           },
         });
       })
       .catch((error) => {
         console.error('Error fetching CSV data:', error);
       });
-  }, [reservoir_name, reservoirName]);
+  }, [reservoir_name]);
 
-  // 일간, 주간, 월간 데이터 필터링
+  // 예측 저수율 데이터
+  useEffect(() => {
+    if (reservoirName) {
+      fetch(`http://localhost:8080/api/reservoir_forecast/${reservoirName}`)
+        .then((response) => response.text())
+        .then((csvText) => {
+          Papa.parse(csvText, {
+            header: true,
+            complete: (result) => {
+              setForecastData(result.data); // 예측 저수율 데이터 설정
+              updateGraphData(data, result.data, 'daily');
+            },
+          });
+        })
+        .catch((error) => {
+          console.error('Error fetching forecast CSV data:', error);
+        });
+    }
+  }, [reservoirName, data]);
+
+  // 데이터 필터링 (일간, 주간, 월간)
   const filterData = (data, mode) => {
     const filtered = [];
     const dataLength = data.length;
@@ -54,27 +75,45 @@ function ReservoirGraph(reservoir_name) {
   };
 
   // 그래프 데이터 업데이트
-  const updateGraphData = useCallback((data, mode) => {
+  const updateGraphData = useCallback((data, forecastData, mode) => {
     const filteredData = filterData(data, mode);
     const labels = filteredData.map((d) => d['날짜']);
     const values = filteredData.map((d) => parseFloat(d['저수율']));
 
+    const datasets = [
+      {
+        label: `${reservoirName} 저수율 (%)`,
+        data: values,
+        borderColor: 'rgba(75, 192, 192, 1)', // 하늘색
+        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        fill: true,
+      },
+    ];
+
+    // 예측 데이터 추가
+    if (forecastData) {
+      const filteredForecastData = filterData(forecastData, mode);
+      const forecastLabels = filteredForecastData.map((d) => d['날짜'] || d['ds']);
+      const forecastValues = filteredForecastData.map((d) => parseFloat(d['저수율'] || d['yhat']));
+
+      labels.push(...forecastLabels); // 예측 데이터 날짜 이어붙이기
+      datasets.push({
+        label: `${reservoirName} 예측 저수율 (%)`,
+        data: [...Array(values.length-1).fill(null),...values.slice(-1), ...forecastValues], // 실제 데이터 뒤에 예측 데이터 이어붙임
+        borderColor: 'rgba(255, 165, 0, 1)', // 주황색
+        backgroundColor: 'rgba(255, 165, 0, 0.2)',
+        fill: true,
+      });
+    }
+
     setGraphData({
       labels,
-      datasets: [
-        {
-          label: reservoirName+' 저수율 (%)',
-          data: values,
-          borderColor: 'rgba(75, 192, 192, 1)',
-          backgroundColor: 'rgba(75, 192, 192, 0.2)',
-          fill: true,
-        },
-      ],
+      datasets,
     });
   }, [reservoirName]);
 
   const handleModeChange = (mode) => {
-    updateGraphData(data, mode);
+    updateGraphData(data, forecastData, mode);
   };
 
   return (
