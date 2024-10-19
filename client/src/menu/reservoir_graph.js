@@ -9,11 +9,13 @@ Chart.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Too
 function ReservoirGraph(reservoir_name) {
   const [data, setData] = useState([]);
   const [graphData, setGraphData] = useState({});
+  const [reservoirName, setReservoirName] = useState('');
 
   useEffect(() => {
     const reservoirNameStr = typeof reservoir_name === 'string' ? reservoir_name : reservoir_name?.reservoir_name;
+    setReservoirName(reservoirNameStr);
     // 서버에서 CSV 파일 가져오기
-    fetch('http://localhost:8080/api/reservoir_data/' + reservoirNameStr)
+    fetch('http://localhost:8080/api/reservoir_percent/' + reservoirName)
       .then((response) => response.text())
       .then((csvText) => {
         // PapaParse로 CSV 텍스트를 파싱
@@ -28,7 +30,7 @@ function ReservoirGraph(reservoir_name) {
       .catch((error) => {
         console.error('Error fetching CSV data:', error);
       });
-  }, [reservoir_name]);
+  }, [reservoir_name, reservoirName]);
 
   // 일간, 주간, 월간 데이터 필터링
   const filterData = (data, mode) => {
@@ -36,15 +38,15 @@ function ReservoirGraph(reservoir_name) {
     const dataLength = data.length;
 
     if (mode === 'daily') {
-      return data.slice(-100);
+      return data.slice(-450);
     } 
     else if (mode === 'weekly') {
-      for (let i = dataLength - 2; i >= 0 && filtered.length < 30; i -= 7) {
+      for (let i = dataLength - 2; i >= 0 && filtered.length < 64; i -= 7) {
         filtered.unshift(data[i]);
       }
     } 
     else if (mode === 'monthly') {
-      for (let i = dataLength - 2; i >= 0 && filtered.length < 5; i -= 30) {
+      for (let i = dataLength - 2; i >= 0 && filtered.length < 15; i -= 30) {
         filtered.unshift(data[i]);
       }
     }
@@ -61,7 +63,7 @@ function ReservoirGraph(reservoir_name) {
       labels,
       datasets: [
         {
-          label: '저수율 (%)',
+          label: reservoirName+' 저수율 (%)',
           data: values,
           borderColor: 'rgba(75, 192, 192, 1)',
           backgroundColor: 'rgba(75, 192, 192, 0.2)',
@@ -69,7 +71,7 @@ function ReservoirGraph(reservoir_name) {
         },
       ],
     });
-  }, []);
+  }, [reservoirName]);
 
   const handleModeChange = (mode) => {
     updateGraphData(data, mode);
