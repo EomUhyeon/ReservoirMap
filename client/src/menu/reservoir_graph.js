@@ -6,13 +6,14 @@ import './menu.css';
 
 Chart.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
-function ReservoirGraph() {
+function ReservoirGraph(reservoir_name) {
   const [data, setData] = useState([]);
   const [graphData, setGraphData] = useState({});
 
   useEffect(() => {
+    const reservoirNameStr = typeof reservoir_name === 'string' ? reservoir_name : reservoir_name?.reservoir_name;
     // 서버에서 CSV 파일 가져오기
-    fetch('http://localhost:8080/api/reservoir_data')
+    fetch('http://localhost:8080/api/reservoir_data/' + reservoirNameStr)
       .then((response) => response.text())
       .then((csvText) => {
         // PapaParse로 CSV 텍스트를 파싱
@@ -27,20 +28,27 @@ function ReservoirGraph() {
       .catch((error) => {
         console.error('Error fetching CSV data:', error);
       });
-  }, []);
+  }, [reservoir_name]);
 
   // 일간, 주간, 월간 데이터 필터링
   const filterData = (data, mode) => {
+    const filtered = [];
+    const dataLength = data.length;
+
     if (mode === 'daily') {
-      return data.slice(-100); // 최근 100일 데이터
+      return data.slice(-100);
     } 
     else if (mode === 'weekly') {
-      return data.slice(-200); // 최근 200일 데이터
+      for (let i = dataLength - 2; i >= 0 && filtered.length < 30; i -= 7) {
+        filtered.unshift(data[i]);
+      }
     } 
     else if (mode === 'monthly') {
-      return data.slice(-300); // 최근 300일 데이터
+      for (let i = dataLength - 2; i >= 0 && filtered.length < 5; i -= 30) {
+        filtered.unshift(data[i]);
+      }
     }
-    return data;
+    return filtered;
   };
 
   // 그래프 데이터 업데이트
@@ -75,11 +83,11 @@ function ReservoirGraph() {
         <button className="graph_button" onClick={() => handleModeChange('monthly')}>월간</button>
       </div>
       {graphData.labels ? (
-        <div style={{ width: '100%', height: '300px' }}>
+        <div style={{ width: '90%', height: '400px' }}>
           <Line
             data={graphData}
             options={{
-              maintainAspectRatio: false, // 비율 유지하지 않음
+              maintainAspectRatio: false,
               scales: {
                 y: {
                   min: 0,

@@ -122,7 +122,12 @@ function Menu({ putSearch, getPopup, isEmptyPopup }) {
                     </table>
                 )}
             </div>
-            <ReservoirGraph />
+            {reservoirInformation.length > 0 ? (
+                <ReservoirGraph reservoir_name={reservoirInformation[0]} />
+
+                ) : (
+                <p>저수지 정보를 선택해주세요.</p>
+            )}
         </div>
     );
 }

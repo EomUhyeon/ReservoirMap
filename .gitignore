@@ -2,6 +2,7 @@
 /client/save
 /ai_server/save
 /ai_server/data
+/ai_server/data_processing/save
 /ai_server/venv
 /ai_server/.idea
 

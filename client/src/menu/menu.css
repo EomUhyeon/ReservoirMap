@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 390px;
+  width: 590px;
   height: calc(100vh - 16px);
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@
   z-index: 1000;                  /* 사이드바를 맨 위에 배치 */
 }
 .left_menu_closed {
-  transform: translateX(-390px);
+  transform: translateX(-590px);
 }
 .left_menu_btn {
   position: absolute;
@@ -39,9 +39,9 @@
 }
 
 .search_box {
-  width: 340px;
+  width: calc(100% - 48px);
   height: 46px;
-  margin: 20px;
+  margin: 23px;
   display: flex;
   align-items: center;
   border: 2px solid #9C27B0;
