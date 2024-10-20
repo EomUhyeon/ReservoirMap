@@ -12,6 +12,8 @@
 - sudo apt install git
 - git clone https://github.com/your-repository-url
 
+- java -jar server-0.0.1-SNAPSHOT.jar
+
 
 - chmod +x gradlew
 - ./gradlew build
@@ -32,4 +34,23 @@
 
 3. Spring Boot Project를 빌드 하는 방법
 - .\gradlew.bat build
+
+4. 접속 방법
+
+- http://your-vm-ip-address:8080
+- http://34.66.104.241:8080/ 
+
+5. 프로젝트 만들기
+- Paths.get() 사용하지 마세요.
+
+Path filePath = Paths.get(new ClassPathResource(fileName).getURI());
+String csvContent = Files.readString(filePath);
+
+
+ClassPathResource resource = new ClassPathResource(fileName);
+String csvContent = new String(resource.getInputStream().readAllBytes(), StandardCharsets.UTF_8);
+
+// 파일 이름을 UTF-8로 인코딩
+String encodedFileName = URLEncoder.encode(reservoirName + ".csv", StandardCharsets.UTF_8.toString());
+
 
