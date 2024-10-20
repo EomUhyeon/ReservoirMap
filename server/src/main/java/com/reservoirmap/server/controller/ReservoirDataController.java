@@ -17,7 +17,7 @@ import java.io.InputStream;
 @RestController
 public class ReservoirDataController {
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "*")
     @GetMapping("/api/reservoir_percent/{reservoirName}")
     public ResponseEntity<byte[]> getReservoirPercent(@PathVariable String reservoirName) {
         try {
@@ -43,7 +43,7 @@ public class ReservoirDataController {
         }
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "*")
     @GetMapping("/api/reservoir_forecast/{reservoirName}")
     public ResponseEntity<byte[]> getReservoirForecast(@PathVariable String reservoirName) {
         try {
