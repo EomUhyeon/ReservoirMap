@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Line } from 'react-chartjs-2';
 import Papa from 'papaparse';
-import { Chart, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
+import { Chart, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler } from 'chart.js';
 import './menu.css';
 
-Chart.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
+Chart.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler);
 
 function ReservoirGraph(reservoir_name) {
   const [data, setData] = useState([]);                 // 실제 저수율 데이터
@@ -15,9 +15,10 @@ function ReservoirGraph(reservoir_name) {
   // 실제 저수율 데이터
   useEffect(() => {
     const reservoirNameStr = typeof reservoir_name === 'string' ? reservoir_name : reservoir_name?.reservoir_name;
+    const encodedReservoirName = encodeURIComponent(reservoirNameStr);
     setReservoirName(reservoirNameStr);
     
-    fetch(`http://localhost:8080/api/reservoir_percent/${reservoirNameStr}`)
+    fetch(`http://localhost:8080/api/reservoir_percent/${encodedReservoirName}`)
       .then((response) => response.text())
       .then((csvText) => {
         Papa.parse(csvText, {
@@ -36,7 +37,8 @@ function ReservoirGraph(reservoir_name) {
   // 예측 저수율 데이터
   useEffect(() => {
     if (reservoirName) {
-      fetch(`http://localhost:8080/api/reservoir_forecast/${reservoirName}`)
+      const encodedReservoirName = encodeURIComponent(reservoirName);
+      fetch(`http://localhost:8080/api/reservoir_forecast/${encodedReservoirName}`)
         .then((response) => response.text())
         .then((csvText) => {
           Papa.parse(csvText, {
