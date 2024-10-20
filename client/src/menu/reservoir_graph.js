@@ -3,10 +3,11 @@ import { Line } from 'react-chartjs-2';
 import Papa from 'papaparse';
 import { Chart, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler } from 'chart.js';
 import './menu.css';
+import KoToEnName from './ko_to_en_name.json'
 
 Chart.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler);
 
-function ReservoirGraph(reservoir_name) {
+function ReservoirGraph({ reservoir_name }) { 
   const [data, setData] = useState([]);                 // 실제 저수율 데이터
   const [forecastData, setForecastData] = useState([]); // 예측 저수율 데이터
   const [graphData, setGraphData] = useState({});
@@ -15,17 +16,23 @@ function ReservoirGraph(reservoir_name) {
   // 실제 저수율 데이터
   useEffect(() => {
     const reservoirNameStr = typeof reservoir_name === 'string' ? reservoir_name : reservoir_name?.reservoir_name;
-    const encodedReservoirName = encodeURIComponent(reservoirNameStr);
     setReservoirName(reservoirNameStr);
-    
-    fetch(`http://localhost:8080/api/reservoir_percent/${encodedReservoirName}`)
+
+    const reservoirEntry = KoToEnName.find((entry) => entry.name === reservoirNameStr);
+    const englishReservoirName = reservoirEntry ? reservoirEntry.en_name : reservoirNameStr;
+
+    fetch(`http://localhost:8080/api/reservoir_percent/${englishReservoirName}`)
       .then((response) => response.text())
       .then((csvText) => {
         Papa.parse(csvText, {
           header: true,
           complete: (result) => {
+            if (!result || !result.data || result.data.length === 0) {
+              console.error('Parsed CSV data is empty or invalid.');
+              return;
+            }
             setData(result.data); // 실제 저수율 데이터 설정
-            updateGraphData(result.data, null, 'daily');
+            updateGraphData(result.data, forecastData, 'daily');
           },
         });
       })
@@ -37,13 +44,19 @@ function ReservoirGraph(reservoir_name) {
   // 예측 저수율 데이터
   useEffect(() => {
     if (reservoirName) {
-      const encodedReservoirName = encodeURIComponent(reservoirName);
-      fetch(`http://localhost:8080/api/reservoir_forecast/${encodedReservoirName}`)
+      const reservoirEntry = KoToEnName.find((entry) => entry.name === reservoirName);
+      const englishReservoirName = reservoirEntry ? reservoirEntry.en_name : reservoirName;
+
+      fetch(`http://localhost:8080/api/reservoir_forecast/${englishReservoirName}`)
         .then((response) => response.text())
         .then((csvText) => {
           Papa.parse(csvText, {
             header: true,
             complete: (result) => {
+              if (!result || !result.data || result.data.length === 0) {
+                console.error('Parsed forecast CSV data is empty or invalid.');
+                return;
+              }
               setForecastData(result.data); // 예측 저수율 데이터 설정
               updateGraphData(data, result.data, 'daily');
             },
@@ -79,8 +92,8 @@ function ReservoirGraph(reservoir_name) {
   // 그래프 데이터 업데이트
   const updateGraphData = useCallback((data, forecastData, mode) => {
     const filteredData = filterData(data, mode);
-    const labels = filteredData.map((d) => d['날짜']);
-    const values = filteredData.map((d) => parseFloat(d['저수율']));
+    const labels = filteredData.map((d) => d['date']);
+    const values = filteredData.map((d) => parseFloat(d['percent']));
 
     const datasets = [
       {
@@ -95,17 +108,19 @@ function ReservoirGraph(reservoir_name) {
     // 예측 데이터 추가
     if (forecastData) {
       const filteredForecastData = filterData(forecastData, mode);
-      const forecastLabels = filteredForecastData.map((d) => d['날짜'] || d['ds']);
-      const forecastValues = filteredForecastData.map((d) => parseFloat(d['저수율'] || d['yhat']));
+      const forecastLabels = filteredForecastData.map((d) => d['date'] || d['ds']);
+      const forecastValues = filteredForecastData.map((d) => parseFloat(d['percent'] || d['yhat']));
 
-      labels.push(...forecastLabels); // 예측 데이터 날짜 이어붙이기
-      datasets.push({
-        label: `${reservoirName} 예측 저수율 (%)`,
-        data: [...Array(values.length-1).fill(null),...values.slice(-1), ...forecastValues], // 실제 데이터 뒤에 예측 데이터 이어붙임
-        borderColor: 'rgba(255, 165, 0, 1)', // 주황색
-        backgroundColor: 'rgba(255, 165, 0, 0.2)',
-        fill: true,
-      });
+      if (values.length > 0 && forecastValues.length > 0) {
+        labels.push(...forecastLabels); // 예측 데이터 날짜 이어붙이기
+        datasets.push({
+          label: `${reservoirName} 예측 저수율 (%)`,
+          data: [...Array(values.length - 1).fill(null), values[values.length - 1], ...forecastValues], // 실제 데이터 뒤에 예측 데이터 이어붙임
+          borderColor: 'rgba(255, 165, 0, 1)', // 주황색
+          backgroundColor: 'rgba(255, 165, 0, 0.2)',
+          fill: true,
+        });
+      } 
     }
 
     setGraphData({
@@ -113,6 +128,7 @@ function ReservoirGraph(reservoir_name) {
       datasets,
     });
   }, [reservoirName]);
+
 
   const handleModeChange = (mode) => {
     updateGraphData(data, forecastData, mode);

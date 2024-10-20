@@ -1,0 +1,4322 @@
+[
+    {
+        "name": "성주저수지",
+        "en_name": "seongjujeosuji"
+    },
+    {
+        "name": "고삼저수지",
+        "en_name": "gosamjeosuji"
+    },
+    {
+        "name": "불갑저수지",
+        "en_name": "bulgapjeosuji"
+    },
+    {
+        "name": "맹동저수지",
+        "en_name": "maengdongjeosuji"
+    },
+    {
+        "name": "옥구저수지",
+        "en_name": "okgujeosuji"
+    },
+    {
+        "name": "동상저수지",
+        "en_name": "dongsangjeosuji"
+    },
+    {
+        "name": "구이저수지",
+        "en_name": "guijeosuji"
+    },
+    {
+        "name": "달창저수지",
+        "en_name": "dalchangjeosuji"
+    },
+    {
+        "name": "오태저수지",
+        "en_name": "otaejeosuji"
+    },
+    {
+        "name": "비룡저수지",
+        "en_name": "biryongjeosuji"
+    },
+    {
+        "name": "서부저수지",
+        "en_name": "seobujeosuji"
+    },
+    {
+        "name": "장남저수지",
+        "en_name": "jangnamjeosuji"
+    },
+    {
+        "name": "고풍저수지",
+        "en_name": "gopungjeosuji"
+    },
+    {
+        "name": "수청저수지",
+        "en_name": "sucheongjeosuji"
+    },
+    {
+        "name": "오창저수지",
+        "en_name": "ochangjeosuji"
+    },
+    {
+        "name": "마북저수지",
+        "en_name": "mabukjeosuji"
+    },
+    {
+        "name": "상판저수지",
+        "en_name": "sangpanjeosuji"
+    },
+    {
+        "name": "덕용저수지",
+        "en_name": "deogyongjeosuji"
+    },
+    {
+        "name": "반산저수지",
+        "en_name": "bansanjeosuji"
+    },
+    {
+        "name": "주남저수지",
+        "en_name": "junamjeosuji"
+    },
+    {
+        "name": "보청저수지",
+        "en_name": "bocheongjeosuji"
+    },
+    {
+        "name": "장치저수지",
+        "en_name": "jangchijeosuji"
+    },
+    {
+        "name": "삼흥저수지",
+        "en_name": "samheungjeosuji"
+    },
+    {
+        "name": "사곡저수지",
+        "en_name": "sagokjeosuji"
+    },
+    {
+        "name": "내장저수지",
+        "en_name": "naejangjeosuji"
+    },
+    {
+        "name": "금전저수지",
+        "en_name": "geumjeonjeosuji"
+    },
+    {
+        "name": "구성저수지",
+        "en_name": "guseongjeosuji"
+    },
+    {
+        "name": "칠갑저수지",
+        "en_name": "chilgapjeosuji"
+    },
+    {
+        "name": "계룡저수지",
+        "en_name": "gyeryongjeosuji"
+    },
+    {
+        "name": "마둔저수지",
+        "en_name": "madunjeosuji"
+    },
+    {
+        "name": "복심저수지",
+        "en_name": "boksimjeosuji"
+    },
+    {
+        "name": "가음저수지",
+        "en_name": "gaeumjeosuji"
+    },
+    {
+        "name": "추평저수지",
+        "en_name": "chupyeongjeosuji"
+    },
+    {
+        "name": "원창저수지",
+        "en_name": "wonchangjeosuji"
+    },
+    {
+        "name": "거창저수지",
+        "en_name": "geochangjeosuji"
+    },
+    {
+        "name": "잠곡저수지",
+        "en_name": "jamgokjeosuji"
+    },
+    {
+        "name": "도고저수지",
+        "en_name": "dogojeosuji"
+    },
+    {
+        "name": "금풍저수지",
+        "en_name": "geumpungjeosuji"
+    },
+    {
+        "name": "길정저수지",
+        "en_name": "giljeongjeosuji"
+    },
+    {
+        "name": "은천저수지",
+        "en_name": "euncheonjeosuji"
+    },
+    {
+        "name": "물야저수지",
+        "en_name": "muryajeosuji"
+    },
+    {
+        "name": "광혜저수지",
+        "en_name": "gwanghyejeosuji"
+    },
+    {
+        "name": "오어저수지",
+        "en_name": "oeojeosuji"
+    },
+    {
+        "name": "도림저수지",
+        "en_name": "dorimjeosuji"
+    },
+    {
+        "name": "만운저수지",
+        "en_name": "manunjeosuji"
+    },
+    {
+        "name": "율치저수지",
+        "en_name": "yulchijeosuji"
+    },
+    {
+        "name": "입암저수지",
+        "en_name": "ibamjeosuji"
+    },
+    {
+        "name": "화장저수지",
+        "en_name": "hwajangjeosuji"
+    },
+    {
+        "name": "백산저수지",
+        "en_name": "baeksanjeosuji"
+    },
+    {
+        "name": "종천저수지",
+        "en_name": "jongcheonjeosuji"
+    },
+    {
+        "name": "마지저수지",
+        "en_name": "majijeosuji"
+    },
+    {
+        "name": "금석저수지",
+        "en_name": "geumseokjeosuji"
+    },
+    {
+        "name": "신림저수지",
+        "en_name": "sinrimjeosuji"
+    },
+    {
+        "name": "옥종저수지",
+        "en_name": "okjongjeosuji"
+    },
+    {
+        "name": "의령저수지",
+        "en_name": "uiryeongjeosuji"
+    },
+    {
+        "name": "평암저수지",
+        "en_name": "pyeongamjeosuji"
+    },
+    {
+        "name": "웅양저수지",
+        "en_name": "ungyangjeosuji"
+    },
+    {
+        "name": "임고저수지",
+        "en_name": "imgojeosuji"
+    },
+    {
+        "name": "효곡저수지",
+        "en_name": "hyogokjeosuji"
+    },
+    {
+        "name": "임천저수지",
+        "en_name": "imcheonjeosuji"
+    },
+    {
+        "name": "용설저수지",
+        "en_name": "yongseoljeosuji"
+    },
+    {
+        "name": "죽계저수지",
+        "en_name": "jukgyejeosuji"
+    },
+    {
+        "name": "방동저수지",
+        "en_name": "bangdongjeosuji"
+    },
+    {
+        "name": "삼기저수지",
+        "en_name": "samgijeosuji"
+    },
+    {
+        "name": "길용저수지",
+        "en_name": "giryongjeosuji"
+    },
+    {
+        "name": "무극저수지",
+        "en_name": "mugeukjeosuji"
+    },
+    {
+        "name": "인정저수지",
+        "en_name": "injeongjeosuji"
+    },
+    {
+        "name": "중흥저수지",
+        "en_name": "jungheungjeosuji"
+    },
+    {
+        "name": "풍전저수지",
+        "en_name": "pungjeonjeosuji"
+    },
+    {
+        "name": "하이저수지",
+        "en_name": "haijeosuji"
+    },
+    {
+        "name": "옥녀저수지",
+        "en_name": "oknyeojeosuji"
+    },
+    {
+        "name": "구시저수지",
+        "en_name": "gusijeosuji"
+    },
+    {
+        "name": "궁유저수지",
+        "en_name": "gungyujeosuji"
+    },
+    {
+        "name": "청기저수지",
+        "en_name": "cheonggijeosuji"
+    },
+    {
+        "name": "봉성저수지",
+        "en_name": "bongseongjeosuji"
+    },
+    {
+        "name": "정안저수지",
+        "en_name": "jeonganjeosuji"
+    },
+    {
+        "name": "묵계저수지",
+        "en_name": "mukgyejeosuji"
+    },
+    {
+        "name": "오남저수지",
+        "en_name": "onamjeosuji"
+    },
+    {
+        "name": "고시저수지",
+        "en_name": "gosijeosuji"
+    },
+    {
+        "name": "만봉저수지",
+        "en_name": "manbongjeosuji"
+    },
+    {
+        "name": "율현저수지",
+        "en_name": "yulhyeonjeosuji"
+    },
+    {
+        "name": "운주저수지",
+        "en_name": "unjujeosuji"
+    },
+    {
+        "name": "중산저수지",
+        "en_name": "jungsanjeosuji"
+    },
+    {
+        "name": "왕동저수지",
+        "en_name": "wangdongjeosuji"
+    },
+    {
+        "name": "화산곡저수지",
+        "en_name": "hwasangokjeosuji"
+    },
+    {
+        "name": "생곡저수지",
+        "en_name": "saenggokjeosuji"
+    },
+    {
+        "name": "월남저수지",
+        "en_name": "wolnamjeosuji"
+    },
+    {
+        "name": "궁산저수지",
+        "en_name": "gungsanjeosuji"
+    },
+    {
+        "name": "추풍령저수지",
+        "en_name": "chupungryeongjeosuji"
+    },
+    {
+        "name": "월천저수지",
+        "en_name": "wolcheonjeosuji"
+    },
+    {
+        "name": "장현저수지",
+        "en_name": "janghyeonjeosuji"
+    },
+    {
+        "name": "기천저수지",
+        "en_name": "gicheonjeosuji"
+    },
+    {
+        "name": "옥곡저수지",
+        "en_name": "okgokjeosuji"
+    },
+    {
+        "name": "진례저수지",
+        "en_name": "jinryejeosuji"
+    },
+    {
+        "name": "괴목저수지",
+        "en_name": "goemokjeosuji"
+    },
+    {
+        "name": "송면저수지",
+        "en_name": "songmyeonjeosuji"
+    },
+    {
+        "name": "칠동저수지",
+        "en_name": "childongjeosuji"
+    },
+    {
+        "name": "홍양저수지",
+        "en_name": "hongyangjeosuji"
+    },
+    {
+        "name": "성전저수지",
+        "en_name": "seongjeonjeosuji"
+    },
+    {
+        "name": "서암저수지",
+        "en_name": "seoamjeosuji"
+    },
+    {
+        "name": "장척저수지",
+        "en_name": "jangcheokjeosuji"
+    },
+    {
+        "name": "지천저수지",
+        "en_name": "jicheonjeosuji"
+    },
+    {
+        "name": "갈평저수지",
+        "en_name": "galpyeongjeosuji"
+    },
+    {
+        "name": "송선저수지",
+        "en_name": "songseonjeosuji"
+    },
+    {
+        "name": "화매저수지",
+        "en_name": "hwamaejeosuji"
+    },
+    {
+        "name": "소수저수지",
+        "en_name": "sosujeosuji"
+    },
+    {
+        "name": "왕궁저수지",
+        "en_name": "wanggungjeosuji"
+    },
+    {
+        "name": "복안저수지",
+        "en_name": "boganjeosuji"
+    },
+    {
+        "name": "장연저수지",
+        "en_name": "jangyeonjeosuji"
+    },
+    {
+        "name": "오로저수지",
+        "en_name": "orojeosuji"
+    },
+    {
+        "name": "박달저수지",
+        "en_name": "bakdaljeosuji"
+    },
+    {
+        "name": "외동저수지",
+        "en_name": "oedongjeosuji"
+    },
+    {
+        "name": "개심저수지",
+        "en_name": "gaesimjeosuji"
+    },
+    {
+        "name": "해평저수지",
+        "en_name": "haepyeongjeosuji"
+    },
+    {
+        "name": "당지저수지",
+        "en_name": "dangjijeosuji"
+    },
+    {
+        "name": "왕신저수지",
+        "en_name": "wangsinjeosuji"
+    },
+    {
+        "name": "동면저수지",
+        "en_name": "dongmyeonjeosuji"
+    },
+    {
+        "name": "사산저수지",
+        "en_name": "sasanjeosuji"
+    },
+    {
+        "name": "내봉저수지",
+        "en_name": "naebongjeosuji"
+    },
+    {
+        "name": "성연저수지",
+        "en_name": "seongyeonjeosuji"
+    },
+    {
+        "name": "쌍봉저수지",
+        "en_name": "ssangbongjeosuji"
+    },
+    {
+        "name": "부석저수지",
+        "en_name": "buseokjeosuji"
+    },
+    {
+        "name": "창내저수지",
+        "en_name": "changnaejeosuji"
+    },
+    {
+        "name": "천은저수지",
+        "en_name": "cheoneunjeosuji"
+    },
+    {
+        "name": "백천저수지",
+        "en_name": "baekcheonjeosuji"
+    },
+    {
+        "name": "부전저수지",
+        "en_name": "bujeonjeosuji"
+    },
+    {
+        "name": "감돈저수지",
+        "en_name": "gamdonjeosuji"
+    },
+    {
+        "name": "명계저수지",
+        "en_name": "myeonggyejeosuji"
+    },
+    {
+        "name": "창림저수지",
+        "en_name": "changrimjeosuji"
+    },
+    {
+        "name": "해원저수지",
+        "en_name": "haewonjeosuji"
+    },
+    {
+        "name": "대승저수지",
+        "en_name": "daeseungjeosuji"
+    },
+    {
+        "name": "애당저수지",
+        "en_name": "aedangjeosuji"
+    },
+    {
+        "name": "두량저수지",
+        "en_name": "duryangjeosuji"
+    },
+    {
+        "name": "청상저수지",
+        "en_name": "cheongsangjeosuji"
+    },
+    {
+        "name": "한계저수지",
+        "en_name": "hangyejeosuji"
+    },
+    {
+        "name": "동해저수지",
+        "en_name": "donghaejeosuji"
+    },
+    {
+        "name": "고서저수지",
+        "en_name": "goseojeosuji"
+    },
+    {
+        "name": "송단저수지",
+        "en_name": "songdanjeosuji"
+    },
+    {
+        "name": "신반월저수지",
+        "en_name": "sinbanwoljeosuji"
+    },
+    {
+        "name": "잠홍저수지",
+        "en_name": "jamhongjeosuji"
+    },
+    {
+        "name": "모점저수지",
+        "en_name": "mojeomjeosuji"
+    },
+    {
+        "name": "천락저수지",
+        "en_name": "cheonrakjeosuji"
+    },
+    {
+        "name": "우목저수지",
+        "en_name": "umokjeosuji"
+    },
+    {
+        "name": "송석저수지",
+        "en_name": "songseokjeosuji"
+    },
+    {
+        "name": "설악저수지",
+        "en_name": "seorakjeosuji"
+    },
+    {
+        "name": "효촌저수지",
+        "en_name": "hyochonjeosuji"
+    },
+    {
+        "name": "추암저수지",
+        "en_name": "chuamjeosuji"
+    },
+    {
+        "name": "운대1저수지",
+        "en_name": "undae1jeosuji"
+    },
+    {
+        "name": "무을저수지",
+        "en_name": "mueuljeosuji"
+    },
+    {
+        "name": "좌운저수지",
+        "en_name": "jwaunjeosuji"
+    },
+    {
+        "name": "요룡저수지",
+        "en_name": "yoryongjeosuji"
+    },
+    {
+        "name": "우치저수지",
+        "en_name": "uchijeosuji"
+    },
+    {
+        "name": "고경저수지",
+        "en_name": "gogyeongjeosuji"
+    },
+    {
+        "name": "광곡저수지",
+        "en_name": "gwanggokjeosuji"
+    },
+    {
+        "name": "봉재저수지",
+        "en_name": "bongjaejeosuji"
+    },
+    {
+        "name": "둔전저수지",
+        "en_name": "dunjeonjeosuji"
+    },
+    {
+        "name": "원암저수지",
+        "en_name": "wonamjeosuji"
+    },
+    {
+        "name": "소향저수지",
+        "en_name": "sohyangjeosuji"
+    },
+    {
+        "name": "당전저수지",
+        "en_name": "dangjeonjeosuji"
+    },
+    {
+        "name": "천태저수지",
+        "en_name": "cheontaejeosuji"
+    },
+    {
+        "name": "수룡저수지",
+        "en_name": "suryongjeosuji"
+    },
+    {
+        "name": "소성저수지",
+        "en_name": "soseongjeosuji"
+    },
+    {
+        "name": "소태저수지",
+        "en_name": "sotaejeosuji"
+    },
+    {
+        "name": "개천저수지",
+        "en_name": "gaecheonjeosuji"
+    },
+    {
+        "name": "양화저수지",
+        "en_name": "yanghwajeosuji"
+    },
+    {
+        "name": "노동저수지",
+        "en_name": "nodongjeosuji"
+    },
+    {
+        "name": "기사저수지",
+        "en_name": "gisajeosuji"
+    },
+    {
+        "name": "적량저수지",
+        "en_name": "jeokryangjeosuji"
+    },
+    {
+        "name": "두창저수지",
+        "en_name": "duchangjeosuji"
+    },
+    {
+        "name": "삼화저수지",
+        "en_name": "samhwajeosuji"
+    },
+    {
+        "name": "갈천저수지",
+        "en_name": "galcheonjeosuji"
+    },
+    {
+        "name": "월산2저수지",
+        "en_name": "wolsan2jeosuji"
+    },
+    {
+        "name": "흑석저수지",
+        "en_name": "heukseokjeosuji"
+    },
+    {
+        "name": "향양저수지",
+        "en_name": "hyangyangjeosuji"
+    },
+    {
+        "name": "풍년저수지",
+        "en_name": "pungnyeonjeosuji"
+    },
+    {
+        "name": "용평저수지",
+        "en_name": "yongpyeongjeosuji"
+    },
+    {
+        "name": "육동저수지",
+        "en_name": "yukdongjeosuji"
+    },
+    {
+        "name": "노홍저수지",
+        "en_name": "nohongjeosuji"
+    },
+    {
+        "name": "매현저수지",
+        "en_name": "maehyeonjeosuji"
+    },
+    {
+        "name": "대위저수지",
+        "en_name": "daewijeosuji"
+    },
+    {
+        "name": "충도저수지",
+        "en_name": "chungdojeosuji"
+    },
+    {
+        "name": "쌍정저수지",
+        "en_name": "ssangjeongjeosuji"
+    },
+    {
+        "name": "성양저수지",
+        "en_name": "seongyangjeosuji"
+    },
+    {
+        "name": "신항저수지",
+        "en_name": "sinhangjeosuji"
+    },
+    {
+        "name": "덕암저수지",
+        "en_name": "deogamjeosuji"
+    },
+    {
+        "name": "경포저수지",
+        "en_name": "gyeongpojeosuji"
+    },
+    {
+        "name": "구림저수지",
+        "en_name": "gurimjeosuji"
+    },
+    {
+        "name": "창수저수지",
+        "en_name": "changsujeosuji"
+    },
+    {
+        "name": "덕가저수지",
+        "en_name": "deokgajeosuji"
+    },
+    {
+        "name": "성송저수지",
+        "en_name": "seongsongjeosuji"
+    },
+    {
+        "name": "흥업저수지",
+        "en_name": "heungeopjeosuji"
+    },
+    {
+        "name": "신휴저수지",
+        "en_name": "sinhyujeosuji"
+    },
+    {
+        "name": "굴운저수지",
+        "en_name": "gurunjeosuji"
+    },
+    {
+        "name": "옥실저수지",
+        "en_name": "oksiljeosuji"
+    },
+    {
+        "name": "보통저수지",
+        "en_name": "botongjeosuji"
+    },
+    {
+        "name": "홍동저수지",
+        "en_name": "hongdongjeosuji"
+    },
+    {
+        "name": "판곡저수지",
+        "en_name": "pangokjeosuji"
+    },
+    {
+        "name": "돈답저수지",
+        "en_name": "dondapjeosuji"
+    },
+    {
+        "name": "솔기저수지",
+        "en_name": "solgijeosuji"
+    },
+    {
+        "name": "소암저수지",
+        "en_name": "soamjeosuji"
+    },
+    {
+        "name": "석포저수지",
+        "en_name": "seokpojeosuji"
+    },
+    {
+        "name": "황락저수지",
+        "en_name": "hwangrakjeosuji"
+    },
+    {
+        "name": "도리저수지",
+        "en_name": "dorijeosuji"
+    },
+    {
+        "name": "담안저수지",
+        "en_name": "damanjeosuji"
+    },
+    {
+        "name": "초대저수지",
+        "en_name": "chodaejeosuji"
+    },
+    {
+        "name": "오원저수지",
+        "en_name": "owonjeosuji"
+    },
+    {
+        "name": "연봉2저수지",
+        "en_name": "yeonbong2jeosuji"
+    },
+    {
+        "name": "애룡저수지",
+        "en_name": "aeryongjeosuji"
+    },
+    {
+        "name": "우금저수지",
+        "en_name": "ugeumjeosuji"
+    },
+    {
+        "name": "월악저수지",
+        "en_name": "worakjeosuji"
+    },
+    {
+        "name": "조연저수지",
+        "en_name": "joyeonjeosuji"
+    },
+    {
+        "name": "석우저수지",
+        "en_name": "seogujeosuji"
+    },
+    {
+        "name": "명관저수지",
+        "en_name": "myeonggwanjeosuji"
+    },
+    {
+        "name": "문산저수지",
+        "en_name": "munsanjeosuji"
+    },
+    {
+        "name": "언별저수지",
+        "en_name": "eonbyeoljeosuji"
+    },
+    {
+        "name": "손곡저수지",
+        "en_name": "songokjeosuji"
+    },
+    {
+        "name": "벽남저수지",
+        "en_name": "byeoknamjeosuji"
+    },
+    {
+        "name": "복성저수지",
+        "en_name": "bokseongjeosuji"
+    },
+    {
+        "name": "산막저수지",
+        "en_name": "sanmakjeosuji"
+    },
+    {
+        "name": "업성저수지",
+        "en_name": "eopseongjeosuji"
+    },
+    {
+        "name": "남사저수지",
+        "en_name": "namsajeosuji"
+    },
+    {
+        "name": "우천저수지",
+        "en_name": "ucheonjeosuji"
+    },
+    {
+        "name": "미포저수지",
+        "en_name": "mipojeosuji"
+    },
+    {
+        "name": "문광저수지",
+        "en_name": "mungwangjeosuji"
+    },
+    {
+        "name": "흥사저수지",
+        "en_name": "heungsajeosuji"
+    },
+    {
+        "name": "석동저수지",
+        "en_name": "seokdongjeosuji"
+    },
+    {
+        "name": "율어저수지",
+        "en_name": "yureojeosuji"
+    },
+    {
+        "name": "안덕저수지",
+        "en_name": "andeokjeosuji"
+    },
+    {
+        "name": "초당저수지",
+        "en_name": "chodangjeosuji"
+    },
+    {
+        "name": "마곡저수지",
+        "en_name": "magokjeosuji"
+    },
+    {
+        "name": "연소저수지",
+        "en_name": "yeonsojeosuji"
+    },
+    {
+        "name": "응석저수지",
+        "en_name": "eungseokjeosuji"
+    },
+    {
+        "name": "봉현저수지",
+        "en_name": "bonghyeonjeosuji"
+    },
+    {
+        "name": "청웅저수지",
+        "en_name": "cheongungjeosuji"
+    },
+    {
+        "name": "성지저수지",
+        "en_name": "seongjijeosuji"
+    },
+    {
+        "name": "탄동저수지",
+        "en_name": "tandongjeosuji"
+    },
+    {
+        "name": "어천저수지",
+        "en_name": "eocheonjeosuji"
+    },
+    {
+        "name": "고기저수지",
+        "en_name": "gogijeosuji"
+    },
+    {
+        "name": "강진저수지",
+        "en_name": "gangjinjeosuji"
+    },
+    {
+        "name": "양신저수지",
+        "en_name": "yangsinjeosuji"
+    },
+    {
+        "name": "은곡저수지",
+        "en_name": "eungokjeosuji"
+    },
+    {
+        "name": "차리저수지",
+        "en_name": "charijeosuji"
+    },
+    {
+        "name": "남북저수지",
+        "en_name": "nambukjeosuji"
+    },
+    {
+        "name": "노구저수지",
+        "en_name": "nogujeosuji"
+    },
+    {
+        "name": "수락저수지",
+        "en_name": "surakjeosuji"
+    },
+    {
+        "name": "낙생저수지",
+        "en_name": "naksaengjeosuji"
+    },
+    {
+        "name": "선암저수지",
+        "en_name": "seonamjeosuji"
+    },
+    {
+        "name": "삼가저수지",
+        "en_name": "samgajeosuji"
+    },
+    {
+        "name": "강선저수지",
+        "en_name": "gangseonjeosuji"
+    },
+    {
+        "name": "일대저수지",
+        "en_name": "ildaejeosuji"
+    },
+    {
+        "name": "운남저수지",
+        "en_name": "unnamjeosuji"
+    },
+    {
+        "name": "동곡저수지",
+        "en_name": "donggokjeosuji"
+    },
+    {
+        "name": "백호저수지",
+        "en_name": "baekhojeosuji"
+    },
+    {
+        "name": "주봉저수지",
+        "en_name": "jubongjeosuji"
+    },
+    {
+        "name": "화원1저수지",
+        "en_name": "hwawon1jeosuji"
+    },
+    {
+        "name": "금마저수지",
+        "en_name": "geummajeosuji"
+    },
+    {
+        "name": "월매저수지",
+        "en_name": "wolmaejeosuji"
+    },
+    {
+        "name": "직지저수지",
+        "en_name": "jikjijeosuji"
+    },
+    {
+        "name": "황계저수지",
+        "en_name": "hwanggyejeosuji"
+    },
+    {
+        "name": "대장저수지",
+        "en_name": "daejangjeosuji"
+    },
+    {
+        "name": "기지저수지",
+        "en_name": "gijijeosuji"
+    },
+    {
+        "name": "창봉저수지",
+        "en_name": "changbongjeosuji"
+    },
+    {
+        "name": "강사저수지",
+        "en_name": "gangsajeosuji"
+    },
+    {
+        "name": "어옥저수지",
+        "en_name": "eookjeosuji"
+    },
+    {
+        "name": "점곡저수지",
+        "en_name": "jeomgokjeosuji"
+    },
+    {
+        "name": "송평저수지",
+        "en_name": "songpyeongjeosuji"
+    },
+    {
+        "name": "예전저수지",
+        "en_name": "yejeonjeosuji"
+    },
+    {
+        "name": "외선미저수지",
+        "en_name": "oeseonmijeosuji"
+    },
+    {
+        "name": "송당저수지",
+        "en_name": "songdangjeosuji"
+    },
+    {
+        "name": "내태저수지",
+        "en_name": "naetaejeosuji"
+    },
+    {
+        "name": "척정저수지",
+        "en_name": "cheokjeongjeosuji"
+    },
+    {
+        "name": "동향저수지",
+        "en_name": "donghyangjeosuji"
+    },
+    {
+        "name": "월가저수지",
+        "en_name": "wolgajeosuji"
+    },
+    {
+        "name": "호민저수지",
+        "en_name": "hominjeosuji"
+    },
+    {
+        "name": "인담저수지",
+        "en_name": "indamjeosuji"
+    },
+    {
+        "name": "중화저수지",
+        "en_name": "junghwajeosuji"
+    },
+    {
+        "name": "수성저수지",
+        "en_name": "suseongjeosuji"
+    },
+    {
+        "name": "용진저수지",
+        "en_name": "yongjinjeosuji"
+    },
+    {
+        "name": "개암저수지",
+        "en_name": "gaeamjeosuji"
+    },
+    {
+        "name": "연죽저수지",
+        "en_name": "yeonjukjeosuji"
+    },
+    {
+        "name": "속곡저수지",
+        "en_name": "sokgokjeosuji"
+    },
+    {
+        "name": "달서저수지",
+        "en_name": "dalseojeosuji"
+    },
+    {
+        "name": "매원저수지",
+        "en_name": "maewonjeosuji"
+    },
+    {
+        "name": "덕중저수지",
+        "en_name": "deokjungjeosuji"
+    },
+    {
+        "name": "화성저수지",
+        "en_name": "hwaseongjeosuji"
+    },
+    {
+        "name": "용풍저수지",
+        "en_name": "yongpungjeosuji"
+    },
+    {
+        "name": "장군저수지",
+        "en_name": "janggunjeosuji"
+    },
+    {
+        "name": "심동저수지",
+        "en_name": "simdongjeosuji"
+    },
+    {
+        "name": "대보저수지",
+        "en_name": "daebojeosuji"
+    },
+    {
+        "name": "도척저수지",
+        "en_name": "docheokjeosuji"
+    },
+    {
+        "name": "동교저수지",
+        "en_name": "donggyojeosuji"
+    },
+    {
+        "name": "하분저수지",
+        "en_name": "habunjeosuji"
+    },
+    {
+        "name": "김전저수지",
+        "en_name": "gimjeonjeosuji"
+    },
+    {
+        "name": "금반저수지",
+        "en_name": "geumbanjeosuji"
+    },
+    {
+        "name": "달성저수지",
+        "en_name": "dalseongjeosuji"
+    },
+    {
+        "name": "주항저수지",
+        "en_name": "juhangjeosuji"
+    },
+    {
+        "name": "천망저수지",
+        "en_name": "cheonmangjeosuji"
+    },
+    {
+        "name": "모암저수지",
+        "en_name": "moamjeosuji"
+    },
+    {
+        "name": "매전저수지",
+        "en_name": "maejeonjeosuji"
+    },
+    {
+        "name": "수산저수지",
+        "en_name": "susanjeosuji"
+    },
+    {
+        "name": "모화저수지",
+        "en_name": "mohwajeosuji"
+    },
+    {
+        "name": "청량저수지",
+        "en_name": "cheongryangjeosuji"
+    },
+    {
+        "name": "금주저수지",
+        "en_name": "geumjujeosuji"
+    },
+    {
+        "name": "진죽저수지",
+        "en_name": "jinjukjeosuji"
+    },
+    {
+        "name": "강운저수지",
+        "en_name": "gangunjeosuji"
+    },
+    {
+        "name": "연보저수지",
+        "en_name": "yeonbojeosuji"
+    },
+    {
+        "name": "불모산저수지",
+        "en_name": "bulmosanjeosuji"
+    },
+    {
+        "name": "이담저수지",
+        "en_name": "idamjeosuji"
+    },
+    {
+        "name": "상오안저수지",
+        "en_name": "sangoanjeosuji"
+    },
+    {
+        "name": "명주저수지",
+        "en_name": "myeongjujeosuji"
+    },
+    {
+        "name": "노티저수지",
+        "en_name": "notijeosuji"
+    },
+    {
+        "name": "우곡저수지",
+        "en_name": "ugokjeosuji"
+    },
+    {
+        "name": "모령저수지",
+        "en_name": "moryeongjeosuji"
+    },
+    {
+        "name": "취병저수지",
+        "en_name": "chwibyeongjeosuji"
+    },
+    {
+        "name": "입장저수지",
+        "en_name": "ipjangjeosuji"
+    },
+    {
+        "name": "비룡담저수지",
+        "en_name": "biryongdamjeosuji"
+    },
+    {
+        "name": "노단이저수지",
+        "en_name": "nodanijeosuji"
+    },
+    {
+        "name": "효천저수지",
+        "en_name": "hyocheonjeosuji"
+    },
+    {
+        "name": "연경저수지",
+        "en_name": "yeongyeongjeosuji"
+    },
+    {
+        "name": "승월저수지",
+        "en_name": "seungwoljeosuji"
+    },
+    {
+        "name": "화죽저수지",
+        "en_name": "hwajukjeosuji"
+    },
+    {
+        "name": "상항저수지",
+        "en_name": "sanghangjeosuji"
+    },
+    {
+        "name": "황령저수지",
+        "en_name": "hwangryeongjeosuji"
+    },
+    {
+        "name": "우본저수지",
+        "en_name": "ubonjeosuji"
+    },
+    {
+        "name": "원수저수지",
+        "en_name": "wonsujeosuji"
+    },
+    {
+        "name": "모월저수지",
+        "en_name": "mowoljeosuji"
+    },
+    {
+        "name": "화원2저수지",
+        "en_name": "hwawon2jeosuji"
+    },
+    {
+        "name": "답천저수지",
+        "en_name": "dapcheonjeosuji"
+    },
+    {
+        "name": "도기저수지",
+        "en_name": "dogijeosuji"
+    },
+    {
+        "name": "발랑저수지",
+        "en_name": "balrangjeosuji"
+    },
+    {
+        "name": "상암저수지",
+        "en_name": "sangamjeosuji"
+    },
+    {
+        "name": "부안저수지",
+        "en_name": "buanjeosuji"
+    },
+    {
+        "name": "옥관저수지",
+        "en_name": "okgwanjeosuji"
+    },
+    {
+        "name": "관춘저수지",
+        "en_name": "gwanchunjeosuji"
+    },
+    {
+        "name": "냉천저수지",
+        "en_name": "naengcheonjeosuji"
+    },
+    {
+        "name": "범화저수지",
+        "en_name": "beomhwajeosuji"
+    },
+    {
+        "name": "수야저수지",
+        "en_name": "suyajeosuji"
+    },
+    {
+        "name": "용궁저수지",
+        "en_name": "yonggungjeosuji"
+    },
+    {
+        "name": "정석저수지",
+        "en_name": "jeongseokjeosuji"
+    },
+    {
+        "name": "춘동저수지",
+        "en_name": "chundongjeosuji"
+    },
+    {
+        "name": "진봉저수지",
+        "en_name": "jinbongjeosuji"
+    },
+    {
+        "name": "서대저수지",
+        "en_name": "seodaejeosuji"
+    },
+    {
+        "name": "원부저수지",
+        "en_name": "wonbujeosuji"
+    },
+    {
+        "name": "임수저수지",
+        "en_name": "imsujeosuji"
+    },
+    {
+        "name": "두산저수지",
+        "en_name": "dusanjeosuji"
+    },
+    {
+        "name": "황둔저수지",
+        "en_name": "hwangdunjeosuji"
+    },
+    {
+        "name": "용치저수지",
+        "en_name": "yongchijeosuji"
+    },
+    {
+        "name": "요고저수지",
+        "en_name": "yogojeosuji"
+    },
+    {
+        "name": "조박저수지",
+        "en_name": "jobakjeosuji"
+    },
+    {
+        "name": "구계저수지",
+        "en_name": "gugyejeosuji"
+    },
+    {
+        "name": "평정저수지",
+        "en_name": "pyeongjeongjeosuji"
+    },
+    {
+        "name": "보미저수지",
+        "en_name": "bomijeosuji"
+    },
+    {
+        "name": "감물저수지",
+        "en_name": "gammuljeosuji"
+    },
+    {
+        "name": "유유저수지",
+        "en_name": "yuyujeosuji"
+    },
+    {
+        "name": "권이저수지",
+        "en_name": "gwonijeosuji"
+    },
+    {
+        "name": "선고저수지",
+        "en_name": "seongojeosuji"
+    },
+    {
+        "name": "하산저수지",
+        "en_name": "hasanjeosuji"
+    },
+    {
+        "name": "작천저수지",
+        "en_name": "jakcheonjeosuji"
+    },
+    {
+        "name": "노안1저수지",
+        "en_name": "noan1jeosuji"
+    },
+    {
+        "name": "운호저수지",
+        "en_name": "unhojeosuji"
+    },
+    {
+        "name": "삼덕저수지",
+        "en_name": "samdeokjeosuji"
+    },
+    {
+        "name": "품산저수지",
+        "en_name": "pumsanjeosuji"
+    },
+    {
+        "name": "정자저수지",
+        "en_name": "jeongjajeosuji"
+    },
+    {
+        "name": "천곡2저수지",
+        "en_name": "cheongok2jeosuji"
+    },
+    {
+        "name": "하당저수지",
+        "en_name": "hadangjeosuji"
+    },
+    {
+        "name": "영마저수지",
+        "en_name": "yeongmajeosuji"
+    },
+    {
+        "name": "손항저수지",
+        "en_name": "sonhangjeosuji"
+    },
+    {
+        "name": "입실저수지",
+        "en_name": "ipsiljeosuji"
+    },
+    {
+        "name": "가수저수지",
+        "en_name": "gasujeosuji"
+    },
+    {
+        "name": "자산저수지",
+        "en_name": "jasanjeosuji"
+    },
+    {
+        "name": "월랑저수지",
+        "en_name": "wolrangjeosuji"
+    },
+    {
+        "name": "연제저수지",
+        "en_name": "yeonjejeosuji"
+    },
+    {
+        "name": "공암저수지",
+        "en_name": "gongamjeosuji"
+    },
+    {
+        "name": "누교저수지",
+        "en_name": "nugyojeosuji"
+    },
+    {
+        "name": "매정저수지",
+        "en_name": "maejeongjeosuji"
+    },
+    {
+        "name": "맥포저수지",
+        "en_name": "maekpojeosuji"
+    },
+    {
+        "name": "박석저수지",
+        "en_name": "bakseokjeosuji"
+    },
+    {
+        "name": "제산저수지",
+        "en_name": "jesanjeosuji"
+    },
+    {
+        "name": "갈전저수지",
+        "en_name": "galjeonjeosuji"
+    },
+    {
+        "name": "노치저수지",
+        "en_name": "nochijeosuji"
+    },
+    {
+        "name": "대맥저수지",
+        "en_name": "daemaekjeosuji"
+    },
+    {
+        "name": "유학저수지",
+        "en_name": "yuhakjeosuji"
+    },
+    {
+        "name": "월티저수지",
+        "en_name": "woltijeosuji"
+    },
+    {
+        "name": "미야저수지",
+        "en_name": "miyajeosuji"
+    },
+    {
+        "name": "대암저수지",
+        "en_name": "daeamjeosuji"
+    },
+    {
+        "name": "화양저수지",
+        "en_name": "hwayangjeosuji"
+    },
+    {
+        "name": "방광저수지",
+        "en_name": "banggwangjeosuji"
+    },
+    {
+        "name": "옥성저수지",
+        "en_name": "okseongjeosuji"
+    },
+    {
+        "name": "서하저수지",
+        "en_name": "seohajeosuji"
+    },
+    {
+        "name": "유신저수지",
+        "en_name": "yusinjeosuji"
+    },
+    {
+        "name": "금지저수지",
+        "en_name": "geumjijeosuji"
+    },
+    {
+        "name": "서랑저수지",
+        "en_name": "seorangjeosuji"
+    },
+    {
+        "name": "횡계저수지",
+        "en_name": "hoenggyejeosuji"
+    },
+    {
+        "name": "노천저수지",
+        "en_name": "nocheonjeosuji"
+    },
+    {
+        "name": "임화저수지",
+        "en_name": "imhwajeosuji"
+    },
+    {
+        "name": "불암저수지",
+        "en_name": "buramjeosuji"
+    },
+    {
+        "name": "대복저수지",
+        "en_name": "daebokjeosuji"
+    },
+    {
+        "name": "불목저수지",
+        "en_name": "bulmokjeosuji"
+    },
+    {
+        "name": "내정저수지",
+        "en_name": "naejeongjeosuji"
+    },
+    {
+        "name": "송풍저수지",
+        "en_name": "songpungjeosuji"
+    },
+    {
+        "name": "미후저수지",
+        "en_name": "mihujeosuji"
+    },
+    {
+        "name": "평호저수지",
+        "en_name": "pyeonghojeosuji"
+    },
+    {
+        "name": "송악저수지",
+        "en_name": "songakjeosuji"
+    },
+    {
+        "name": "사자저수지",
+        "en_name": "sajajeosuji"
+    },
+    {
+        "name": "연장저수지",
+        "en_name": "yeonjangjeosuji"
+    },
+    {
+        "name": "서포저수지",
+        "en_name": "seopojeosuji"
+    },
+    {
+        "name": "어촌저수지",
+        "en_name": "eochonjeosuji"
+    },
+    {
+        "name": "외촌저수지",
+        "en_name": "oechonjeosuji"
+    },
+    {
+        "name": "저동저수지",
+        "en_name": "jeodongjeosuji"
+    },
+    {
+        "name": "상송저수지",
+        "en_name": "sangsongjeosuji"
+    },
+    {
+        "name": "심원저수지",
+        "en_name": "simwonjeosuji"
+    },
+    {
+        "name": "정산저수지",
+        "en_name": "jeongsanjeosuji"
+    },
+    {
+        "name": "탑곡저수지",
+        "en_name": "tapgokjeosuji"
+    },
+    {
+        "name": "궁항저수지",
+        "en_name": "gunghangjeosuji"
+    },
+    {
+        "name": "국전저수지",
+        "en_name": "gukjeonjeosuji"
+    },
+    {
+        "name": "남포저수지",
+        "en_name": "nampojeosuji"
+    },
+    {
+        "name": "마정저수지",
+        "en_name": "majeongjeosuji"
+    },
+    {
+        "name": "구상저수지",
+        "en_name": "gusangjeosuji"
+    },
+    {
+        "name": "남치저수지",
+        "en_name": "namchijeosuji"
+    },
+    {
+        "name": "내연저수지",
+        "en_name": "naeyeonjeosuji"
+    },
+    {
+        "name": "연덕저수지",
+        "en_name": "yeondeokjeosuji"
+    },
+    {
+        "name": "거제저수지",
+        "en_name": "geojejeosuji"
+    },
+    {
+        "name": "삼방저수지",
+        "en_name": "sambangjeosuji"
+    },
+    {
+        "name": "길곡저수지",
+        "en_name": "gilgokjeosuji"
+    },
+    {
+        "name": "월송저수지",
+        "en_name": "wolsongjeosuji"
+    },
+    {
+        "name": "우동저수지",
+        "en_name": "udongjeosuji"
+    },
+    {
+        "name": "의동저수지",
+        "en_name": "uidongjeosuji"
+    },
+    {
+        "name": "서마저수지",
+        "en_name": "seomajeosuji"
+    },
+    {
+        "name": "숭암저수지",
+        "en_name": "sungamjeosuji"
+    },
+    {
+        "name": "건등저수지",
+        "en_name": "geondeungjeosuji"
+    },
+    {
+        "name": "명경저수지",
+        "en_name": "myeonggyeongjeosuji"
+    },
+    {
+        "name": "비봉저수지",
+        "en_name": "bibongjeosuji"
+    },
+    {
+        "name": "신구저수지",
+        "en_name": "singujeosuji"
+    },
+    {
+        "name": "상용저수지",
+        "en_name": "sangyongjeosuji"
+    },
+    {
+        "name": "화암저수지",
+        "en_name": "hwaamjeosuji"
+    },
+    {
+        "name": "운수저수지",
+        "en_name": "unsujeosuji"
+    },
+    {
+        "name": "송라저수지",
+        "en_name": "songrajeosuji"
+    },
+    {
+        "name": "오사저수지",
+        "en_name": "osajeosuji"
+    },
+    {
+        "name": "유암저수지",
+        "en_name": "yuamjeosuji"
+    },
+    {
+        "name": "신금저수지",
+        "en_name": "singeumjeosuji"
+    },
+    {
+        "name": "등암저수지",
+        "en_name": "deungamjeosuji"
+    },
+    {
+        "name": "월흥저수지",
+        "en_name": "wolheungjeosuji"
+    },
+    {
+        "name": "오기저수지",
+        "en_name": "ogijeosuji"
+    },
+    {
+        "name": "화림저수지",
+        "en_name": "hwarimjeosuji"
+    },
+    {
+        "name": "동암저수지",
+        "en_name": "dongamjeosuji"
+    },
+    {
+        "name": "부야저수지",
+        "en_name": "buyajeosuji"
+    },
+    {
+        "name": "도남저수지",
+        "en_name": "donamjeosuji"
+    },
+    {
+        "name": "미전저수지",
+        "en_name": "mijeonjeosuji"
+    },
+    {
+        "name": "노상저수지",
+        "en_name": "nosangjeosuji"
+    },
+    {
+        "name": "목미저수지",
+        "en_name": "mokmijeosuji"
+    },
+    {
+        "name": "두만저수지",
+        "en_name": "dumanjeosuji"
+    },
+    {
+        "name": "양전저수지",
+        "en_name": "yangjeonjeosuji"
+    },
+    {
+        "name": "척과저수지",
+        "en_name": "cheokgwajeosuji"
+    },
+    {
+        "name": "송원저수지",
+        "en_name": "songwonjeosuji"
+    },
+    {
+        "name": "과림저수지",
+        "en_name": "gwarimjeosuji"
+    },
+    {
+        "name": "하눌저수지",
+        "en_name": "hanuljeosuji"
+    },
+    {
+        "name": "방내저수지",
+        "en_name": "bangnaejeosuji"
+    },
+    {
+        "name": "입사저수지",
+        "en_name": "ipsajeosuji"
+    },
+    {
+        "name": "용현저수지",
+        "en_name": "yonghyeonjeosuji"
+    },
+    {
+        "name": "옥금저수지",
+        "en_name": "okgeumjeosuji"
+    },
+    {
+        "name": "추곡저수지",
+        "en_name": "chugokjeosuji"
+    },
+    {
+        "name": "마흘저수지",
+        "en_name": "maheuljeosuji"
+    },
+    {
+        "name": "사봉저수지",
+        "en_name": "sabongjeosuji"
+    },
+    {
+        "name": "일봉저수지",
+        "en_name": "ilbongjeosuji"
+    },
+    {
+        "name": "홍곡저수지",
+        "en_name": "honggokjeosuji"
+    },
+    {
+        "name": "노방저수지",
+        "en_name": "nobangjeosuji"
+    },
+    {
+        "name": "무곡저수지",
+        "en_name": "mugokjeosuji"
+    },
+    {
+        "name": "내의저수지",
+        "en_name": "naeuijeosuji"
+    },
+    {
+        "name": "마룡저수지",
+        "en_name": "maryongjeosuji"
+    },
+    {
+        "name": "대박저수지",
+        "en_name": "daebakjeosuji"
+    },
+    {
+        "name": "회동저수지",
+        "en_name": "hoedongjeosuji"
+    },
+    {
+        "name": "장흥저수지",
+        "en_name": "jangheungjeosuji"
+    },
+    {
+        "name": "운강저수지",
+        "en_name": "ungangjeosuji"
+    },
+    {
+        "name": "신전저수지",
+        "en_name": "sinjeonjeosuji"
+    },
+    {
+        "name": "마이저수지",
+        "en_name": "maijeosuji"
+    },
+    {
+        "name": "목교저수지",
+        "en_name": "mokgyojeosuji"
+    },
+    {
+        "name": "성대저수지",
+        "en_name": "seongdaejeosuji"
+    },
+    {
+        "name": "속초저수지",
+        "en_name": "sokchojeosuji"
+    },
+    {
+        "name": "공안저수지",
+        "en_name": "gonganjeosuji"
+    },
+    {
+        "name": "인보저수지",
+        "en_name": "inbojeosuji"
+    },
+    {
+        "name": "광천저수지",
+        "en_name": "gwangcheonjeosuji"
+    },
+    {
+        "name": "수부저수지",
+        "en_name": "subujeosuji"
+    },
+    {
+        "name": "도덕저수지",
+        "en_name": "dodeokjeosuji"
+    },
+    {
+        "name": "구내저수지",
+        "en_name": "gunaejeosuji"
+    },
+    {
+        "name": "연호저수지",
+        "en_name": "yeonhojeosuji"
+    },
+    {
+        "name": "유동저수지",
+        "en_name": "yudongjeosuji"
+    },
+    {
+        "name": "무선저수지",
+        "en_name": "museonjeosuji"
+    },
+    {
+        "name": "차사저수지",
+        "en_name": "chasajeosuji"
+    },
+    {
+        "name": "연봉1저수지",
+        "en_name": "yeonbong1jeosuji"
+    },
+    {
+        "name": "가평저수지",
+        "en_name": "gapyeongjeosuji"
+    },
+    {
+        "name": "아암저수지",
+        "en_name": "aamjeosuji"
+    },
+    {
+        "name": "공배저수지",
+        "en_name": "gongbaejeosuji"
+    },
+    {
+        "name": "화원3저수지",
+        "en_name": "hwawon3jeosuji"
+    },
+    {
+        "name": "일월저수지",
+        "en_name": "irwoljeosuji"
+    },
+    {
+        "name": "무릉저수지",
+        "en_name": "mureungjeosuji"
+    },
+    {
+        "name": "사점저수지",
+        "en_name": "sajeomjeosuji"
+    },
+    {
+        "name": "천상저수지",
+        "en_name": "cheonsangjeosuji"
+    },
+    {
+        "name": "학서저수지",
+        "en_name": "hakseojeosuji"
+    },
+    {
+        "name": "평산저수지",
+        "en_name": "pyeongsanjeosuji"
+    },
+    {
+        "name": "오궁저수지",
+        "en_name": "ogungjeosuji"
+    },
+    {
+        "name": "고야저수지",
+        "en_name": "goyajeosuji"
+    },
+    {
+        "name": "방춘저수지",
+        "en_name": "bangchunjeosuji"
+    },
+    {
+        "name": "버들저수지",
+        "en_name": "beodeuljeosuji"
+    },
+    {
+        "name": "설매저수지",
+        "en_name": "seolmaejeosuji"
+    },
+    {
+        "name": "진안저수지",
+        "en_name": "jinanjeosuji"
+    },
+    {
+        "name": "한실저수지",
+        "en_name": "hansiljeosuji"
+    },
+    {
+        "name": "낙덕저수지",
+        "en_name": "nakdeokjeosuji"
+    },
+    {
+        "name": "용면저수지",
+        "en_name": "yongmyeonjeosuji"
+    },
+    {
+        "name": "우습저수지",
+        "en_name": "useupjeosuji"
+    },
+    {
+        "name": "지포저수지",
+        "en_name": "jipojeosuji"
+    },
+    {
+        "name": "다정저수지",
+        "en_name": "dajeongjeosuji"
+    },
+    {
+        "name": "관덕저수지",
+        "en_name": "gwandeokjeosuji"
+    },
+    {
+        "name": "창기저수지",
+        "en_name": "changgijeosuji"
+    },
+    {
+        "name": "팔영저수지",
+        "en_name": "paryeongjeosuji"
+    },
+    {
+        "name": "서양저수지",
+        "en_name": "seoyangjeosuji"
+    },
+    {
+        "name": "계촌저수지",
+        "en_name": "gyechonjeosuji"
+    },
+    {
+        "name": "지수저수지",
+        "en_name": "jisujeosuji"
+    },
+    {
+        "name": "실업저수지",
+        "en_name": "sireopjeosuji"
+    },
+    {
+        "name": "개정저수지",
+        "en_name": "gaejeongjeosuji"
+    },
+    {
+        "name": "용지저수지",
+        "en_name": "yongjijeosuji"
+    },
+    {
+        "name": "영수저수지",
+        "en_name": "yeongsujeosuji"
+    },
+    {
+        "name": "주을저수지",
+        "en_name": "jueuljeosuji"
+    },
+    {
+        "name": "남정저수지",
+        "en_name": "namjeongjeosuji"
+    },
+    {
+        "name": "지촌저수지",
+        "en_name": "jichonjeosuji"
+    },
+    {
+        "name": "서가정저수지",
+        "en_name": "seogajeongjeosuji"
+    },
+    {
+        "name": "부제저수지",
+        "en_name": "bujejeosuji"
+    },
+    {
+        "name": "화봉저수지",
+        "en_name": "hwabongjeosuji"
+    },
+    {
+        "name": "모정저수지",
+        "en_name": "mojeongjeosuji"
+    },
+    {
+        "name": "보림저수지",
+        "en_name": "borimjeosuji"
+    },
+    {
+        "name": "시동저수지",
+        "en_name": "sidongjeosuji"
+    },
+    {
+        "name": "반성저수지",
+        "en_name": "banseongjeosuji"
+    },
+    {
+        "name": "학림저수지",
+        "en_name": "hakrimjeosuji"
+    },
+    {
+        "name": "삼춘저수지",
+        "en_name": "samchunjeosuji"
+    },
+    {
+        "name": "사양저수지",
+        "en_name": "sayangjeosuji"
+    },
+    {
+        "name": "봉계1저수지",
+        "en_name": "bonggye1jeosuji"
+    },
+    {
+        "name": "연구저수지",
+        "en_name": "yeongujeosuji"
+    },
+    {
+        "name": "지장저수지",
+        "en_name": "jijangjeosuji"
+    },
+    {
+        "name": "가례저수지",
+        "en_name": "garyejeosuji"
+    },
+    {
+        "name": "어두저수지",
+        "en_name": "eodujeosuji"
+    },
+    {
+        "name": "욱수저수지",
+        "en_name": "uksujeosuji"
+    },
+    {
+        "name": "주교1저수지",
+        "en_name": "jugyo1jeosuji"
+    },
+    {
+        "name": "안정저수지",
+        "en_name": "anjeongjeosuji"
+    },
+    {
+        "name": "적성저수지",
+        "en_name": "jeokseongjeosuji"
+    },
+    {
+        "name": "괴정저수지",
+        "en_name": "goejeongjeosuji"
+    },
+    {
+        "name": "고이저수지",
+        "en_name": "goijeosuji"
+    },
+    {
+        "name": "오룡저수지",
+        "en_name": "oryongjeosuji"
+    },
+    {
+        "name": "축산저수지",
+        "en_name": "chuksanjeosuji"
+    },
+    {
+        "name": "마전저수지",
+        "en_name": "majeonjeosuji"
+    },
+    {
+        "name": "호덕저수지",
+        "en_name": "hodeokjeosuji"
+    },
+    {
+        "name": "조화저수지",
+        "en_name": "johwajeosuji"
+    },
+    {
+        "name": "상마북저수지",
+        "en_name": "sangmabukjeosuji"
+    },
+    {
+        "name": "문방저수지",
+        "en_name": "munbangjeosuji"
+    },
+    {
+        "name": "운곡1저수지",
+        "en_name": "ungok1jeosuji"
+    },
+    {
+        "name": "용제저수지",
+        "en_name": "yongjejeosuji"
+    },
+    {
+        "name": "용소저수지",
+        "en_name": "yongsojeosuji"
+    },
+    {
+        "name": "산대저수지",
+        "en_name": "sandaejeosuji"
+    },
+    {
+        "name": "황길저수지",
+        "en_name": "hwanggiljeosuji"
+    },
+    {
+        "name": "모고저수지",
+        "en_name": "mogojeosuji"
+    },
+    {
+        "name": "기일저수지",
+        "en_name": "giiljeosuji"
+    },
+    {
+        "name": "미인치저수지",
+        "en_name": "miinchijeosuji"
+    },
+    {
+        "name": "백포저수지",
+        "en_name": "baekpojeosuji"
+    },
+    {
+        "name": "평리저수지",
+        "en_name": "pyeongrijeosuji"
+    },
+    {
+        "name": "삼율저수지",
+        "en_name": "samyuljeosuji"
+    },
+    {
+        "name": "한치저수지",
+        "en_name": "hanchijeosuji"
+    },
+    {
+        "name": "입남저수지",
+        "en_name": "ipnamjeosuji"
+    },
+    {
+        "name": "혈곡저수지",
+        "en_name": "hyeolgokjeosuji"
+    },
+    {
+        "name": "빅실저수지",
+        "en_name": "biksiljeosuji"
+    },
+    {
+        "name": "신두2호저수지",
+        "en_name": "sindu2hojeosuji"
+    },
+    {
+        "name": "동외저수지",
+        "en_name": "dongoejeosuji"
+    },
+    {
+        "name": "방송저수지",
+        "en_name": "bangsongjeosuji"
+    },
+    {
+        "name": "대석저수지",
+        "en_name": "daeseokjeosuji"
+    },
+    {
+        "name": "장천저수지",
+        "en_name": "jangcheonjeosuji"
+    },
+    {
+        "name": "용문저수지",
+        "en_name": "yongmunjeosuji"
+    },
+    {
+        "name": "매주저수지",
+        "en_name": "maejujeosuji"
+    },
+    {
+        "name": "장저울저수지",
+        "en_name": "jangjeouljeosuji"
+    },
+    {
+        "name": "내금저수지",
+        "en_name": "naegeumjeosuji"
+    },
+    {
+        "name": "도인저수지",
+        "en_name": "doinjeosuji"
+    },
+    {
+        "name": "병정저수지",
+        "en_name": "byeongjeongjeosuji"
+    },
+    {
+        "name": "내령저수지",
+        "en_name": "naeryeongjeosuji"
+    },
+    {
+        "name": "십이리저수지",
+        "en_name": "sibirijeosuji"
+    },
+    {
+        "name": "중도저수지",
+        "en_name": "jungdojeosuji"
+    },
+    {
+        "name": "봉호저수지",
+        "en_name": "bonghojeosuji"
+    },
+    {
+        "name": "창유저수지",
+        "en_name": "changyujeosuji"
+    },
+    {
+        "name": "안치저수지",
+        "en_name": "anchijeosuji"
+    },
+    {
+        "name": "송천저수지",
+        "en_name": "songcheonjeosuji"
+    },
+    {
+        "name": "우음저수지",
+        "en_name": "ueumjeosuji"
+    },
+    {
+        "name": "소래저수지",
+        "en_name": "soraejeosuji"
+    },
+    {
+        "name": "병산저수지",
+        "en_name": "byeongsanjeosuji"
+    },
+    {
+        "name": "추계저수지",
+        "en_name": "chugyejeosuji"
+    },
+    {
+        "name": "장기저수지",
+        "en_name": "janggijeosuji"
+    },
+    {
+        "name": "의평저수지",
+        "en_name": "uipyeongjeosuji"
+    },
+    {
+        "name": "명도저수지",
+        "en_name": "myeongdojeosuji"
+    },
+    {
+        "name": "갈망골저수지",
+        "en_name": "galmanggoljeosuji"
+    },
+    {
+        "name": "조감저수지",
+        "en_name": "jogamjeosuji"
+    },
+    {
+        "name": "중평저수지",
+        "en_name": "jungpyeongjeosuji"
+    },
+    {
+        "name": "미암저수지",
+        "en_name": "miamjeosuji"
+    },
+    {
+        "name": "단평저수지",
+        "en_name": "danpyeongjeosuji"
+    },
+    {
+        "name": "도평저수지",
+        "en_name": "dopyeongjeosuji"
+    },
+    {
+        "name": "삼합저수지",
+        "en_name": "samhapjeosuji"
+    },
+    {
+        "name": "남창저수지",
+        "en_name": "namchangjeosuji"
+    },
+    {
+        "name": "송고저수지",
+        "en_name": "songgojeosuji"
+    },
+    {
+        "name": "명덕저수지",
+        "en_name": "myeongdeokjeosuji"
+    },
+    {
+        "name": "고라저수지",
+        "en_name": "gorajeosuji"
+    },
+    {
+        "name": "안평저수지",
+        "en_name": "anpyeongjeosuji"
+    },
+    {
+        "name": "우두저수지",
+        "en_name": "udujeosuji"
+    },
+    {
+        "name": "성당저수지",
+        "en_name": "seongdangjeosuji"
+    },
+    {
+        "name": "아곡저수지",
+        "en_name": "agokjeosuji"
+    },
+    {
+        "name": "차당저수지",
+        "en_name": "chadangjeosuji"
+    },
+    {
+        "name": "지향저수지",
+        "en_name": "jihyangjeosuji"
+    },
+    {
+        "name": "백계저수지",
+        "en_name": "baekgyejeosuji"
+    },
+    {
+        "name": "종산2저수지",
+        "en_name": "jongsan2jeosuji"
+    },
+    {
+        "name": "석교저수지",
+        "en_name": "seokgyojeosuji"
+    },
+    {
+        "name": "잔드리저수지",
+        "en_name": "jandeurijeosuji"
+    },
+    {
+        "name": "단석저수지",
+        "en_name": "danseokjeosuji"
+    },
+    {
+        "name": "움골저수지",
+        "en_name": "umgoljeosuji"
+    },
+    {
+        "name": "신위양저수지",
+        "en_name": "sinwiyangjeosuji"
+    },
+    {
+        "name": "군상저수지",
+        "en_name": "gunsangjeosuji"
+    },
+    {
+        "name": "월포저수지",
+        "en_name": "wolpojeosuji"
+    },
+    {
+        "name": "매향저수지",
+        "en_name": "maehyangjeosuji"
+    },
+    {
+        "name": "품평저수지",
+        "en_name": "pumpyeongjeosuji"
+    },
+    {
+        "name": "방한저수지",
+        "en_name": "banghanjeosuji"
+    },
+    {
+        "name": "우슬저수지",
+        "en_name": "useuljeosuji"
+    },
+    {
+        "name": "여수저수지",
+        "en_name": "yeosujeosuji"
+    },
+    {
+        "name": "칠리제저수지",
+        "en_name": "chilrijejeosuji"
+    },
+    {
+        "name": "근곡저수지",
+        "en_name": "geungokjeosuji"
+    },
+    {
+        "name": "북군저수지",
+        "en_name": "bukgunjeosuji"
+    },
+    {
+        "name": "구호저수지",
+        "en_name": "guhojeosuji"
+    },
+    {
+        "name": "퇴천저수지",
+        "en_name": "toecheonjeosuji"
+    },
+    {
+        "name": "안성저수지",
+        "en_name": "anseongjeosuji"
+    },
+    {
+        "name": "용주저수지",
+        "en_name": "yongjujeosuji"
+    },
+    {
+        "name": "양사저수지",
+        "en_name": "yangsajeosuji"
+    },
+    {
+        "name": "용교저수지",
+        "en_name": "yonggyojeosuji"
+    },
+    {
+        "name": "도산저수지",
+        "en_name": "dosanjeosuji"
+    },
+    {
+        "name": "상리저수지",
+        "en_name": "sangrijeosuji"
+    },
+    {
+        "name": "당오저수지",
+        "en_name": "dangojeosuji"
+    },
+    {
+        "name": "고장저수지",
+        "en_name": "gojangjeosuji"
+    },
+    {
+        "name": "용월저수지",
+        "en_name": "yongwoljeosuji"
+    },
+    {
+        "name": "학송저수지",
+        "en_name": "haksongjeosuji"
+    },
+    {
+        "name": "도청저수지",
+        "en_name": "docheongjeosuji"
+    },
+    {
+        "name": "곡안저수지",
+        "en_name": "goganjeosuji"
+    },
+    {
+        "name": "중고저수지",
+        "en_name": "junggojeosuji"
+    },
+    {
+        "name": "운월저수지",
+        "en_name": "unwoljeosuji"
+    },
+    {
+        "name": "종산1저수지",
+        "en_name": "jongsan1jeosuji"
+    },
+    {
+        "name": "죽산1저수지",
+        "en_name": "juksan1jeosuji"
+    },
+    {
+        "name": "수천저수지",
+        "en_name": "sucheonjeosuji"
+    },
+    {
+        "name": "석현저수지",
+        "en_name": "seokhyeonjeosuji"
+    },
+    {
+        "name": "탑동저수지",
+        "en_name": "tapdongjeosuji"
+    },
+    {
+        "name": "소로저수지",
+        "en_name": "sorojeosuji"
+    },
+    {
+        "name": "해창저수지",
+        "en_name": "haechangjeosuji"
+    },
+    {
+        "name": "근촌저수지",
+        "en_name": "geunchonjeosuji"
+    },
+    {
+        "name": "구사저수지",
+        "en_name": "gusajeosuji"
+    },
+    {
+        "name": "정동저수지",
+        "en_name": "jeongdongjeosuji"
+    },
+    {
+        "name": "명진저수지",
+        "en_name": "myeongjinjeosuji"
+    },
+    {
+        "name": "동천저수지",
+        "en_name": "dongcheonjeosuji"
+    },
+    {
+        "name": "절암저수지",
+        "en_name": "jeoramjeosuji"
+    },
+    {
+        "name": "과동저수지",
+        "en_name": "gwadongjeosuji"
+    },
+    {
+        "name": "현경저수지",
+        "en_name": "hyeongyeongjeosuji"
+    },
+    {
+        "name": "덕진저수지",
+        "en_name": "deokjinjeosuji"
+    },
+    {
+        "name": "사도저수지",
+        "en_name": "sadojeosuji"
+    },
+    {
+        "name": "흥곡저수지",
+        "en_name": "heunggokjeosuji"
+    },
+    {
+        "name": "만학저수지",
+        "en_name": "manhakjeosuji"
+    },
+    {
+        "name": "항곡저수지",
+        "en_name": "hanggokjeosuji"
+    },
+    {
+        "name": "취적저수지",
+        "en_name": "chwijeokjeosuji"
+    },
+    {
+        "name": "태백저수지",
+        "en_name": "taebaekjeosuji"
+    },
+    {
+        "name": "백두저수지",
+        "en_name": "baekdujeosuji"
+    },
+    {
+        "name": "월경저수지",
+        "en_name": "wolgyeongjeosuji"
+    },
+    {
+        "name": "소정저수지",
+        "en_name": "sojeongjeosuji"
+    },
+    {
+        "name": "동고저수지",
+        "en_name": "donggojeosuji"
+    },
+    {
+        "name": "당촌저수지",
+        "en_name": "dangchonjeosuji"
+    },
+    {
+        "name": "서변저수지",
+        "en_name": "seobyeonjeosuji"
+    },
+    {
+        "name": "가정저수지",
+        "en_name": "gajeongjeosuji"
+    },
+    {
+        "name": "매탄1저수지",
+        "en_name": "maetan1jeosuji"
+    },
+    {
+        "name": "보산저수지",
+        "en_name": "bosanjeosuji"
+    },
+    {
+        "name": "호성저수지",
+        "en_name": "hoseongjeosuji"
+    },
+    {
+        "name": "미억저수지",
+        "en_name": "mieokjeosuji"
+    },
+    {
+        "name": "배방저수지",
+        "en_name": "baebangjeosuji"
+    },
+    {
+        "name": "대분저수지",
+        "en_name": "daebunjeosuji"
+    },
+    {
+        "name": "은석저수지",
+        "en_name": "eunseokjeosuji"
+    },
+    {
+        "name": "사천2저수지",
+        "en_name": "sacheon2jeosuji"
+    },
+    {
+        "name": "황곡저수지",
+        "en_name": "hwanggokjeosuji"
+    },
+    {
+        "name": "득소저수지",
+        "en_name": "deuksojeosuji"
+    },
+    {
+        "name": "당하저수지",
+        "en_name": "danghajeosuji"
+    },
+    {
+        "name": "동문저수지",
+        "en_name": "dongmunjeosuji"
+    },
+    {
+        "name": "검성저수지",
+        "en_name": "geomseongjeosuji"
+    },
+    {
+        "name": "옥연1저수지",
+        "en_name": "ogyeon1jeosuji"
+    },
+    {
+        "name": "절골저수지",
+        "en_name": "jeolgoljeosuji"
+    },
+    {
+        "name": "삽실저수지",
+        "en_name": "sapsiljeosuji"
+    },
+    {
+        "name": "이월저수지",
+        "en_name": "iwoljeosuji"
+    },
+    {
+        "name": "행장저수지",
+        "en_name": "haengjangjeosuji"
+    },
+    {
+        "name": "척고저수지",
+        "en_name": "cheokgojeosuji"
+    },
+    {
+        "name": "한운저수지",
+        "en_name": "hanunjeosuji"
+    },
+    {
+        "name": "법동저수지",
+        "en_name": "beopdongjeosuji"
+    },
+    {
+        "name": "진월저수지",
+        "en_name": "jinwoljeosuji"
+    },
+    {
+        "name": "길은저수지",
+        "en_name": "gireunjeosuji"
+    },
+    {
+        "name": "신석저수지",
+        "en_name": "sinseokjeosuji"
+    },
+    {
+        "name": "밀이저수지",
+        "en_name": "mirijeosuji"
+    },
+    {
+        "name": "사부골저수지",
+        "en_name": "sabugoljeosuji"
+    },
+    {
+        "name": "동변저수지",
+        "en_name": "dongbyeonjeosuji"
+    },
+    {
+        "name": "관율저수지",
+        "en_name": "gwanyuljeosuji"
+    },
+    {
+        "name": "망덕저수지",
+        "en_name": "mangdeokjeosuji"
+    },
+    {
+        "name": "율동저수지",
+        "en_name": "yuldongjeosuji"
+    },
+    {
+        "name": "등지저수지",
+        "en_name": "deungjijeosuji"
+    },
+    {
+        "name": "하사저수지",
+        "en_name": "hasajeosuji"
+    },
+    {
+        "name": "구영2저수지",
+        "en_name": "guyeong2jeosuji"
+    },
+    {
+        "name": "대각저수지",
+        "en_name": "daegakjeosuji"
+    },
+    {
+        "name": "여천저수지",
+        "en_name": "yeocheonjeosuji"
+    },
+    {
+        "name": "말흘저수지",
+        "en_name": "malheuljeosuji"
+    },
+    {
+        "name": "둔덕저수지",
+        "en_name": "dundeokjeosuji"
+    },
+    {
+        "name": "홍도저수지",
+        "en_name": "hongdojeosuji"
+    },
+    {
+        "name": "채지저수지",
+        "en_name": "chaejijeosuji"
+    },
+    {
+        "name": "압수저수지",
+        "en_name": "apsujeosuji"
+    },
+    {
+        "name": "봉계2저수지",
+        "en_name": "bonggye2jeosuji"
+    },
+    {
+        "name": "신장저수지",
+        "en_name": "sinjangjeosuji"
+    },
+    {
+        "name": "구천저수지",
+        "en_name": "gucheonjeosuji"
+    },
+    {
+        "name": "양정저수지",
+        "en_name": "yangjeongjeosuji"
+    },
+    {
+        "name": "길상1저수지",
+        "en_name": "gilsang1jeosuji"
+    },
+    {
+        "name": "효갈저수지",
+        "en_name": "hyogaljeosuji"
+    },
+    {
+        "name": "내야저수지",
+        "en_name": "naeyajeosuji"
+    },
+    {
+        "name": "지다리저수지",
+        "en_name": "jidarijeosuji"
+    },
+    {
+        "name": "광령저수지",
+        "en_name": "gwangryeongjeosuji"
+    },
+    {
+        "name": "괴음저수지",
+        "en_name": "goeeumjeosuji"
+    },
+    {
+        "name": "대송저수지",
+        "en_name": "daesongjeosuji"
+    },
+    {
+        "name": "오리골저수지",
+        "en_name": "origoljeosuji"
+    },
+    {
+        "name": "상방저수지",
+        "en_name": "sangbangjeosuji"
+    },
+    {
+        "name": "대율저수지",
+        "en_name": "daeyuljeosuji"
+    },
+    {
+        "name": "순촌저수지",
+        "en_name": "sunchonjeosuji"
+    },
+    {
+        "name": "청룡저수지",
+        "en_name": "cheongryongjeosuji"
+    },
+    {
+        "name": "증상골저수지",
+        "en_name": "jeungsanggoljeosuji"
+    },
+    {
+        "name": "추포저수지",
+        "en_name": "chupojeosuji"
+    },
+    {
+        "name": "기룡저수지",
+        "en_name": "giryongjeosuji"
+    },
+    {
+        "name": "남동저수지",
+        "en_name": "namdongjeosuji"
+    },
+    {
+        "name": "백연저수지",
+        "en_name": "baegyeonjeosuji"
+    },
+    {
+        "name": "부평저수지",
+        "en_name": "bupyeongjeosuji"
+    },
+    {
+        "name": "흥각2저수지",
+        "en_name": "heunggak2jeosuji"
+    },
+    {
+        "name": "지탄저수지",
+        "en_name": "jitanjeosuji"
+    },
+    {
+        "name": "요동저수지",
+        "en_name": "yodongjeosuji"
+    },
+    {
+        "name": "항동저수지",
+        "en_name": "hangdongjeosuji"
+    },
+    {
+        "name": "농촌저수지",
+        "en_name": "nongchonjeosuji"
+    },
+    {
+        "name": "능화저수지",
+        "en_name": "neunghwajeosuji"
+    },
+    {
+        "name": "옹저수지",
+        "en_name": "ongjeosuji"
+    },
+    {
+        "name": "소포2저수지",
+        "en_name": "sopo2jeosuji"
+    },
+    {
+        "name": "가랑저수지",
+        "en_name": "garangjeosuji"
+    },
+    {
+        "name": "화수저수지",
+        "en_name": "hwasujeosuji"
+    },
+    {
+        "name": "구저수지",
+        "en_name": "gujeosuji"
+    },
+    {
+        "name": "호구저수지",
+        "en_name": "hogujeosuji"
+    },
+    {
+        "name": "연꽃저수지",
+        "en_name": "yeonkkotjeosuji"
+    },
+    {
+        "name": "구서양저수지",
+        "en_name": "guseoyangjeosuji"
+    },
+    {
+        "name": "부길저수지",
+        "en_name": "bugiljeosuji"
+    },
+    {
+        "name": "선항저수지",
+        "en_name": "seonhangjeosuji"
+    },
+    {
+        "name": "창산저수지",
+        "en_name": "changsanjeosuji"
+    },
+    {
+        "name": "거청저수지",
+        "en_name": "geocheongjeosuji"
+    },
+    {
+        "name": "황말저수지",
+        "en_name": "hwangmaljeosuji"
+    },
+    {
+        "name": "미촌저수지",
+        "en_name": "michonjeosuji"
+    },
+    {
+        "name": "원우저수지",
+        "en_name": "wonujeosuji"
+    },
+    {
+        "name": "안음저수지",
+        "en_name": "aneumjeosuji"
+    },
+    {
+        "name": "돌치저수지",
+        "en_name": "dolchijeosuji"
+    },
+    {
+        "name": "월명저수지",
+        "en_name": "wolmyeongjeosuji"
+    },
+    {
+        "name": "영호정저수지",
+        "en_name": "yeonghojeongjeosuji"
+    },
+    {
+        "name": "남티저수지",
+        "en_name": "namtijeosuji"
+    },
+    {
+        "name": "도속저수지",
+        "en_name": "dosokjeosuji"
+    },
+    {
+        "name": "월천1호저수지",
+        "en_name": "wolcheon1hojeosuji"
+    },
+    {
+        "name": "곤저수지",
+        "en_name": "gonjeosuji"
+    },
+    {
+        "name": "와요저수지",
+        "en_name": "wayojeosuji"
+    },
+    {
+        "name": "망월동저수지",
+        "en_name": "mangwoldongjeosuji"
+    },
+    {
+        "name": "영촌저수지",
+        "en_name": "yeongchonjeosuji"
+    },
+    {
+        "name": "갈포저수지",
+        "en_name": "galpojeosuji"
+    },
+    {
+        "name": "익금저수지",
+        "en_name": "ikgeumjeosuji"
+    },
+    {
+        "name": "대인저수지",
+        "en_name": "daeinjeosuji"
+    },
+    {
+        "name": "조양저수지",
+        "en_name": "joyangjeosuji"
+    },
+    {
+        "name": "산당저수지",
+        "en_name": "sandangjeosuji"
+    },
+    {
+        "name": "복사곡저수지",
+        "en_name": "boksagokjeosuji"
+    },
+    {
+        "name": "산곡저수지",
+        "en_name": "sangokjeosuji"
+    },
+    {
+        "name": "일리저수지",
+        "en_name": "ilrijeosuji"
+    },
+    {
+        "name": "사교저수지",
+        "en_name": "sagyojeosuji"
+    },
+    {
+        "name": "고전저수지",
+        "en_name": "gojeonjeosuji"
+    },
+    {
+        "name": "명석저수지",
+        "en_name": "myeongseokjeosuji"
+    },
+    {
+        "name": "장혈저수지",
+        "en_name": "janghyeoljeosuji"
+    },
+    {
+        "name": "상백저수지",
+        "en_name": "sangbaekjeosuji"
+    },
+    {
+        "name": "분황저수지",
+        "en_name": "bunhwangjeosuji"
+    },
+    {
+        "name": "가좌저수지",
+        "en_name": "gajwajeosuji"
+    },
+    {
+        "name": "오미저수지",
+        "en_name": "omijeosuji"
+    },
+    {
+        "name": "대재저수지",
+        "en_name": "daejaejeosuji"
+    },
+    {
+        "name": "석장저수지",
+        "en_name": "seokjangjeosuji"
+    },
+    {
+        "name": "숙적저수지",
+        "en_name": "sukjeokjeosuji"
+    },
+    {
+        "name": "부리저수지",
+        "en_name": "burijeosuji"
+    },
+    {
+        "name": "영등저수지",
+        "en_name": "yeongdeungjeosuji"
+    },
+    {
+        "name": "파도저수지",
+        "en_name": "padojeosuji"
+    },
+    {
+        "name": "신추저수지",
+        "en_name": "sinchujeosuji"
+    },
+    {
+        "name": "월치저수지",
+        "en_name": "wolchijeosuji"
+    },
+    {
+        "name": "유촌저수지",
+        "en_name": "yuchonjeosuji"
+    },
+    {
+        "name": "삼치저수지",
+        "en_name": "samchijeosuji"
+    },
+    {
+        "name": "신호정저수지",
+        "en_name": "sinhojeongjeosuji"
+    },
+    {
+        "name": "죽분저수지",
+        "en_name": "jukbunjeosuji"
+    },
+    {
+        "name": "싹실저수지",
+        "en_name": "ssaksiljeosuji"
+    },
+    {
+        "name": "초장저수지",
+        "en_name": "chojangjeosuji"
+    },
+    {
+        "name": "벽수저수지",
+        "en_name": "byeoksujeosuji"
+    },
+    {
+        "name": "마전1저수지",
+        "en_name": "majeon1jeosuji"
+    },
+    {
+        "name": "초양저수지",
+        "en_name": "choyangjeosuji"
+    },
+    {
+        "name": "연정저수지",
+        "en_name": "yeonjeongjeosuji"
+    },
+    {
+        "name": "석방저수지",
+        "en_name": "seokbangjeosuji"
+    },
+    {
+        "name": "금남저수지",
+        "en_name": "geumnamjeosuji"
+    },
+    {
+        "name": "어은상저수지",
+        "en_name": "eoeunsangjeosuji"
+    },
+    {
+        "name": "명전저수지",
+        "en_name": "myeongjeonjeosuji"
+    },
+    {
+        "name": "오천저수지",
+        "en_name": "ocheonjeosuji"
+    },
+    {
+        "name": "계동저수지",
+        "en_name": "gyedongjeosuji"
+    },
+    {
+        "name": "광두저수지",
+        "en_name": "gwangdujeosuji"
+    },
+    {
+        "name": "나산저수지",
+        "en_name": "nasanjeosuji"
+    },
+    {
+        "name": "운정저수지",
+        "en_name": "unjeongjeosuji"
+    },
+    {
+        "name": "전당저수지",
+        "en_name": "jeondangjeosuji"
+    },
+    {
+        "name": "서호저수지",
+        "en_name": "seohojeosuji"
+    },
+    {
+        "name": "사갑저수지",
+        "en_name": "sagapjeosuji"
+    },
+    {
+        "name": "도이저수지",
+        "en_name": "doijeosuji"
+    },
+    {
+        "name": "소곡저수지",
+        "en_name": "sogokjeosuji"
+    },
+    {
+        "name": "가흥저수지",
+        "en_name": "gaheungjeosuji"
+    },
+    {
+        "name": "내청저수지",
+        "en_name": "naecheongjeosuji"
+    },
+    {
+        "name": "효정저수지",
+        "en_name": "hyojeongjeosuji"
+    },
+    {
+        "name": "요기저수지",
+        "en_name": "yogijeosuji"
+    },
+    {
+        "name": "차동저수지",
+        "en_name": "chadongjeosuji"
+    },
+    {
+        "name": "죽산2저수지",
+        "en_name": "juksan2jeosuji"
+    },
+    {
+        "name": "궁정저수지",
+        "en_name": "gungjeongjeosuji"
+    },
+    {
+        "name": "도관저수지",
+        "en_name": "dogwanjeosuji"
+    },
+    {
+        "name": "별실저수지",
+        "en_name": "byeolsiljeosuji"
+    },
+    {
+        "name": "장고저수지",
+        "en_name": "janggojeosuji"
+    },
+    {
+        "name": "다암저수지",
+        "en_name": "daamjeosuji"
+    },
+    {
+        "name": "북조기저수지",
+        "en_name": "bukjogijeosuji"
+    },
+    {
+        "name": "산계저수지",
+        "en_name": "sangyejeosuji"
+    },
+    {
+        "name": "구리저수지",
+        "en_name": "gurijeosuji"
+    },
+    {
+        "name": "학사저수지",
+        "en_name": "haksajeosuji"
+    },
+    {
+        "name": "전평저수지",
+        "en_name": "jeonpyeongjeosuji"
+    },
+    {
+        "name": "소화저수지",
+        "en_name": "sohwajeosuji"
+    },
+    {
+        "name": "달산저수지",
+        "en_name": "dalsanjeosuji"
+    },
+    {
+        "name": "한동저수지",
+        "en_name": "handongjeosuji"
+    },
+    {
+        "name": "율산저수지",
+        "en_name": "yulsanjeosuji"
+    },
+    {
+        "name": "토개저수지",
+        "en_name": "togaejeosuji"
+    },
+    {
+        "name": "구월하저수지",
+        "en_name": "guwolhajeosuji"
+    },
+    {
+        "name": "낙안저수지",
+        "en_name": "naganjeosuji"
+    },
+    {
+        "name": "옥동저수지",
+        "en_name": "okdongjeosuji"
+    },
+    {
+        "name": "석지저수지",
+        "en_name": "seokjijeosuji"
+    },
+    {
+        "name": "차산저수지",
+        "en_name": "chasanjeosuji"
+    },
+    {
+        "name": "후동저수지",
+        "en_name": "hudongjeosuji"
+    },
+    {
+        "name": "운곡2저수지",
+        "en_name": "ungok2jeosuji"
+    },
+    {
+        "name": "운지곡저수지",
+        "en_name": "unjigokjeosuji"
+    },
+    {
+        "name": "외치1저수지",
+        "en_name": "oechi1jeosuji"
+    },
+    {
+        "name": "수월저수지",
+        "en_name": "suwoljeosuji"
+    },
+    {
+        "name": "보월저수지",
+        "en_name": "bowoljeosuji"
+    },
+    {
+        "name": "매류저수지",
+        "en_name": "maeryujeosuji"
+    },
+    {
+        "name": "북초산저수지",
+        "en_name": "bukchosanjeosuji"
+    },
+    {
+        "name": "원천저수지",
+        "en_name": "woncheonjeosuji"
+    },
+    {
+        "name": "초곡저수지",
+        "en_name": "chogokjeosuji"
+    },
+    {
+        "name": "조산저수지",
+        "en_name": "josanjeosuji"
+    },
+    {
+        "name": "당리저수지",
+        "en_name": "dangrijeosuji"
+    },
+    {
+        "name": "교곡저수지",
+        "en_name": "gyogokjeosuji"
+    },
+    {
+        "name": "방계저수지",
+        "en_name": "banggyejeosuji"
+    },
+    {
+        "name": "상탑저수지",
+        "en_name": "sangtapjeosuji"
+    },
+    {
+        "name": "난곡저수지",
+        "en_name": "nangokjeosuji"
+    },
+    {
+        "name": "도래모저수지",
+        "en_name": "doraemojeosuji"
+    },
+    {
+        "name": "구곡저수지",
+        "en_name": "gugokjeosuji"
+    },
+    {
+        "name": "둔지저수지",
+        "en_name": "dunjijeosuji"
+    },
+    {
+        "name": "복자동저수지",
+        "en_name": "bokjadongjeosuji"
+    },
+    {
+        "name": "상덕저수지",
+        "en_name": "sangdeokjeosuji"
+    },
+    {
+        "name": "상부2저수지",
+        "en_name": "sangbu2jeosuji"
+    },
+    {
+        "name": "연당저수지",
+        "en_name": "yeondangjeosuji"
+    },
+    {
+        "name": "조곡저수지",
+        "en_name": "jogokjeosuji"
+    },
+    {
+        "name": "행군저수지",
+        "en_name": "haenggunjeosuji"
+    },
+    {
+        "name": "무동저수지",
+        "en_name": "mudongjeosuji"
+    },
+    {
+        "name": "신음저수지",
+        "en_name": "sineumjeosuji"
+    },
+    {
+        "name": "몽송저수지",
+        "en_name": "mongsongjeosuji"
+    },
+    {
+        "name": "석사저수지",
+        "en_name": "seoksajeosuji"
+    },
+    {
+        "name": "신근저수지",
+        "en_name": "singeunjeosuji"
+    },
+    {
+        "name": "산제저수지",
+        "en_name": "sanjejeosuji"
+    },
+    {
+        "name": "청암저수지",
+        "en_name": "cheongamjeosuji"
+    },
+    {
+        "name": "벌못저수지",
+        "en_name": "beolmotjeosuji"
+    },
+    {
+        "name": "상부1저수지",
+        "en_name": "sangbu1jeosuji"
+    },
+    {
+        "name": "뒷들저수지",
+        "en_name": "dwitdeuljeosuji"
+    },
+    {
+        "name": "석종저수지",
+        "en_name": "seokjongjeosuji"
+    },
+    {
+        "name": "외치2저수지",
+        "en_name": "oechi2jeosuji"
+    },
+    {
+        "name": "북성저수지",
+        "en_name": "bukseongjeosuji"
+    },
+    {
+        "name": "지사저수지",
+        "en_name": "jisajeosuji"
+    },
+    {
+        "name": "산성저수지",
+        "en_name": "sanseongjeosuji"
+    },
+    {
+        "name": "중명저수지",
+        "en_name": "jungmyeongjeosuji"
+    },
+    {
+        "name": "봉명저수지",
+        "en_name": "bongmyeongjeosuji"
+    },
+    {
+        "name": "모지저수지",
+        "en_name": "mojijeosuji"
+    },
+    {
+        "name": "향월저수지",
+        "en_name": "hyangwoljeosuji"
+    },
+    {
+        "name": "노현2저수지",
+        "en_name": "nohyeon2jeosuji"
+    },
+    {
+        "name": "염해저수지",
+        "en_name": "yeomhaejeosuji"
+    },
+    {
+        "name": "오수저수지",
+        "en_name": "osujeosuji"
+    },
+    {
+        "name": "세류저수지",
+        "en_name": "seryujeosuji"
+    },
+    {
+        "name": "송변2저수지",
+        "en_name": "songbyeon2jeosuji"
+    },
+    {
+        "name": "오리밭들저수지",
+        "en_name": "oribatdeuljeosuji"
+    },
+    {
+        "name": "두달저수지",
+        "en_name": "dudaljeosuji"
+    },
+    {
+        "name": "칠창저수지",
+        "en_name": "chilchangjeosuji"
+    },
+    {
+        "name": "반암저수지",
+        "en_name": "banamjeosuji"
+    },
+    {
+        "name": "김천저수지",
+        "en_name": "gimcheonjeosuji"
+    },
+    {
+        "name": "춘정1저수지",
+        "en_name": "chunjeong1jeosuji"
+    },
+    {
+        "name": "산합저수지",
+        "en_name": "sanhapjeosuji"
+    },
+    {
+        "name": "다천저수지",
+        "en_name": "dacheonjeosuji"
+    },
+    {
+        "name": "대초저수지",
+        "en_name": "daechojeosuji"
+    },
+    {
+        "name": "어은하저수지",
+        "en_name": "eoeunhajeosuji"
+    },
+    {
+        "name": "초음저수지",
+        "en_name": "choeumjeosuji"
+    },
+    {
+        "name": "부동저수지",
+        "en_name": "budongjeosuji"
+    },
+    {
+        "name": "명곡2저수지",
+        "en_name": "myeonggok2jeosuji"
+    },
+    {
+        "name": "신후평저수지",
+        "en_name": "sinhupyeongjeosuji"
+    },
+    {
+        "name": "먹골저수지",
+        "en_name": "meokgoljeosuji"
+    },
+    {
+        "name": "신천저수지",
+        "en_name": "sincheonjeosuji"
+    },
+    {
+        "name": "이치미저수지",
+        "en_name": "ichimijeosuji"
+    },
+    {
+        "name": "상락저수지",
+        "en_name": "sangrakjeosuji"
+    },
+    {
+        "name": "석화저수지",
+        "en_name": "seokhwajeosuji"
+    },
+    {
+        "name": "원용두저수지",
+        "en_name": "wonyongdujeosuji"
+    },
+    {
+        "name": "방두저수지",
+        "en_name": "bangdujeosuji"
+    },
+    {
+        "name": "사림저수지",
+        "en_name": "sarimjeosuji"
+    },
+    {
+        "name": "먼갓저수지",
+        "en_name": "meongatjeosuji"
+    },
+    {
+        "name": "과곡저수지",
+        "en_name": "gwagokjeosuji"
+    },
+    {
+        "name": "울성저수지",
+        "en_name": "ulseongjeosuji"
+    },
+    {
+        "name": "삼태저수지",
+        "en_name": "samtaejeosuji"
+    },
+    {
+        "name": "석전저수지",
+        "en_name": "seokjeonjeosuji"
+    },
+    {
+        "name": "장사저수지",
+        "en_name": "jangsajeosuji"
+    },
+    {
+        "name": "어미저수지",
+        "en_name": "eomijeosuji"
+    },
+    {
+        "name": "뒷골저수지",
+        "en_name": "dwitgoljeosuji"
+    },
+    {
+        "name": "하가저수지",
+        "en_name": "hagajeosuji"
+    },
+    {
+        "name": "유수저수지",
+        "en_name": "yusujeosuji"
+    },
+    {
+        "name": "감치저수지",
+        "en_name": "gamchijeosuji"
+    },
+    {
+        "name": "염전저수지",
+        "en_name": "yeomjeonjeosuji"
+    },
+    {
+        "name": "퇴로동저수지",
+        "en_name": "toerodongjeosuji"
+    },
+    {
+        "name": "동돈저수지",
+        "en_name": "dongdonjeosuji"
+    },
+    {
+        "name": "정서상저수지",
+        "en_name": "jeongseosangjeosuji"
+    },
+    {
+        "name": "포강저수지",
+        "en_name": "pogangjeosuji"
+    },
+    {
+        "name": "부산저수지",
+        "en_name": "busanjeosuji"
+    },
+    {
+        "name": "장재저수지",
+        "en_name": "jangjaejeosuji"
+    },
+    {
+        "name": "광산저수지",
+        "en_name": "gwangsanjeosuji"
+    },
+    {
+        "name": "한두골저수지",
+        "en_name": "handugoljeosuji"
+    },
+    {
+        "name": "방죽골저수지",
+        "en_name": "bangjukgoljeosuji"
+    },
+    {
+        "name": "오누이상저수지",
+        "en_name": "onuisangjeosuji"
+    },
+    {
+        "name": "가지밭골저수지",
+        "en_name": "gajibatgoljeosuji"
+    },
+    {
+        "name": "담뒤저수지",
+        "en_name": "damdwijeosuji"
+    },
+    {
+        "name": "성태저수지",
+        "en_name": "seongtaejeosuji"
+    },
+    {
+        "name": "원두평저수지",
+        "en_name": "wondupyeongjeosuji"
+    },
+    {
+        "name": "금산골저수지",
+        "en_name": "geumsangoljeosuji"
+    },
+    {
+        "name": "신촌2저수지",
+        "en_name": "sinchon2jeosuji"
+    },
+    {
+        "name": "백옥저수지",
+        "en_name": "baegokjeosuji"
+    },
+    {
+        "name": "귀명저수지",
+        "en_name": "gwimyeongjeosuji"
+    },
+    {
+        "name": "저리저수지",
+        "en_name": "jeorijeosuji"
+    },
+    {
+        "name": "선지저수지",
+        "en_name": "seonjijeosuji"
+    },
+    {
+        "name": "세레저수지",
+        "en_name": "serejeosuji"
+    },
+    {
+        "name": "인강저수지",
+        "en_name": "ingangjeosuji"
+    },
+    {
+        "name": "석실저수지",
+        "en_name": "seoksiljeosuji"
+    },
+    {
+        "name": "황정숲1저수지",
+        "en_name": "hwangjeongsup1jeosuji"
+    },
+    {
+        "name": "시곡저수지",
+        "en_name": "sigokjeosuji"
+    },
+    {
+        "name": "감천저수지",
+        "en_name": "gamcheonjeosuji"
+    },
+    {
+        "name": "다사저수지",
+        "en_name": "dasajeosuji"
+    },
+    {
+        "name": "수정골저수지",
+        "en_name": "sujeonggoljeosuji"
+    },
+    {
+        "name": "상서저수지",
+        "en_name": "sangseojeosuji"
+    },
+    {
+        "name": "복평저수지",
+        "en_name": "bokpyeongjeosuji"
+    },
+    {
+        "name": "성터저수지",
+        "en_name": "seongteojeosuji"
+    },
+    {
+        "name": "송티저수지",
+        "en_name": "songtijeosuji"
+    },
+    {
+        "name": "아강저수지",
+        "en_name": "agangjeosuji"
+    },
+    {
+        "name": "전천저수지",
+        "en_name": "jeoncheonjeosuji"
+    },
+    {
+        "name": "가척저수지",
+        "en_name": "gacheokjeosuji"
+    },
+    {
+        "name": "반운저수지",
+        "en_name": "banunjeosuji"
+    },
+    {
+        "name": "탑송곡저수지",
+        "en_name": "tapsonggokjeosuji"
+    },
+    {
+        "name": "양장1저수지",
+        "en_name": "yangjang1jeosuji"
+    },
+    {
+        "name": "등곡저수지",
+        "en_name": "deunggokjeosuji"
+    },
+    {
+        "name": "송계저수지",
+        "en_name": "songgyejeosuji"
+    },
+    {
+        "name": "광성저수지",
+        "en_name": "gwangseongjeosuji"
+    },
+    {
+        "name": "당수평저수지",
+        "en_name": "dangsupyeongjeosuji"
+    },
+    {
+        "name": "오계저수지",
+        "en_name": "ogyejeosuji"
+    },
+    {
+        "name": "학곡저수지",
+        "en_name": "hakgokjeosuji"
+    },
+    {
+        "name": "내송화저수지",
+        "en_name": "naesonghwajeosuji"
+    },
+    {
+        "name": "마람터저수지",
+        "en_name": "maramteojeosuji"
+    },
+    {
+        "name": "한산저수지",
+        "en_name": "hansanjeosuji"
+    },
+    {
+        "name": "해산저수지",
+        "en_name": "haesanjeosuji"
+    },
+    {
+        "name": "독점저수지",
+        "en_name": "dokjeomjeosuji"
+    },
+    {
+        "name": "내산정저수지",
+        "en_name": "naesanjeongjeosuji"
+    },
+    {
+        "name": "오누이하저수지",
+        "en_name": "onuihajeosuji"
+    },
+    {
+        "name": "적산저수지",
+        "en_name": "jeoksanjeosuji"
+    },
+    {
+        "name": "효동저수지",
+        "en_name": "hyodongjeosuji"
+    },
+    {
+        "name": "매계저수지",
+        "en_name": "maegyejeosuji"
+    },
+    {
+        "name": "낙곡저수지",
+        "en_name": "nakgokjeosuji"
+    },
+    {
+        "name": "당남저수지",
+        "en_name": "dangnamjeosuji"
+    },
+    {
+        "name": "양림1저수지",
+        "en_name": "yangrim1jeosuji"
+    },
+    {
+        "name": "상정토저수지",
+        "en_name": "sangjeongtojeosuji"
+    },
+    {
+        "name": "초포저수지",
+        "en_name": "chopojeosuji"
+    },
+    {
+        "name": "수완1저수지",
+        "en_name": "suwan1jeosuji"
+    },
+    {
+        "name": "인곡저수지",
+        "en_name": "ingokjeosuji"
+    },
+    {
+        "name": "후산읍저수지",
+        "en_name": "husaneupjeosuji"
+    },
+    {
+        "name": "무릉4저수지",
+        "en_name": "mureung4jeosuji"
+    },
+    {
+        "name": "대촌저수지",
+        "en_name": "daechonjeosuji"
+    },
+    {
+        "name": "턱골저수지",
+        "en_name": "teokgoljeosuji"
+    },
+    {
+        "name": "바위암저수지",
+        "en_name": "bawiamjeosuji"
+    },
+    {
+        "name": "퇴로서저수지",
+        "en_name": "toeroseojeosuji"
+    },
+    {
+        "name": "말랑들저수지",
+        "en_name": "malrangdeuljeosuji"
+    },
+    {
+        "name": "무곡2저수지",
+        "en_name": "mugok2jeosuji"
+    },
+    {
+        "name": "삼곡1저수지",
+        "en_name": "samgok1jeosuji"
+    },
+    {
+        "name": "율리저수지",
+        "en_name": "yulrijeosuji"
+    },
+    {
+        "name": "하남1저수지",
+        "en_name": "hanam1jeosuji"
+    },
+    {
+        "name": "월현저수지",
+        "en_name": "wolhyeonjeosuji"
+    },
+    {
+        "name": "대상저수지",
+        "en_name": "daesangjeosuji"
+    },
+    {
+        "name": "유하3저수지",
+        "en_name": "yuha3jeosuji"
+    },
+    {
+        "name": "외석정저수지",
+        "en_name": "oeseokjeongjeosuji"
+    },
+    {
+        "name": "이인저수지",
+        "en_name": "iinjeosuji"
+    },
+    {
+        "name": "부수저수지",
+        "en_name": "busujeosuji"
+    },
+    {
+        "name": "쌍구저수지",
+        "en_name": "ssanggujeosuji"
+    },
+    {
+        "name": "중정토저수지",
+        "en_name": "jungjeongtojeosuji"
+    },
+    {
+        "name": "중부2저수지",
+        "en_name": "jungbu2jeosuji"
+    },
+    {
+        "name": "월천2호저수지",
+        "en_name": "wolcheon2hojeosuji"
+    },
+    {
+        "name": "송오리저수지",
+        "en_name": "songorijeosuji"
+    },
+    {
+        "name": "월감저수지",
+        "en_name": "wolgamjeosuji"
+    },
+    {
+        "name": "고길저수지",
+        "en_name": "gogiljeosuji"
+    },
+    {
+        "name": "고사하저수지",
+        "en_name": "gosahajeosuji"
+    },
+    {
+        "name": "용문곡저수지",
+        "en_name": "yongmungokjeosuji"
+    },
+    {
+        "name": "솔고개저수지",
+        "en_name": "solgogaejeosuji"
+    },
+    {
+        "name": "화대저수지",
+        "en_name": "hwadaejeosuji"
+    },
+    {
+        "name": "방목저수지",
+        "en_name": "bangmokjeosuji"
+    },
+    {
+        "name": "장명저수지",
+        "en_name": "jangmyeongjeosuji"
+    },
+    {
+        "name": "신덕정저수지",
+        "en_name": "sindeokjeongjeosuji"
+    },
+    {
+        "name": "고정저수지",
+        "en_name": "gojeongjeosuji"
+    },
+    {
+        "name": "모전저수지",
+        "en_name": "mojeonjeosuji"
+    },
+    {
+        "name": "삼곡2저수지",
+        "en_name": "samgok2jeosuji"
+    },
+    {
+        "name": "덕신저수지",
+        "en_name": "deoksinjeosuji"
+    },
+    {
+        "name": "이어저수지",
+        "en_name": "ieojeosuji"
+    },
+    {
+        "name": "유하저수지",
+        "en_name": "yuhajeosuji"
+    },
+    {
+        "name": "금당저수지",
+        "en_name": "geumdangjeosuji"
+    },
+    {
+        "name": "증구지저수지",
+        "en_name": "jeunggujijeosuji"
+    },
+    {
+        "name": "노류골저수지",
+        "en_name": "noryugoljeosuji"
+    },
+    {
+        "name": "금림저수지",
+        "en_name": "geumrimjeosuji"
+    },
+    {
+        "name": "정곡저수지",
+        "en_name": "jeonggokjeosuji"
+    },
+    {
+        "name": "독곡저수지",
+        "en_name": "dokgokjeosuji"
+    },
+    {
+        "name": "추산저수지",
+        "en_name": "chusanjeosuji"
+    },
+    {
+        "name": "영지저수지",
+        "en_name": "yeongjijeosuji"
+    },
+    {
+        "name": "유하1저수지",
+        "en_name": "yuha1jeosuji"
+    },
+    {
+        "name": "상포저수지",
+        "en_name": "sangpojeosuji"
+    },
+    {
+        "name": "택촌2저수지",
+        "en_name": "taekchon2jeosuji"
+    },
+    {
+        "name": "덕촌1저수지",
+        "en_name": "deokchon1jeosuji"
+    },
+    {
+        "name": "모정2저수지",
+        "en_name": "mojeong2jeosuji"
+    },
+    {
+        "name": "남전4저수지",
+        "en_name": "namjeon4jeosuji"
+    },
+    {
+        "name": "약석저수지",
+        "en_name": "yakseokjeosuji"
+    },
+    {
+        "name": "대미론저수지",
+        "en_name": "daemironjeosuji"
+    },
+    {
+        "name": "앞실저수지",
+        "en_name": "apsiljeosuji"
+    },
+    {
+        "name": "가는골저수지",
+        "en_name": "ganeungoljeosuji"
+    },
+    {
+        "name": "덕성저수지",
+        "en_name": "deokseongjeosuji"
+    },
+    {
+        "name": "마쌍저수지",
+        "en_name": "massangjeosuji"
+    },
+    {
+        "name": "양하저수지",
+        "en_name": "yanghajeosuji"
+    },
+    {
+        "name": "우계저수지",
+        "en_name": "ugyejeosuji"
+    },
+    {
+        "name": "양지말저수지",
+        "en_name": "yangjimaljeosuji"
+    },
+    {
+        "name": "생초저수지",
+        "en_name": "saengchojeosuji"
+    },
+    {
+        "name": "제촌저수지",
+        "en_name": "jechonjeosuji"
+    },
+    {
+        "name": "곰네저수지",
+        "en_name": "gomnejeosuji"
+    },
+    {
+        "name": "뒤뜰저수지",
+        "en_name": "dwitteuljeosuji"
+    },
+    {
+        "name": "가오저수지",
+        "en_name": "gaojeosuji"
+    },
+    {
+        "name": "웅골저수지",
+        "en_name": "unggoljeosuji"
+    },
+    {
+        "name": "황정숲2저수지",
+        "en_name": "hwangjeongsup2jeosuji"
+    },
+    {
+        "name": "어전저수지",
+        "en_name": "eojeonjeosuji"
+    },
+    {
+        "name": "하회저수지",
+        "en_name": "hahoejeosuji"
+    },
+    {
+        "name": "덕담저수지",
+        "en_name": "deokdamjeosuji"
+    },
+    {
+        "name": "두암저수지",
+        "en_name": "duamjeosuji"
+    },
+    {
+        "name": "아포저수지",
+        "en_name": "apojeosuji"
+    },
+    {
+        "name": "말미저수지",
+        "en_name": "malmijeosuji"
+    },
+    {
+        "name": "우지곡저수지",
+        "en_name": "ujigokjeosuji"
+    },
+    {
+        "name": "구평저수지",
+        "en_name": "gupyeongjeosuji"
+    },
+    {
+        "name": "정녕1저수지",
+        "en_name": "jeongnyeong1jeosuji"
+    },
+    {
+        "name": "행현저수지",
+        "en_name": "haenghyeonjeosuji"
+    },
+    {
+        "name": "내지곡저수지",
+        "en_name": "naejigokjeosuji"
+    },
+    {
+        "name": "유하2저수지",
+        "en_name": "yuha2jeosuji"
+    },
+    {
+        "name": "콩밭골저수지",
+        "en_name": "kongbatgoljeosuji"
+    },
+    {
+        "name": "흥왕저수지",
+        "en_name": "heungwangjeosuji"
+    },
+    {
+        "name": "양피저수지",
+        "en_name": "yangpijeosuji"
+    },
+    {
+        "name": "화달저수지",
+        "en_name": "hwadaljeosuji"
+    },
+    {
+        "name": "모덕저수지",
+        "en_name": "modeokjeosuji"
+    },
+    {
+        "name": "술정저수지",
+        "en_name": "suljeongjeosuji"
+    },
+    {
+        "name": "길가저수지",
+        "en_name": "gilgajeosuji"
+    },
+    {
+        "name": "원당2저수지",
+        "en_name": "wondang2jeosuji"
+    },
+    {
+        "name": "금포저수지",
+        "en_name": "geumpojeosuji"
+    },
+    {
+        "name": "어랑저수지",
+        "en_name": "eorangjeosuji"
+    },
+    {
+        "name": "부마저수지",
+        "en_name": "bumajeosuji"
+    },
+    {
+        "name": "파장저수지",
+        "en_name": "pajangjeosuji"
+    },
+    {
+        "name": "수인저수지",
+        "en_name": "suinjeosuji"
+    },
+    {
+        "name": "후산저수지",
+        "en_name": "husanjeosuji"
+    },
+    {
+        "name": "양림2저수지",
+        "en_name": "yangrim2jeosuji"
+    },
+    {
+        "name": "한천저수지",
+        "en_name": "hancheonjeosuji"
+    },
+    {
+        "name": "성북저수지",
+        "en_name": "seongbukjeosuji"
+    },
+    {
+        "name": "아랫골저수지",
+        "en_name": "araetgoljeosuji"
+    }
+]

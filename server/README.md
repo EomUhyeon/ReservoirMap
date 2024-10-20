@@ -7,12 +7,13 @@
 
 1. 초기 세팅 명령어
 - sudo apt update
+- sudo apt install locales
 - sudo apt install openjdk-17-jdk
 - java -version
 - sudo apt install git
 - git clone https://github.com/your-repository-url
 
-- java -jar server-0.0.1-SNAPSHOT.jar
+- java -jar server-0.0.5-SNAPSHOT.jar
 
 
 - chmod +x gradlew
@@ -54,3 +55,41 @@ String csvContent = new String(resource.getInputStream().readAllBytes(), Standar
 String encodedFileName = URLEncoder.encode(reservoirName + ".csv", StandardCharsets.UTF_8.toString());
 
 
+1. 로케일 설정을 기본값으로 적용
+   로케일을 en_US.UTF-8로 변경하려면, 시스템의 기본 로케일을 업데이트해야 합니다.
+
+1.1 /etc/default/locale 파일을 수정:
+bash
+코드 복사
+sudo nano /etc/default/locale
+파일이 열리면 다음 내용을 추가하거나 수정하세요:
+
+bash
+코드 복사
+LANG=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+저장하고 나서 파일을 닫습니다.
+
+1.2 로케일 적용:
+다음 명령어를 실행하여 변경 사항을 적용합니다.
+
+bash
+코드 복사
+source /etc/default/locale
+2. 로케일 설정 확인
+   이제 다시 locale 명령어를 실행하여 설정이 제대로 적용되었는지 확인하세요:
+
+bash
+코드 복사
+locale
+출력에서 LANG과 LC_* 항목이 모두 en_US.UTF-8으로 표시되면 설정이 완료된 것입니다.
+재부팅 (필요한 경우): 모든 단계를 수행한 후 시스템을 재부팅해 설정을 제대로 반영시켜야 할 수 있습니다.
+
+bash
+코드 복사
+sudo reboot
+로케일 확인: 재부팅 후 다시 locale 명령어로 로케일 설정을 확인하세요.
+
+bash
+코드 복사
+locale

@@ -2,8 +2,8 @@ import csv
 import json
 
 # CSV 파일 경로와 변환할 JSON 파일 경로 설정
-csv_file_path = 'reservoir_test_data.csv'  # 변환할 CSV 파일 이름
-json_file_path = 'reservoir_test_data.json'  # 저장될 JSON 파일 이름
+csv_file_path = 'ko_name_only.csv'  # 변환할 CSV 파일 이름
+json_file_path = 'reservoir_ko_to_en.json'  # 저장될 JSON 파일 이름
 
 # CSV 파일 읽기
 with open(csv_file_path, mode='r', encoding='utf-8-sig') as csv_file:
