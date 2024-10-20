@@ -11,6 +11,8 @@
 - java -version
 - sudo apt install git
 - git clone https://github.com/your-repository-url
+
+
 - chmod +x gradlew
 - ./gradlew build
 
@@ -28,4 +30,6 @@
 - 생성 후 방화벽 규칙 추가
   네트워킹 → VPC 네트워크 → 방화벽 규칙으로 이동한 후 새로운 규칙을 추가하고 포트 8080을 추가
 
+3. Spring Boot Project를 빌드 하는 방법
+- .\gradlew.bat build
 
