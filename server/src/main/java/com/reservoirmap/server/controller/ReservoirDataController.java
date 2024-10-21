@@ -17,7 +17,7 @@ import java.nio.file.Paths;
 @RestController
 public class ReservoirDataController {
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "*")
     @GetMapping("/api/reservoir_percent/{reservoirName}")
     public ResponseEntity<String> getReservoirPercent(@PathVariable String reservoirName) {
         try {
@@ -37,7 +37,7 @@ public class ReservoirDataController {
         }
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "*")
     @GetMapping("/api/reservoir_forecast/{reservoirName}")
     public ResponseEntity<String> getReservoirForecast(@PathVariable String reservoirName) {
         try {
