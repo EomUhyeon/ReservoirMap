@@ -10,9 +10,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 
 @RestController
 public class ReservoirDataController {
@@ -23,14 +22,16 @@ public class ReservoirDataController {
         try {
             // 요청받은 저수지명에 해당하는 CSV 파일 경로 설정
             String fileName = "reservoir_percent_data/" + reservoirName + ".csv";
-            Path filePath = Paths.get(new ClassPathResource(fileName).getURI());
+            ClassPathResource resource = new ClassPathResource(fileName);
+            String csvContent = new String(resource.getInputStream().readAllBytes(), StandardCharsets.UTF_8);
 
-            String csvContent = Files.readString(filePath);
+            // 파일 이름을 UTF-8로 인코딩
+            String encodedFileName = URLEncoder.encode(reservoirName + ".csv", StandardCharsets.UTF_8.toString());
 
             // 파일 내용 클라이언트 전달
             return ResponseEntity.ok()
                     .contentType(MediaType.TEXT_PLAIN)
-                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + reservoirName + ".csv\"")
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename*=UTF-8''" + encodedFileName)
                     .body(csvContent);
         } catch (IOException e) {
             return ResponseEntity.status(500).body("Error reading CSV file: " + e.getMessage());
@@ -43,14 +44,16 @@ public class ReservoirDataController {
         try {
             // 요청받은 저수지명에 해당하는 CSV 파일 경로 설정
             String fileName = "reservoir_forecast_data/" + reservoirName + "_예측결과.csv";
-            Path filePath = Paths.get(new ClassPathResource(fileName).getURI());
+            ClassPathResource resource = new ClassPathResource(fileName);
+            String csvContent = new String(resource.getInputStream().readAllBytes(), StandardCharsets.UTF_8);
 
-            String csvContent = Files.readString(filePath);
+            // 파일 이름을 UTF-8로 인코딩
+            String encodedFileName = URLEncoder.encode(reservoirName + "_예측결과.csv", StandardCharsets.UTF_8.toString());
 
             // 파일 내용 클라이언트 전달
             return ResponseEntity.ok()
                     .contentType(MediaType.TEXT_PLAIN)
-                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + reservoirName + ".csv\"")
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename*=UTF-8''" + encodedFileName)
                     .body(csvContent);
         } catch (IOException e) {
             return ResponseEntity.status(500).body("Error reading CSV file: " + e.getMessage());

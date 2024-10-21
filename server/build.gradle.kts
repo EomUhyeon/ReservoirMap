@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.reservoirmap"
-version = "0.0.8-SNAPSHOT"
+version = "0.0.9-SNAPSHOT"
 
 java {
 	toolchain {
