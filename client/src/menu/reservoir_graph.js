@@ -17,7 +17,7 @@ function ReservoirGraph(reservoir_name) {
     const reservoirNameStr = typeof reservoir_name === 'string' ? reservoir_name : reservoir_name?.reservoir_name;
     setReservoirName(reservoirNameStr);
     
-    fetch(`http://34.66.104.241:8080/api/reservoir_percent/${reservoirNameStr}`)
+    fetch(`http://localhost:8080/api/reservoir_percent/${reservoirNameStr}`)
       .then((response) => response.text())
       .then((csvText) => {
         Papa.parse(csvText, {
@@ -36,7 +36,7 @@ function ReservoirGraph(reservoir_name) {
   // 예측 저수율 데이터
   useEffect(() => {
     if (reservoirName) {
-      fetch(`http://34.66.104.241:8080/api/reservoir_forecast/${reservoirName}`)
+      fetch(`http://localhost:8080/api/reservoir_forecast/${reservoirName}`)
         .then((response) => response.text())
         .then((csvText) => {
           Papa.parse(csvText, {
@@ -84,8 +84,8 @@ function ReservoirGraph(reservoir_name) {
       {
         label: `${reservoirName} 저수율 (%)`,
         data: values,
-        borderColor: 'rgba(75, 192, 192, 1)', // 하늘색
-        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        borderColor: 'rgba(37, 143, 255, 1)', // 파란색
+        backgroundColor: 'rgba(37, 143, 255, 0.2)',
         fill: true,
       },
     ];
@@ -100,8 +100,8 @@ function ReservoirGraph(reservoir_name) {
       datasets.push({
         label: `${reservoirName} 예측 저수율 (%)`,
         data: [...Array(values.length-1).fill(null),...values.slice(-1), ...forecastValues], // 실제 데이터 뒤에 예측 데이터 이어붙임
-        borderColor: 'rgba(255, 165, 0, 1)', // 주황색
-        backgroundColor: 'rgba(255, 165, 0, 0.2)',
+        borderColor: 'rgba(255, 140, 37, 1)', // 주황색
+        backgroundColor: 'rgba(255, 140, 37, 0.2)',
         fill: true,
       });
     }
@@ -119,12 +119,12 @@ function ReservoirGraph(reservoir_name) {
   return (
     <div className="reservoir_graph_box">
       <div className="button-group">
-        <button className="graph_button" onClick={() => handleModeChange('daily')}>일간</button>
-        <button className="graph_button" onClick={() => handleModeChange('weekly')}>주간</button>
-        <button className="graph_button" onClick={() => handleModeChange('monthly')}>월간</button>
+        <button className="graph_button" onClick={() => handleModeChange('daily')}>일간 저수율</button>
+        <button className="graph_button" onClick={() => handleModeChange('weekly')}>주간 저수율</button>
+        <button className="graph_button" onClick={() => handleModeChange('monthly')}>월간 저수율</button>
       </div>
       {graphData.labels ? (
-        <div style={{ width: '90%', height: '400px' }}>
+        <div className='graph_box'>
           <Line
             data={graphData}
             options={{

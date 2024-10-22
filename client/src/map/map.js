@@ -119,11 +119,32 @@ function Map({ getSearch, isEmptySearch, putPopup }) {
                         }}
                     >
                         <Popup>
-                            이름 : {marker.name}<br />
-                            유효 저수량 : {marker.유효저수량} m³<br />
-                            금일 저수량 : {저수량}<br />
-                            금일 저수율 : {저수율}<br />
-                            소재지 : {marker.위치}
+                            <div className='table_map'>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>이름</strong></td>
+                                            <td>{marker.name}</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>유효 저수량</strong></td>
+                                            <td>{marker.유효저수량} m³</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>금일 저수량</strong></td>
+                                            <td>{저수량}</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>금일 저수율</strong></td>
+                                            <td>{저수율}</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>소재지</strong></td>
+                                            <td>{marker.위치}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </Popup>
                     </Marker>
                 );

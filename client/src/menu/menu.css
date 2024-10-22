@@ -2,27 +2,28 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 590px;
+  width: 640px;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: white;      /* 연한 회색 배경 */
-  color: #000;                  /* 검은색 텍스트 */
+  background-color: white;        /* 연한 회색 배경 */
+  color: #000;                    /* 검은색 텍스트 */
   transition: transform 0.3s ease;
-  z-index: 1000;                  /* 사이드바를 맨 위에 배치 */
+  z-index: 1000;                    /* 사이드바를 맨 위에 배치 */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 .left_menu_closed {
-  transform: translateX(-590px);
+  transform: translateX(-640px);
 }
 .left_menu_btn {
+  width: 20px;
+  height: 70px;
   position: absolute;
-  right: -23px;
-  font-size: 16px;
+  right: -20px;
   top: 50%;
   transform: translateY(-50%);
+  border: 1px solid #f0f0f0;     /* 연한 회색 테두리 */
   background-color: white;       /* 중간 회색 배경 */
-  color: #9C27B0;
-  border: 1px solid #9C27B0;
   border-left: none;               /* 왼쪽 테두리 제거 */
   cursor: pointer;
   padding-top: 15px;
@@ -30,24 +31,44 @@
   padding-left: 5px;
   padding-right: 8px;
   border-radius: 0 8px 8px 0;
+  box-shadow: 0 2px 4px #f0f0f0(0, 0, 0, 0.1); /* 그림자 추가 */
 }
 .left_menu_btn:hover {
   background-color: #f0f0f0;
 }
+.arrow {                           /* 화살표 스타일 */
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 6px solid #258fff; 
+}
+.arrow.open {
+  transform: rotate(180deg); 
+}
 
 .gray-line {
   border: none;
-  border-top: 5px solid #f0f0f3;
-  margin: 1px;                    /* 위아래 여백 */
+  border-top: 1px solid #e2e2e2;
+  margin: 1px;
 }
 
+.left_menu_top{
+  width: 100%;
+  height: 81px;
+  background-color: #258fff;
+  display: flex;                   /* 자식 요소 정렬을 위한 flexbox 설정 */
+  justify-content: center;         /* 가로 중앙 정렬 */
+}
 .search_box {
-  width: calc(100% - 48px);
-  margin: 23px;
-
+  width: calc(100% - 40px);
   align-items: center;
-  border: 2px solid #9C27B0;
+  border: 1px solid #258fff;
+  background-color: #ffffff;
   border-radius: 8px;             /* 모서리 둥글게 */
+  position: absolute;             /* 요소를 절대 위치로 설정 */
+  top: 17px;
+  z-index: 1000;                  /* 높은 z-index 값으로 다른 요소 위에 표시 */
 }
 .search_bar {
   border: none;
@@ -65,13 +86,12 @@
 .search_window:focus::placeholder {
   color: transparent;
 }
-
 .search_bnt {
   width: 25px;
   height: 25px;
   border: none; 
-  background-color: #fff;       /* 흰색 배경 */
-  color: #9C27B0;               /* 텍스트와 아이콘을 보라색으로 */
+  background-color: #ffffff;    /* 흰색 배경 */
+  color: #258fff;               /* 텍스트와 아이콘을 보라색으로 */
   margin: 10px 15px;
   cursor: pointer;
   position: relative;             /* 아이콘 위치를 위한 설정 */
@@ -81,7 +101,7 @@
   position: absolute;
   width: 14px;
   height: 14px;
-  border: 2px solid #9C27B0; 
+  border: 2px solid #258fff;
   border-radius: 50%;
   top: 40%;
   left: 9px;
@@ -93,82 +113,84 @@
   position: absolute;
   width: 8px;
   height: 2px;
-  background-color: #9C27B0;
+  background-color: #258fff;
   top: 59%;
   left: 20px;
   transform: translateY(-50%) rotate(45deg);
   transform-origin: left center;
 }
 .search_data_box {
-  border-top: 1px solid #f0f0f3; 
+  border-top: 1px solid #258fff;
 }
 
+.left_menu_mid{
+  width: 100%;
+}
+.left_menu_mid_bnt {
+  margin-left: 25px;
+  margin-bottom: -1px;
+  border: none;                   /* 투명 */
+  width: 81px;
+  height: 44px;
+  color: #666666;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.left_menu_bot{
+  margin-top: -2px;
+  display: flex;
+  flex-direction: column;         /* 세로 방향 정렬 */
+}
 .reservoir_information_box{
   width: 100%;
   height: 200px;
 }
-
-.reservoir_graph_box {
+.table_menu table {
   width: 100%;
-  height: auto;
-  padding: 20px;
-}
-
-.button-group {
-  display: flex;
-  justify-content: space-around;
+  border-collapse: collapse;      /* 테두리가 겹치지 않도록 설정 */
   margin-bottom: 20px;
 }
-
+.table_menu table,.table_menu th,.table_menu td {
+  border: 1px solid #e2e2e2;    /* 회색 테두리 */
+  border-right: none;
+}
+.table_menu th,.table_menu td {
+  padding: 10px;
+  text-align: left;
+}
+.table_menu th {
+  background-color: #f2f2f2;    /* 헤더에 연한 회색 배경 */
+  font-weight: bold;              /* 굵은 텍스트 */
+}
+.reservoir_graph_box {
+  width: 100%;
+  padding-top: 25px;
+}
+.button-group {
+  display: flex;
+  justify-content: flex-end;      /* 오른쪽 정렬 */
+  margin-bottom: 20px;
+}
 .graph_button {
-  padding: 10px 20px;
+  width: 105px;
+  height: 35px;
+  margin-right: 10px;
   font-size: 16px;
   cursor: pointer;
   border: none;
-  background-color: #9C27B0;
+  background-color: #258fff;
   color: white;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
-
 .graph_button:hover {
-  background-color: #BA68C8;
+  background-color: #1166dd;
 }
-
-
-
-
-
-
-
-.facilities_box {
-  width: 390px;
-  flex-wrap: wrap; 
+.graph_box{
   display: flex;
-  justify-content: center;          /* 수평 중앙 정렬 */
-}
-.facilities_bnt {
-  width: 50px;
-  height: 50px;
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: 50%;
-  border: 2px solid #9C27B0; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  background-color: white;
-}
-.facilities_bnt:hover{
-  background-color: #f0f0f0;
-}
-.facilities_text {
-  margin-left: 5px;
-  margin-right: 5px;
-  width: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 10px;
+  justify-content: center;        /* 수평 가운데 정렬 */
+  width: 90%;
+  height: 400px;
+  margin: 0 auto;                 /* 부모 요소 내에서 가운데 정렬 */
 }

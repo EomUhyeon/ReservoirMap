@@ -90,45 +90,54 @@ function Menu({ putSearch, getPopup, isEmptyPopup }) {
     return (
         <div className={left_menu}>
             <button className="left_menu_btn" onClick={leftMenuBnt}>
-            {menuOpen ? "<" : ">"}
+                <div className={`arrow ${menuOpen ? 'open' : ''}`}></div>
             </button>
-            <Search />
-            <hr className="gray-line"></hr>
-            <div className="reservoir_information_box">
-                {reservoirInformation.length > 0 && (
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td><strong>이름 :</strong></td>
-                                <td>{reservoirInformation[0]}</td>
-                            </tr>
-                            <tr>
-                                <td><strong>유효 저수량 :</strong></td>
-                                <td>{reservoirInformation[1]} m³</td>
-                            </tr>
-                            <tr>
-                                <td><strong>금일 저수량 :</strong></td>
-                                <td>{reservoirInformation[2]}</td>
-                            </tr>
-                            <tr>
-                                <td><strong>금일 저수율 :</strong></td>
-                                <td>{reservoirInformation[3]}</td>
-                            </tr>
-                            <tr>
-                                <td><strong>소재지 :</strong></td>
-                                <td>{reservoirInformation[4]}</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div className="left_menu_top">
+                <Search />
+            </div>
+            <div className="left_menu_mid">
+                <button className="left_menu_mid_bnt">전국 현황</button>
+                <button className="left_menu_mid_bnt">상세 정보</button>
+                <hr className="gray-line"></hr>
+            </div>
+            <div className="left_menu_bot">
+                <div className="reservoir_information_box">
+                    {reservoirInformation.length > 0 && (
+                        <div className="table_menu">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>이름</strong></td>
+                                        <td>{reservoirInformation[0]}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>유효 저수량</strong></td>
+                                        <td>{reservoirInformation[1]} m³</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>금일 저수량</strong></td>
+                                        <td>{reservoirInformation[2]}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>금일 저수율</strong></td>
+                                        <td>{reservoirInformation[3]}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>소재지</strong></td>
+                                        <td>{reservoirInformation[4]}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    )}
+                </div>
+                {reservoirInformation.length > 0 ? (
+                    <ReservoirGraph reservoir_name={reservoirInformation[0]} />
+
+                    ) : (
+                    <p>저수지 정보를 선택해주세요.</p>
                 )}
             </div>
-            <hr className="gray-line"></hr>
-            {reservoirInformation.length > 0 ? (
-                <ReservoirGraph reservoir_name={reservoirInformation[0]} />
-
-                ) : (
-                <p>저수지 정보를 선택해주세요.</p>
-            )}
         </div>
     );
 }

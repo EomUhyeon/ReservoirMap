@@ -32,6 +32,24 @@
     background-color: #779ECB;
 }
 
+.table_map table {
+    border-collapse: collapse;                    /* 테두리가 겹치지 않도록 설정 */
+}
+.table_map table,.table_map th,.table_map td {
+    border: 1px solid #e2e2e2;                  /* 회색 테두리 */
+}
+.table_map th,.table_map td {
+    padding: 10px;
+    text-align: left;
+}
+.table_map th {
+    background-color: #f2f2f2;                  /* 헤더에 연한 회색 배경 */
+    font-weight: bold;                            /* 굵은 텍스트 */
+}
+.table_map th:first-child,.table_map td:first-child {
+    width: 70px;                                  /* 첫 번째 열의 너비 */
+}
+
 
 /* 마커 색상 예시 001 */
 /* .marker-20 {
