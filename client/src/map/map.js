@@ -7,8 +7,8 @@ import ReservoirData from './reservoir_data.json';
 import TodayPercent from './reservoir_today_percent';
 
 function Map({ getSearch, isEmptySearch, putPopup }) {
-    const start_point = [37.316946, 126.830447];
-    const start_zoom = 13;
+    const start_point = [35.9087003, 128.8030026];
+    const start_zoom = 10;
     const [searchReservoir, setSearchReservoir] = useState(null);
     const markersRef = useRef({});
 
