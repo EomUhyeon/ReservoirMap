@@ -13,7 +13,7 @@ function ReservoirGraph(reservoir_name) {
   const [forecastData, setForecastData] = useState([]); // 예측 저수율 데이터
   const [graphData, setGraphData] = useState({});
   const [reservoirName, setReservoirName] = useState('');
-  const [recommendedCrop, setRecommendedCrop] = useState(null); // 추천 작물 저장
+  const [recommendedCrop, setRecommendedCrop] = useState([]); // 추천 작물 저장
 
   // 실제 저수율 데이터
   useEffect(() => {
@@ -83,16 +83,25 @@ function ReservoirGraph(reservoir_name) {
   
       // 추천 작물 결정
       if (average >= 0 && average <= 30) {
-        const randomCrop = cropData.low_water_usage[Math.floor(Math.random() * cropData.low_water_usage.length)];
-        setRecommendedCrop(randomCrop);
+        const randomIndex = Math.floor(Math.random() * cropData.low_water_usage.length);
+        const randomCrop = cropData.low_water_usage[randomIndex];
+        const secondIndex = (randomIndex + 1) % cropData.low_water_usage.length;
+        const secondCrop = cropData.low_water_usage[secondIndex];
+        setRecommendedCrop([randomCrop, secondCrop]);
       } 
       else if (average > 30 && average <= 60) {
-        const randomCrop = cropData.medium_water_usage[Math.floor(Math.random() * cropData.medium_water_usage.length)];
-        setRecommendedCrop(randomCrop);
+        const randomIndex = Math.floor(Math.random() * cropData.medium_water_usage.length);
+        const randomCrop = cropData.medium_water_usage[randomIndex];
+        const secondIndex = (randomIndex + 1) % cropData.medium_water_usage.length;
+        const secondCrop = cropData.medium_water_usage[secondIndex];
+        setRecommendedCrop([randomCrop, secondCrop]);
       } 
       else if (average > 60 && average <= 100) {
-        const randomCrop = cropData.high_water_usage[Math.floor(Math.random() * cropData.high_water_usage.length)];
-        setRecommendedCrop(randomCrop);
+        const randomIndex = Math.floor(Math.random() * cropData.high_water_usage.length);
+        const randomCrop = cropData.high_water_usage[randomIndex];
+        const secondIndex = (randomIndex + 1) % cropData.high_water_usage.length;
+        const secondCrop = cropData.high_water_usage[secondIndex];
+        setRecommendedCrop([randomCrop, secondCrop]);
       }
     }
   };
@@ -164,18 +173,22 @@ function ReservoirGraph(reservoir_name) {
 
   return (
     <div className="reservoir_graph_box">
-      <div>
-        {recommendedCrop && (
-          <div className="recommended-crop">
-            <img src={recommendedCrop.image} alt={recommendedCrop.name} style={{ width: '100px', height: '100px' }} />
-            <p>{recommendedCrop.name}</p>
+      <div className='reservoir_bar'>
+        {recommendedCrop.length > 0 && (
+          <div className="recommended-crops">추천 작물 : 
+            {recommendedCrop.map((crop, index) => (
+              <div key={index} className="recommended-crop">
+                <img src={crop.image} alt={crop.name} />
+                <p>{crop.name}</p>
+              </div>
+            ))}
           </div>
         )}
-      </div>
-      <div className="button-group">
-        <button className="graph_button" onClick={() => handleModeChange('daily')}>일간</button>
-        <button className="graph_button" onClick={() => handleModeChange('weekly')}>주간</button>
-        <button className="graph_button" onClick={() => handleModeChange('monthly')}>월간</button>
+        <div className="button-group">
+          <button className="graph_button" onClick={() => handleModeChange('daily')}>일간</button>
+          <button className="graph_button" onClick={() => handleModeChange('weekly')}>주간</button>
+          <button className="graph_button" onClick={() => handleModeChange('monthly')}>월간</button>
+        </div>
       </div>
       {graphData.labels ? (
         <div className='graph_box'>

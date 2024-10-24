@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 1번 파일 (저수지명, 저수율) 읽기
-file1_path = 'reservoir_value_data.csv'  # 저수지명, 저수율 데이터
+file1_path = 'today_241023.csv'  # 저수지명, 저수율 데이터
 df1 = pd.read_csv(file1_path)
 
 # 2번 파일 (name) 읽기
@@ -18,7 +18,7 @@ merged_df = pd.merge(df2, df1, left_on='name', right_on='저수지명_with_suffi
 result_df = merged_df[['name', '저수율']]
 
 # 결과를 새로운 CSV 파일로 저장
-output_file_path = 'matching_reservoirs.csv'
+output_file_path = 'matching_today_241023.csv'
 result_df.to_csv(output_file_path, index=False, encoding='utf-8-sig')
 
 print(f"일치하는 저수지명과 저수율이 {output_file_path}에 저장되었습니다.")

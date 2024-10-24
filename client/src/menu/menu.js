@@ -3,6 +3,8 @@ import "./menu.css";
 import ReservoirData from './reservoir_data.json';
 import ReservoirGraph from './reservoir_graph.js';
 import cropData from './crop_water_usage.json';
+import statusData from './korea_today_percent.json';
+
 
 function Menu({ putSearch, getPopup, isEmptyPopup }) {
     const [menuOpen, setMenuOpen] = useState(true);
@@ -91,7 +93,38 @@ function Menu({ putSearch, getPopup, isEmptyPopup }) {
 
     // 전국 현황 페이지
     function NationwideStatus() {
-        return <div>전국 저수지 현황 페이지 내용</div>;
+        const [data, setData] = useState([]);
+    
+        useEffect(() => {
+            setData(statusData);  // JSON 데이터를 상태로 설정
+        }, []);
+    
+        return (
+            <div className="status-container">
+                <table className="status-table">
+                    <thead>
+                        <tr>
+                            <th>지역</th>
+                            <th>금일 저수율</th>
+                            <th>전일 저수율</th>
+                            <th>전년 저수율</th>
+                            <th>평년 저수율</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {data.map((item, index) => (
+                            <tr key={index}>
+                                <td>{item.name}</td>
+                                <td>{item.금일}%</td>
+                                <td>{item.전일}%</td>
+                                <td>{item.전년}%</td>
+                                <td>{item.평년}%</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+        );
     }
 
     // 작물 정보 페이지

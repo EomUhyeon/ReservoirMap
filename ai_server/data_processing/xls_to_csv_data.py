@@ -1,10 +1,10 @@
 import pandas as pd
 
 # 엑셀 파일 경로
-excel_file_path = 'reservoir_241013.xls'
+excel_file_path = 'today_241023.xls'
 
 # 변환된 CSV 파일 저장 경로
-csv_output_path = 'reservoir_value_data.csv'
+csv_output_path = 'today_241023.csv'
 
 dataframes = pd.read_html(excel_file_path)
 
