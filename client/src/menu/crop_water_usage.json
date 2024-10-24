@@ -1,0 +1,128 @@
+{
+    "high_water_usage": [
+        {
+            "image": "corp_img/쌀(벼).webp",
+            "name": "쌀(벼)",
+            "water_usage": "1,500~3,000L/m²",
+            "growth_duration": "4~6개월",
+            "optimal_temperature": "20~30°C (최적 25°C)",
+            "description": "논에서 재배되며, 아시아에서 주요 주식입니다. 물을 많이 필요로 하지만 성장 기간이 적당히 짧습니다."
+        },
+        {
+            "image": "corp_img/배추.webp",
+            "name": "배추",
+            "water_usage": "1,000~1,500L/m²",
+            "growth_duration": "2~3개월",
+            "optimal_temperature": "15~20°C",
+            "description": "김장철에 많이 재배되며, 물을 많이 필요로 하지만 성장 기간이 짧아 주기적으로 수확이 가능합니다."
+        },
+        {
+            "image": "corp_img/무.webp",
+            "name": "무",
+            "water_usage": "800~1,200L/m²",
+            "growth_duration": "2~3개월",
+            "optimal_temperature": "12~20°C",
+            "description": "재배 기간이 짧고 다양한 요리에 사용되는 채소입니다. 물을 많이 필요로 하지만 빠르게 성장합니다."
+        },
+        {
+            "image": "corp_img/고구마.webp",
+            "name": "고구마",
+            "water_usage": "700~1,500L/m²",
+            "growth_duration": "3~4개월",
+            "optimal_temperature": "20~30°C",
+            "description": "땅속에서 자라는 작물로 수분을 많이 필요로 하며, 재배 기간이 비교적 짧습니다."
+        },
+        {
+            "image": "corp_img/옥수수.webp",
+            "name": "옥수수",
+            "water_usage": "600~1,200L/m²",
+            "growth_duration": "3~4개월",
+            "optimal_temperature": "18~27°C (최적 24°C)",
+            "description": "재배가 용이하고 물 사용량이 많습니다. 주로 여름에 재배되며 사료로도 사용됩니다."
+        }
+    ],
+    "medium_water_usage": [
+        {
+            "image": "corp_img/상추.webp",
+            "name": "상추",
+            "water_usage": "500~700L/m²",
+            "growth_duration": "1~2개월",
+            "optimal_temperature": "15~20°C",
+            "description": "빠른 수확이 가능하며, 물을 보통 정도로 필요로 합니다. 주로 비닐하우스나 야외에서 재배합니다."
+        },
+        {
+            "image": "corp_img/파.webp",
+            "name": "파",
+            "water_usage": "500~800L/m²",
+            "growth_duration": "2~3개월",
+            "optimal_temperature": "15~25°C",
+            "description": "한국 음식에서 많이 사용되며, 적당한 물과 관리로 빠르게 재배 가능합니다."
+        },
+        {
+            "image": "corp_img/시금치.jpg",
+            "name": "시금치",
+            "water_usage": "400~600L/m²",
+            "growth_duration": "1.5~2개월",
+            "optimal_temperature": "10~20°C",
+            "description": "추운 날씨에도 재배할 수 있으며, 물을 보통 수준으로 필요로 하고 빠르게 자랍니다."
+        },
+        {
+            "image": "corp_img/토마토.webp",
+            "name": "토마토",
+            "water_usage": "500~750L/m²",
+            "growth_duration": "2~3개월",
+            "optimal_temperature": "18~24°C (최적 20°C)",
+            "description": "다양한 요리에 활용되며, 물을 보통 정도로 필요로 하고 비닐하우스 재배 시 연중 수확 가능합니다."
+        },
+        {
+            "image": "corp_img/피망.jpg",
+            "name": "피망",
+            "water_usage": "500~700L/m²",
+            "growth_duration": "2~3개월",
+            "optimal_temperature": "18~25°C",
+            "description": "빠른 수확이 가능하고, 물 사용량이 보통이며, 여러 색상으로 재배 가능합니다."
+        }
+    ],
+    "low_water_usage": [
+        {
+            "image": "corp_img/감자.webp",
+            "name": "감자",
+            "water_usage": "300~500L/m²",
+            "growth_duration": "2~3개월",
+            "optimal_temperature": "10~25°C (최적 20°C)",
+            "description": "물을 적게 필요로 하며 서늘한 기후에서 잘 자라 빠르게 수확할 수 있습니다."
+        },
+        {
+            "image": "corp_img/당근.webp",
+            "name": "당근",
+            "water_usage": "300~500L/m²",
+            "growth_duration": "3개월",
+            "optimal_temperature": "15~20°C",
+            "description": "물을 적게 필요로 하고, 여러 종류의 토양에서 잘 자라며 빠르게 수확할 수 있습니다."
+        },
+        {
+            "image": "corp_img/마늘.webp",
+            "name": "마늘",
+            "water_usage": "300~500L/m²",
+            "growth_duration": "3~4개월",
+            "optimal_temperature": "12~20°C",
+            "description": "비교적 적은 물로도 재배 가능하며, 저장성이 좋고 성장 기간이 짧습니다."
+        },
+        {
+            "image": "corp_img/양파.webp",
+            "name": "양파",
+            "water_usage": "300~600L/m²",
+            "growth_duration": "3~4개월",
+            "optimal_temperature": "12~25°C",
+            "description": "물을 적당히 사용하며, 다양한 기후 조건에서도 잘 자랍니다. 한국 요리에 많이 사용됩니다."
+        },
+        {
+            "image": "corp_img/고추.webp",
+            "name": "고추",
+            "water_usage": "400~600L/m²",
+            "growth_duration": "3~4개월",
+            "optimal_temperature": "20~30°C",
+            "description": "물을 적게 필요로 하며, 한국 요리에서 필수적인 향신료로 널리 사용됩니다."
+        }
+    ]
+}

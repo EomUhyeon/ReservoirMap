@@ -4,6 +4,8 @@ import Papa from 'papaparse';
 import { Chart, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler } from 'chart.js';
 import './menu.css';
 
+import cropData from './crop_water_usage.json';
+
 Chart.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler);
 
 function ReservoirGraph(reservoir_name) {
@@ -11,13 +13,14 @@ function ReservoirGraph(reservoir_name) {
   const [forecastData, setForecastData] = useState([]); // 예측 저수율 데이터
   const [graphData, setGraphData] = useState({});
   const [reservoirName, setReservoirName] = useState('');
+  const [recommendedCrop, setRecommendedCrop] = useState(null); // 추천 작물 저장
 
   // 실제 저수율 데이터
   useEffect(() => {
     const reservoirNameStr = typeof reservoir_name === 'string' ? reservoir_name : reservoir_name?.reservoir_name;
     setReservoirName(reservoirNameStr);
     
-    fetch(`http://localhost:8080/api/reservoir_percent/${reservoirNameStr}`)
+    fetch(`https://35.193.25.157/api/reservoir_percent/${reservoirNameStr}`)
       .then((response) => response.text())
       .then((csvText) => {
         Papa.parse(csvText, {
@@ -36,7 +39,7 @@ function ReservoirGraph(reservoir_name) {
   // 예측 저수율 데이터
   useEffect(() => {
     if (reservoirName) {
-      fetch(`http://localhost:8080/api/reservoir_forecast/${reservoirName}`)
+      fetch(`https://35.193.25.157/api/reservoir_forecast/${reservoirName}`)
         .then((response) => response.text())
         .then((csvText) => {
           Papa.parse(csvText, {
@@ -44,6 +47,7 @@ function ReservoirGraph(reservoir_name) {
             complete: (result) => {
               setForecastData(result.data); // 예측 저수율 데이터 설정
               updateGraphData(data, result.data, 'daily');
+              calculateAverageForecast(result.data); // 예측 데이터 평균 계산
             },
           });
         })
@@ -53,21 +57,63 @@ function ReservoirGraph(reservoir_name) {
     }
   }, [reservoirName, data]);
 
+  // 예측 데이터 평균 계산 및 추천 작물 설정
+  const calculateAverageForecast = (forecastData) => {
+    if (forecastData && forecastData.length > 0) {
+      // 유효한 숫자만 합산하기 위해 유효한 데이터 필터링
+      const validData = forecastData.filter(curr => {
+        const reservoirPercentStr = curr['저수율'] || curr['yhat'];
+        const reservoirPercent = parseFloat(reservoirPercentStr?.replace(/[^0-9.]/g, '')); 
+        return !isNaN(reservoirPercent); // NaN이 아닌 경우만 필터링
+      });
+  
+      if (validData.length === 0) {
+        console.log("유효한 데이터가 없습니다.");
+        return;
+      }
+  
+      const sum = validData.reduce((acc, curr) => {
+        const reservoirPercentStr = curr['저수율'] || curr['yhat'];
+        const reservoirPercent = parseFloat(reservoirPercentStr?.replace(/[^0-9.]/g, '')); 
+        return acc + (isNaN(reservoirPercent) ? 0 : reservoirPercent); // NaN인 경우 0으로 처리
+      }, 0);
+  
+      const average = sum / validData.length;
+      console.log("평균 저수율:", average);
+  
+      // 추천 작물 결정
+      if (average >= 0 && average <= 30) {
+        const randomCrop = cropData.low_water_usage[Math.floor(Math.random() * cropData.low_water_usage.length)];
+        setRecommendedCrop(randomCrop);
+      } 
+      else if (average > 30 && average <= 60) {
+        const randomCrop = cropData.medium_water_usage[Math.floor(Math.random() * cropData.medium_water_usage.length)];
+        setRecommendedCrop(randomCrop);
+      } 
+      else if (average > 60 && average <= 100) {
+        const randomCrop = cropData.high_water_usage[Math.floor(Math.random() * cropData.high_water_usage.length)];
+        setRecommendedCrop(randomCrop);
+      }
+    }
+  };
+
   // 데이터 필터링 (일간, 주간, 월간)
   const filterData = (data, mode) => {
     const filtered = [];
     const dataLength = data.length;
 
     if (mode === 'daily') {
-      return data.slice(-450);
+      for (let i = dataLength - 2; i >= 0 && filtered.length < 365; i -= 1) {
+        filtered.unshift(data[i]);
+      }
     } 
     else if (mode === 'weekly') {
-      for (let i = dataLength - 2; i >= 0 && filtered.length < 64; i -= 7) {
+      for (let i = dataLength - 2; i >= 0 && filtered.length < 52; i -= 7) {
         filtered.unshift(data[i]);
       }
     } 
     else if (mode === 'monthly') {
-      for (let i = dataLength - 2; i >= 0 && filtered.length < 15; i -= 30) {
+      for (let i = dataLength - 2; i >= 0 && filtered.length < 12; i -= 30) {
         filtered.unshift(data[i]);
       }
     }
@@ -118,10 +164,18 @@ function ReservoirGraph(reservoir_name) {
 
   return (
     <div className="reservoir_graph_box">
+      <div>
+        {recommendedCrop && (
+          <div className="recommended-crop">
+            <img src={recommendedCrop.image} alt={recommendedCrop.name} style={{ width: '100px', height: '100px' }} />
+            <p>{recommendedCrop.name}</p>
+          </div>
+        )}
+      </div>
       <div className="button-group">
-        <button className="graph_button" onClick={() => handleModeChange('daily')}>일간 저수율</button>
-        <button className="graph_button" onClick={() => handleModeChange('weekly')}>주간 저수율</button>
-        <button className="graph_button" onClick={() => handleModeChange('monthly')}>월간 저수율</button>
+        <button className="graph_button" onClick={() => handleModeChange('daily')}>일간</button>
+        <button className="graph_button" onClick={() => handleModeChange('weekly')}>주간</button>
+        <button className="graph_button" onClick={() => handleModeChange('monthly')}>월간</button>
       </div>
       {graphData.labels ? (
         <div className='graph_box'>

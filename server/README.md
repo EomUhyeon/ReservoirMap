@@ -93,3 +93,122 @@ sudo reboot
 bash
 코드 복사
 locale
+
+
+1. 자체 서명된 SSL 인증서 생성
+   먼저 Google Cloud VM에서 자체 서명된 SSL 인증서를 생성하여 HTTPS 설정을 위해 준비합니다.
+
+SSH로 Google Cloud VM에 접속합니다.
+
+Google Cloud Console에서 SSH 버튼을 클릭하여 VM에 접속합니다.
+OpenSSL을 사용해 자체 서명된 SSL 인증서 생성: 아래 명령어를 사용하여 자체 서명된 SSL 인증서와 개인 키 파일을 생성합니다.
+
+bash
+코드 복사
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+-keyout /etc/ssl/private/selfsigned.key \
+-out /etc/ssl/certs/selfsigned.crt
+인증서 생성을 위한 정보를 입력해야 합니다. 가장 중요한 것은 Common Name(CN) 부분에 VM의 공인 IP 주소를 입력하는 것입니다. 예:
+
+Country Name: KR
+State: Seoul
+Locality: Seoul
+Organization: MyCompany
+Organizational Unit: IT
+Common Name: 34.66.xxx.xxx (VM의 공인 IP 주소)
+Email Address: 비워둬도 됩니다.
+2. SSL 인증서를 Spring Boot에서 사용할 수 있도록 변환 (PKCS12)
+   Spring Boot는 PKCS12 또는 JKS 형식의 인증서를 사용합니다. 방금 생성한 인증서를 PKCS12 형식으로 변환합니다.
+
+bash
+코드 복사
+sudo openssl pkcs12 -export -in /etc/ssl/certs/selfsigned.crt \
+-inkey /etc/ssl/private/selfsigned.key \
+-out /etc/ssl/private/selfsigned.p12 \
+-name tomcat
+변환된 인증서 파일(selfsigned.p12)이 /etc/ssl/private/ 경로에 저장됩니다. 변환 시 설정한 비밀번호는 Spring Boot 설정에서 사용됩니다.
+
+# 홈 디렉토리로 SSL 인증서 파일을 이동
+sudo mv /etc/ssl/private/selfsigned.p12 /home/righthyeon00/selfsigned.p12
+
+# 새로운 위치의 권한을 수정하여 읽기 권한 부여
+sudo chmod 644 /home/righthyeon00/selfsigned.p12
+
+
+3. Spring Boot 애플리케이션에 HTTPS 설정 추가
+   이제 Spring Boot 프로젝트의 application.properties 또는 application.yml 파일에 HTTPS 설정을 추가합니다.
+
+application.properties 설정:
+properties
+코드 복사
+server.port=443
+server.ssl.key-store=file:/etc/ssl/private/selfsigned.p12
+server.ssl.key-store-password=your-password
+server.ssl.key-store-type=PKCS12
+server.ssl.key-alias=tomcat
+application.yml 설정:
+yaml
+코드 복사
+server:
+port: 443
+ssl:
+key-store: file:/etc/ssl/private/selfsigned.p12
+key-store-password: your-password
+key-store-type: PKCS12
+key-alias: tomcat
+server.port=443: HTTPS는 기본적으로 포트 443에서 동작합니다.
+key-store: SSL 인증서 파일의 경로를 지정합니다.
+key-store-password: 인증서를 생성할 때 설정한 비밀번호를 입력합니다.
+key-store-type: PKCS12 형식으로 설정합니다.
+key-alias: 인증서의 별칭(alias)을 지정합니다. (보통 tomcat으로 설정).
+4. Spring Boot 애플리케이션 빌드 및 VM으로 전송
+   Spring Boot 애플리케이션을 HTTPS 설정을 포함하여 빌드한 후, Google Cloud VM으로 전송합니다.
+
+빌드: 로컬 환경에서 Maven을 사용하여 애플리케이션을 빌드합니다.
+
+bash
+코드 복사
+mvn clean package
+빌드가 완료되면 target/ 디렉토리에 .jar 파일이 생성됩니다.
+
+VM으로 전송: SCP(Secure Copy) 명령어를 사용하여 빌드된 .jar 파일을 VM으로 전송합니다.
+
+bash
+코드 복사
+scp target/myapp-0.0.1-SNAPSHOT.jar username@<VM_IP>:/home/username/
+username: VM의 사용자 이름.
+VM_IP: VM의 공인 IP 주소.
+5. Google Cloud VM에서 애플리케이션 실행
+   SSH로 VM에 접속: SSH로 다시 VM에 접속합니다.
+
+Spring Boot 애플리케이션 실행:
+
+bash
+코드 복사
+java -jar /home/username/myapp-0.0.1-SNAPSHOT.jar
+Spring Boot 애플리케이션이 HTTPS로 구동되며, 443 포트에서 요청을 처리합니다.
+
+6. Google Cloud 방화벽 설정 확인
+   Google Cloud에서 포트 443이 외부에서 접근 가능하도록 방화벽 설정을 확인해야 합니다.
+
+Google Cloud Console에서 VPC 네트워크 > 방화벽 규칙으로 이동합니다.
+
+**포트 443(HTTPS)**가 허용되어 있는지 확인합니다. 만약 허용되어 있지 않다면 방화벽 규칙을 추가해야 합니다.
+
+이름: allow-https
+대상: 모든 인스턴스
+소스 IP 범위: 0.0.0.0/0
+프로토콜 및 포트: TCP 443
+7. 브라우저에서 HTTPS로 접속
+   애플리케이션이 실행되면, 브라우저에서 HTTPS로 접속할 수 있습니다.
+
+브라우저에서 **https://<VM_IP>**를 입력하여 접속합니다.
+자체 서명된 인증서이므로 브라우저에서 경고 메시지가 표시될 수 있습니다. 이 경고를 무시하고 계속 진행하면 애플리케이션에 접속할 수 있습니다.
+요약:
+SSL 인증서 생성: VM에서 자체 서명된 SSL 인증서 생성.
+SSL 인증서 변환: Spring Boot에서 사용할 수 있도록 PKCS12 형식으로 변환.
+Spring Boot 설정: HTTPS 설정을 application.properties 또는 application.yml에 추가.
+Spring Boot 애플리케이션 빌드: 빌드 후 VM에 .jar 파일 업로드.
+Spring Boot 실행: VM에서 HTTPS를 사용해 Spring Boot 애플리케이션 실행.
+Google Cloud 방화벽 설정: 443 포트를 열어 외부에서 HTTPS로 접근 가능하도록 설정.
+브라우저 접속: HTTPS로 애플리케이션에 접속.

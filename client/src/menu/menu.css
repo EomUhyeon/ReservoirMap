@@ -130,11 +130,17 @@
   margin-left: 25px;
   margin-bottom: -1px;
   border: none;                   /* 투명 */
-  width: 81px;
+  width: 90px;
   height: 44px;
   color: #666666;
   background-color: #ffffff;
   cursor: pointer;
+}
+.left_menu_mid_bnt.active {
+  margin-bottom: -2px;
+  border-bottom: 3px solid #258fff;
+  font-weight: bold;              /* 굵은 글자 */
+  color: #258fff;
 }
 
 .left_menu_bot{
@@ -173,7 +179,7 @@
   margin-bottom: 20px;
 }
 .graph_button {
-  width: 105px;
+  width: 65px;
   height: 35px;
   margin-right: 10px;
   font-size: 16px;
@@ -193,4 +199,115 @@
   width: 90%;
   height: 400px;
   margin: 0 auto;                 /* 부모 요소 내에서 가운데 정렬 */
+}
+
+.crop-info-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;         /* 세로 방향 정렬 */
+
+}
+
+.crop_search_box {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;  
+}
+
+.crop_search_window {
+  text-align: left;
+  margin-right: 20px;
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.crop_search_window:focus {
+  outline: none;                  /* 기본 포커스 아웃라인 제거 */
+}
+
+/* 필터 버튼 */
+.crop_filter_buttons {
+  display: flex;
+  align-items: center;      /* 수직 중앙 정렬 */
+}
+/* 기본적인 스타일 - 동그랗게 만들기 */
+.crop_filter_buttons button {
+  margin-left: 5px;
+  width: 45px; /* 동그라미 크기 */
+  height: 45px;
+  border-radius: 50%; /* 동그라미로 만듦 */
+  border: none; /* 테두리 제거 */
+  cursor: pointer; /* 마우스를 올렸을 때 포인터로 변경 */
+  transition: background-color 0.3s ease; /* 색상 변화 효과 */
+}
+
+/* 각 버튼의 기본 색상 */
+.crop_water_high {
+  background-color: #2ecc71; /* 밝은 녹색 (파란 계열과 유사한 녹색) */
+}
+
+.crop_water_medium {
+  background-color: #f4d03f; /* 밝은 노란색 (파란 계열과 유사한 노란색) */
+}
+
+.crop_water_low {
+  background-color: #e74c3c; /* 밝은 빨간색 (파란 계열과 유사한 빨간색) */
+}
+
+/* hover(홀드) 상태에서의 색상 변경 */
+.crop_water_high:hover {
+  background-color: #1e874b; /* 홀드 시 더 진한 녹색 */
+}
+
+.crop_water_medium:hover {
+  background-color: #f1c40f; /* 홀드 시 더 진한 노란색 */
+}
+
+.crop_water_low:hover {
+  background-color: #c0392b; /* 홀드 시 더 진한 빨간색 */
+}
+.crop_water_all {
+  background-color: #258fff;
+}
+
+.crop_water_all:hover {
+  background-color: #1166dd;
+}
+
+/* 테이블 스타일 */
+.crop_table {
+  width: 100%;
+  margin-top: 20px;
+  max-height: 650px; /* 세로 최대 높이 설정 */
+  overflow-y: auto; /* 세로 스크롤 활성화 */
+}
+
+.crop_table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+
+}
+
+.crop_table th, .crop_table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  text-align: center; /* 텍스트를 가로 방향으로 가운데 정렬 */
+}
+
+.crop_table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.crop_table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.crop_table tr:hover {
+  background-color: #f1f1f1;
 }

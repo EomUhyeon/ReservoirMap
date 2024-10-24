@@ -5,6 +5,7 @@
 /ai_server/data_processing/save
 /ai_server/venv
 /ai_server/.idea
+/firebase_client
 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 

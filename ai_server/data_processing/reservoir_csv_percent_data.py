@@ -25,9 +25,6 @@ for reservoir_name in reservoir_names:
     # 각 XLS 파일에서 데이터 검색
     for xls_file in xls_files:
         try:
-            # XLS 파일 읽기
-            # df = pd.read_excel(xls_file)
-
             dataframes = pd.read_html(xls_file)
             df = dataframes[0]
 
