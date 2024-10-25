@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marker Vertical Sort</title>
+    <style>
+        /* 마커 기본 스타일 */
+        .custom-marker {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: gray;
+            border: 2px solid #D3D3D3;   /* 테두리 색상 */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* 그림자 */
+        }
+
+        /* 각각의 수치별 마커 스타일 */
+        .marker-20 {
+            background-color: #FF6F61;  /* 빨간색 계열 */
+        }
+        .marker-40 {
+            background-color: #FFB347;  /* 주황색 계열 */
+        }
+        .marker-60 {
+            background-color: #FDFD96;  /* 노란색 계열 */
+        }
+        .marker-80 {
+            background-color: #AEC6CF;  /* 파란색 계열 */
+        }
+        .marker-100 {
+            background-color: #779ECB;  /* 짙은 파란색 계열 */
+        }
+
+        /* 컨테이너 스타일: 수직 정렬을 위한 Flexbox 사용 */
+        .marker-container {
+            display: flex;
+            flex-direction: column;  /* 수직 정렬 */
+            align-items: center;      /* 가운데 정렬 */
+            gap: 10px;                /* 마커 간의 간격 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="marker-container">
+        <!-- 큰 값일수록 위에 배치 -->
+        <div class="custom-marker marker-100"></div>
+        <div class="custom-marker marker-80"></div>
+        <div class="custom-marker marker-60"></div>
+        <div class="custom-marker marker-40"></div>
+        <div class="custom-marker marker-20"></div>
+    </div>
+
+</body>
+</html>
