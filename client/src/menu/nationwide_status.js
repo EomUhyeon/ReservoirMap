@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import statusData from './korea_today_percent.json';
+import statusData from './data/korea_today_percent.json';
 
 function NationwideStatus() {
     const [data, setData] = useState([]);
