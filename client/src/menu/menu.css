@@ -222,7 +222,6 @@
 }
 .status-table tbody tr:hover {    /* 마우스 오버 시 강조 효과 */
   background-color: #f1f1f1;
-  cursor: pointer;
 }
 .status-table th {                /* 테이블 헤더 고정 */
   position: sticky;
