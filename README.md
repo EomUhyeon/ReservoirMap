@@ -19,6 +19,12 @@
     * 파란색 (과거 저수율 데이터), 주황색 (미래 저수율 데이터)
     ![저수율 그래프](README_img/Reservoir_Graph.gif)
 
+- 농작물 정보
+    * 
+    ![저수율 그래프](README_img/Reservoir_Crops.gif)
+
+- 전국 저수율 현황
+    ![저수지 정보](README_img/Reservoir_List.png)
 
 
 
