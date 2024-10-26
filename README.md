@@ -15,16 +15,16 @@
 
 - 저수지 저수율 정보 제공
     * 상세 정보 페이지에 그래프로 저수지의 과거 저수율과 미래 예측 저수율 정보 제공
-    * 
     * 파란색 (과거 저수율 데이터), 주황색 (미래 저수율 데이터)
     ![저수율 그래프](README_img/Reservoir_Graph.gif)
 
 - 농작물 정보
-    * 
-    ![저수율 그래프](README_img/Reservoir_Crops.gif)
+    * 농작물 정보
+    ![작물 정보](README_img/Reservoir_Crops.gif)
 
 - 전국 저수율 현황
-    ![저수지 정보](README_img/Reservoir_List.png)
+    * 전국 저수율 정보
+    ![전국 저수율](README_img/Reservoir_List.png)
 
 
 
