@@ -3,17 +3,16 @@ import { Line } from 'react-chartjs-2';
 import Papa from 'papaparse';
 import { Chart, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler } from 'chart.js';
 import './menu.css';
-
 import cropData from './crop_water_usage.json';
 
 Chart.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler);
 
 function ReservoirGraph(reservoir_name) {
-  const [data, setData] = useState([]);                 // 실제 저수율 데이터
-  const [forecastData, setForecastData] = useState([]); // 예측 저수율 데이터
+  const [data, setData] = useState([]);                       // 실제 저수율 데이터
+  const [forecastData, setForecastData] = useState([]);       // 예측 저수율 데이터
   const [graphData, setGraphData] = useState({});
   const [reservoirName, setReservoirName] = useState('');
-  const [recommendedCrop, setRecommendedCrop] = useState([]); // 추천 작물 저장
+  const [recommendedCrop, setRecommendedCrop] = useState([]); // 추천 작물
 
   // 실제 저수율 데이터
   useEffect(() => {
@@ -26,7 +25,7 @@ function ReservoirGraph(reservoir_name) {
         Papa.parse(csvText, {
           header: true,
           complete: (result) => {
-            setData(result.data); // 실제 저수율 데이터 설정
+            setData(result.data);                             // 실제 저수율 데이터 설정
             updateGraphData(result.data, null, 'daily');
           },
         });
@@ -45,9 +44,9 @@ function ReservoirGraph(reservoir_name) {
           Papa.parse(csvText, {
             header: true,
             complete: (result) => {
-              setForecastData(result.data); // 예측 저수율 데이터 설정
+              setForecastData(result.data);                   // 예측 저수율 데이터 설정
               updateGraphData(data, result.data, 'daily');
-              calculateAverageForecast(result.data); // 예측 데이터 평균 계산
+              calculateAverageForecast(result.data);
             },
           });
         })
@@ -64,7 +63,7 @@ function ReservoirGraph(reservoir_name) {
       const validData = forecastData.filter(curr => {
         const reservoirPercentStr = curr['저수율'] || curr['yhat'];
         const reservoirPercent = parseFloat(reservoirPercentStr?.replace(/[^0-9.]/g, '')); 
-        return !isNaN(reservoirPercent); // NaN이 아닌 경우만 필터링
+        return !isNaN(reservoirPercent);
       });
   
       if (validData.length === 0) {

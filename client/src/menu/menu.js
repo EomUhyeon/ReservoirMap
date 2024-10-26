@@ -4,7 +4,7 @@ import ReservoirData from './reservoir_data.json';
 import ReservoirGraph from './reservoir_graph.js';
 import cropData from './crop_water_usage.json';
 import statusData from './korea_today_percent.json';
-
+import TodayPercent from './reservoir_today_percent.json';
 
 function Menu({ putSearch, getPopup, isEmptyPopup }) {
     const [menuOpen, setMenuOpen] = useState(true);
@@ -59,6 +59,30 @@ function Menu({ putSearch, getPopup, isEmptyPopup }) {
             putSearch(reservoir.name);  
         };
 
+        const percentCategory = (name) => {
+            const reservoir = TodayPercent.find(item => item.name === name);
+    
+            if (!reservoir || !reservoir.percent) {
+                return '';
+            }
+    
+            const percent = parseFloat(reservoir.percent);
+    
+            if (percent >= 0 && percent <= 20) {
+                return 'marker-20';
+            } else if (percent > 20 && percent <= 40) {
+                return 'marker-40';
+            } else if (percent > 40 && percent <= 60) {
+                return 'marker-60';
+            } else if (percent > 60 && percent <= 80) {
+                return 'marker-80';
+            } else if (percent > 80 && percent <= 100) {
+                return 'marker-100';
+            } else {
+                return '';
+            }
+        };
+
         return (
             <div className="search_box">
                 <div className="search_bar">
@@ -74,12 +98,15 @@ function Menu({ putSearch, getPopup, isEmptyPopup }) {
                 </div>
                 <div className="search_data_box">
                     {searchTerm && (
-                        <ul className="search-results">
+                        <ul className="search_results_box">
                             {filteredReservoirs.length > 0 ? (
                                 filteredReservoirs.map((reservoir, index) => (
-                                    <li key={index} onClick={() => handleReservoirClick(reservoir)}>
-                                        {reservoir.name} ({reservoir.위치})
-                                    </li>
+                                    <div className="search_result">
+                                        <div className={`today_persent ${percentCategory(reservoir.name)}`}></div>
+                                        <li key={index} onClick={() => handleReservoirClick(reservoir)}>
+                                            {reservoir.name} ({reservoir.위치})
+                                        </li>
+                                    </div>
                                 ))
                             ) : (
                                 <li>결과가 없습니다.</li>
