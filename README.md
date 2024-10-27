@@ -7,9 +7,9 @@
     ![저수지 검색](README_img/Reservoir_Search.gif)
 
 
-- 저수지 정보 제공 및 추천 작물
+- 저수지 정보 제공 및 작물 추천
     * 상세 정보 페이지와 팝업으로 저수지 정보 제공
-    * 지도 위 마커로 위치 정보 제공
+    * 지도 위 마커로 저수지 위치 정보 제공
     * 저수지의 저수율을 예측한 데이터를 기반으로 알맞은 작물 추천
     ![저수지 정보](README_img/Reservoir_Information.png)
 
@@ -19,12 +19,10 @@
     ![저수율 그래프](README_img/Reservoir_Graph.gif)
 
 - 농작물 정보
-    * 농작물 정보
+    * 작물 정보 검색
+    * 작물 물 사용량 정보 및 상세 정보 제공
     ![작물 정보](README_img/Reservoir_Crops.gif)
 
 - 전국 저수율 현황
     * 전국 저수율 정보
     ![전국 저수율](README_img/Reservoir_List.png)
-
-
-
