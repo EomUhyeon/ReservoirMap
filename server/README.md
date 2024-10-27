@@ -13,50 +13,49 @@
           us-central1 (아이오와) <br>
           us-east1 (사우스캐롤라이나) 
         - 방화벽 : 웹 애플리케이션을 외부에서 접속할 수 있도록 HTTP와 HTTPS 트래픽 허용 선택
-        - 생성 후 방화벽 규칙 추가
+        - 생성 후 방화벽 규칙 추가 <br>
           네트워킹 → VPC 네트워크 → 방화벽 규칙 → 새로운 규칙 추가 → 포트 8080 추가
 
     * VM 서버 기본 설치 및 https 인증서 생성
         - VM 서버 SSH 접속
         - sudo apt update
         - sudo apt install openjdk-17-jdk (java17 설치)
-        - OpenSSL을 사용해 자체 서명된 SSL 인증서 생성
-          sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
-          -keyout /etc/ssl/private/selfsigned.key \
+        - OpenSSL을 사용해 자체 서명된 SSL 인증서 생성 <br>
+          sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \ <br>
+          -keyout /etc/ssl/private/selfsigned.key \ <br>
           -out /etc/ssl/certs/selfsigned.crt
-        - 인증서 생성을 위한 정보를 입력 예시
-          Country Name: KR
-          State: Seoul
-          Locality: Seoul
-          Organization: MyCompany
-          Organizational Unit: IT
-          Common Name: 35.193.25.157 (VM의 외부 IP 주소)
+        - 인증서 생성을 위한 정보를 입력 예시 <br>
+          Country Name: KR <br>
+          State: Seoul <br>
+          Locality: Seoul <br>
+          Organization: MyCompany <br>
+          Organizational Unit: IT <br>
+          Common Name: 35.193.25.157 (VM의 외부 IP 주소) <br>
           Email Address: (비워둬도 됩니다.)
-        - SSL 인증서를 Spring Boot에서 사용할 수 있도록 변환 (PKCS12)
-          sudo openssl pkcs12 -export -in /etc/ssl/certs/selfsigned.crt \
-          -inkey /etc/ssl/private/selfsigned.key \
-          -out /etc/ssl/private/selfsigned.p12 \
+        - SSL 인증서를 Spring Boot에서 사용할 수 있도록 변환 (PKCS12) <br>
+          sudo openssl pkcs12 -export -in /etc/ssl/certs/selfsigned.crt \ <br>
+          -inkey /etc/ssl/private/selfsigned.key \ <br>
+          -out /etc/ssl/private/selfsigned.p12 \ <br>
           -name tomcat
-        - 홈 디렉토리로 SSL 인증서 파일을 이동
+        - 홈 디렉토리로 SSL 인증서 파일을 이동 <br>
           sudo mv /etc/ssl/private/selfsigned.p12 /home/{Your-Directory}/selfsigned.p12
-        - 읽기 권한 부여
+        - 읽기 권한 부여 <br>
           sudo chmod 644 /home/righthyeon00/selfsigned.p12
 
     * Spring Boot 설정 및 빌드
-        - Spring Boot application.properties 설정 추가
-          server.port=443
-          server.ssl.key-store=file:/home/{Your-Directory}/selfsigned.p12
-          server.ssl.key-store-password={Your-Password}
-          server.ssl.key-store-type=PKCS12
+        - Spring Boot application.properties 설정 추가 <br>
+          server.port=443 <br>
+          server.ssl.key-store=file:/home/{Your-Directory}/selfsigned.p12 <br>
+          server.ssl.key-store-password={Your-Password} <br>
+          server.ssl.key-store-type=PKCS12 <br>
           server.ssl.key-alias=tomcat
-
-        - Spring Boot에 React(프론트엔드)를 빌드해서 추가(선택사항) 후 Spring Boot를 빌드해서 .jar 파일 생성
+        - Spring Boot에 React(프론트엔드)를 빌드해서 추가(선택사항) 후 Spring Boot를 빌드해서 .jar 파일 생성 <br>
           .\gradlew.bat build (Spring Boot 빌드 명령어)
 
     * Spring Boot(벡엔드) VM 서버 실행
         - VM 서버 SSH 접속
         - {Your-Spring-Boot}SNAPSHOT.jar 업로드
-        - 서버 실행
+        - 서버 실행 <br>
           sudo java -jar {Your-Spring-Boot}SNAPSHOT.jar
 
     * 도메인( https://reservoirmap.web.app/ )을 통해 사이트 접속
