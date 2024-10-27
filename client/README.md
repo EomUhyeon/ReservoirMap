@@ -6,7 +6,6 @@ client/<br>
 ├── public/<br>
 │   ├── corp_img/<br>
 │   └── index.html<br>
-├── save/<br>
 ├── src/<br>
 │   ├── data/<br>
 │   │   ├── corp_img/<br>
