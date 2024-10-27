@@ -3,15 +3,15 @@
 1. 프로젝트 배포
 - Firebase
     * React(프론트엔드)를 빌드해서 Firebase에 업로드
-    * 도메인(https://reservoirmap.web.app/)을 얻기 위해 Firebase 활용
+    * 도메인( https://reservoirmap.web.app/ )을 얻기 위해 Firebase 활용
 
 - Google Cloud Compute Engine VM
     * VM 인스턴스 생성
         - Compute Engine > VM 인스턴스 페이지에서 "인스턴스 만들기" 버튼 클릭
-        - 무료 사용 가능한 리전
-          us-west1 (오리건)
-          us-central1 (아이오와)
-          us-east1 (사우스캐롤라이나)
+        - 무료 사용 가능한 리전 <br>
+          us-west1 (오리건) <br>
+          us-central1 (아이오와) <br>
+          us-east1 (사우스캐롤라이나) 
         - 방화벽 : 웹 애플리케이션을 외부에서 접속할 수 있도록 HTTP와 HTTPS 트래픽 허용 선택
         - 생성 후 방화벽 규칙 추가
           네트워킹 → VPC 네트워크 → 방화벽 규칙 → 새로운 규칙 추가 → 포트 8080 추가
@@ -59,8 +59,8 @@
         - 서버 실행
           sudo java -jar {Your-Spring-Boot}SNAPSHOT.jar
 
-    * 도메인(https://reservoirmap.web.app/)을 통해 사이트 접속
-    * React(프론트엔드) 빌드 추가 시 서버의 외부 아이피로도 사이트 접속 가능(https://35.193.25.157)
+    * 도메인( https://reservoirmap.web.app/ )을 통해 사이트 접속
+    * React(프론트엔드) 빌드 추가 시 서버의 외부 아이피로도 사이트 접속 가능( https://35.193.25.157 )
     * 서버 외부 IP(35.193.25.157)는 Google Cloud Compute Engine VM에서 확인가능
     * 자체 서명된 인증서이므로 브라우저에서 경고 메시지가 표시될 수 있습니다. 이 경고를 무시하고 계속 진행하면 사이트에 접속할 수 있습니다.
     * Spring Boot(벡엔드)는 client의 요청 처리
