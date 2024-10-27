@@ -2,36 +2,36 @@
 
 1. 프로젝트 구성
 
-client/
-├── public/
-│   ├── corp_img/
-│   └── index.html
-├── save/
-├── src/
-│   ├── data/
-│   │   ├── corp_img/
-│   │   ├── crop_water_usage.json
-│   │   ├── korea_today_percent.json
-│   │   ├── reservoir_data.json
-│   │   └── reservoir_today_percent.json
-│   ├── map/
-│   │   ├── map.css
-│   │   ├── map.js
-│   │   ├── reservoir_data.json
-│   │   └── reservoir_today_percent.json
-│   ├── menu/
-│   │   ├── css/
-│   │   │   └── menu.css
-│   │   ├── data/
-│   │   │   ├── crop_water_usage.json
-│   │   │   ├── korea_today_percent.json
-│   │   │   ├── reservoir_data.json
-│   │   │   └── reservoir_today_percent.json
-│   │   ├── crop_information.js
-│   │   ├── menu.js
-│   │   ├── nationwide_status.js
-│   │   └── reservoir_graph.js
-│   ├── App.js
-│   ├── index.js
-│   ├── Queue.js
-│   └── reportWebVitals.js
+client/<br>
+├── public/<br>
+│   ├── corp_img/<br>
+│   └── index.html<br>
+├── save/<br>
+├── src/<br>
+│   ├── data/<br>
+│   │   ├── corp_img/<br>
+│   │   ├── crop_water_usage.json<br>
+│   │   ├── korea_today_percent.json<br>
+│   │   ├── reservoir_data.json<br>
+│   │   └── reservoir_today_percent.json<br>
+│   ├── map/<br>
+│   │   ├── map.css<br>
+│   │   ├── map.js<br>
+│   │   ├── reservoir_data.json<br>
+│   │   └── reservoir_today_percent.json<br>
+│   ├── menu/<br>
+│   │   ├── css/<br>
+│   │   │   └── menu.css<br>
+│   │   ├── data/<br>
+│   │   │   ├── crop_water_usage.json<br>
+│   │   │   ├── korea_today_percent.json<br>
+│   │   │   ├── reservoir_data.json<br>
+│   │   │   └── reservoir_today_percent.json<br>
+│   │   ├── crop_information.js<br>
+│   │   ├── menu.js<br>
+│   │   ├── nationwide_status.js<br>
+│   │   └── reservoir_graph.js<br>
+│   ├── App.js<br>
+│   ├── index.js<br>
+│   ├── Queue.js<br>
+│   └── reportWebVitals.js<br>
